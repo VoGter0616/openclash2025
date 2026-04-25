@@ -1,0 +1,31 @@
+payload:
+  # === Windows / Microsoft IPv6 探测 ===
+  - DOMAIN,ipv6.microsoft.com
+  - DOMAIN-SUFFIX,ipv6check.akadns.net
+  - DOMAIN-SUFFIX,ipv6.microsoft.com.nsatc.net
+  - DOMAIN-SUFFIX,teredo.ipv6.microsoft.com
+  - DOMAIN-KEYWORD,6to4.ipv6.microsoft.com
+
+  # === Apple IPv6 探测 (用于识别网络环境) ===
+  - DOMAIN,ipv6-icmp.icloud.com
+  - DOMAIN,ipv6.icloud.com
+  - DOMAIN-KEYWORD,ipv6-check
+
+  # === Google / Android IPv6 探测 ===
+  - DOMAIN,ipv6.google.com
+  - DOMAIN-SUFFIX,ipv6.l.google.com
+  - DOMAIN-SUFFIX,v6-test.chinasoftinc.com
+
+  # === 常见的 IPv6 测试域名 (经常引起解析报错) ===
+  - DOMAIN-KEYWORD,ipv6check
+  - DOMAIN-KEYWORD,v6check
+  - DOMAIN-KEYWORD,test-ipv6
+  - DOMAIN-KEYWORD,check-ipv6
+  - DOMAIN,ds-v6.v6.test-ipv6.com
+  - DOMAIN,v6.ident.me
+  - DOMAIN,v6.ipv6-test.com
+
+  # === 某些 CDN 自动切换 IPv6 的探测点 ===
+  - DOMAIN-SUFFIX,ipv6.akadns.net
+  - DOMAIN-SUFFIX,v6.facebook.com
+  - DOMAIN-SUFFIX,v6.pan.baidu.com
