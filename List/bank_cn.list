@@ -1,0 +1,51 @@
+# NAME: China Bank & Finance
+# 作用: 强制国内银行金融机构直连，防止风控异常
+# 更新日期: 2026-05
+
+# >>> 支付及清算基础设施 (UnionPay / Alipay)
+IP-CIDR,101.231.0.0/16,no-resolve
+IP-CIDR,110.75.0.0/16,no-resolve
+IP-CIDR,115.124.0.0/16,no-resolve
+IP-CIDR,123.125.172.0/24,no-resolve
+
+# >>> 中国六大行 (国有大型商业银行)
+# 工商银行 (ICBC)
+IP-CIDR,103.22.181.0/24,no-resolve
+# 建设银行 (CCB)
+IP-CIDR,123.125.172.0/24,no-resolve
+# 农业银行 (ABC)
+IP-CIDR,124.127.108.0/24,no-resolve
+# 中国银行 (BOC)
+IP-CIDR,180.168.146.0/24,no-resolve
+# 交通银行 (BOCOM)
+IP-CIDR,124.127.32.0/24,no-resolve
+# 邮储银行 (PSBC)
+IP-CIDR,1.189.0.0/16,no-resolve
+
+# >>> 股份制及地方银行
+# 招商银行 (CMB)
+IP-CIDR,121.15.0.0/16,no-resolve
+# 浦发银行 (SPDB)
+IP-CIDR,124.127.94.0/24,no-resolve
+# 兴业银行 (CIB)
+IP-CIDR,124.127.117.0/24,no-resolve
+# 平安银行 (PAB)
+IP-CIDR,103.28.10.0/24,no-resolve
+# 中信银行 (CITIC)
+IP-CIDR,124.127.48.0/24,no-resolve
+# 民生银行 (CMBC)
+IP-CIDR,124.127.24.0/24,no-resolve
+
+# >>> 金融域名补充 (常见银行域名后缀)
+DOMAIN-SUFFIX,95566.com.cn
+DOMAIN-SUFFIX,95559.com.cn
+DOMAIN-SUFFIX,95599.cn
+DOMAIN-SUFFIX,95555.com.cn
+DOMAIN-SUFFIX,ccb.com
+DOMAIN-SUFFIX,icbc.com.cn
+DOMAIN-SUFFIX,abchina.com
+DOMAIN-SUFFIX,boc.cn
+DOMAIN-SUFFIX,bankcomm.com
+DOMAIN-SUFFIX,cmbchina.com
+DOMAIN-SUFFIX,unionpay.com
+DOMAIN-SUFFIX,unionpaysecure.com
