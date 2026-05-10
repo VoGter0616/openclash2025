@@ -1,6 +1,1 @@
 # Generated from rule/Custom_Proxy.list
-
-# --- Google 资源修复 (防止直连超时) ---
-DOMAIN-SUFFIX,gvt1.com
-DOMAIN-SUFFIX,gvt2.com
-DOMAIN-KEYWORD,google
