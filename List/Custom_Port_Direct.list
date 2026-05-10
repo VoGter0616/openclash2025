@@ -1,0 +1,7 @@
+# NAME: Custom Port Filter
+# 作用: 排除 80 和 443 端口，处理非标准端口流量
+# 更新日期: 2026-05
+
+DST-PORT,1-79
+DST-PORT,81-442
+DST-PORT,444-65535
