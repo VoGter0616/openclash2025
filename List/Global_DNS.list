@@ -1,0 +1,38 @@
+# NAME: Global DNS Providers
+# 作用: 确保海外加密 DNS 解析请求走代理，防止 DNS 污染与监听
+# 更新日期: 2026-05
+
+# >>> Google Public DNS
+DOMAIN-SUFFIX,dns.google
+DOMAIN,8888.google
+
+# >>> Cloudflare DNS
+DOMAIN-SUFFIX,cloudflare-dns.com
+DOMAIN-SUFFIX,1dot1dot1dot1.cloudflare-dns.com
+DOMAIN-SUFFIX,one.one.one.one
+
+# >>> DNS.sb
+DOMAIN-SUFFIX,dns.sb
+DOMAIN-SUFFIX,dot.sb
+DOMAIN-SUFFIX,doh.dns.sb
+DOMAIN,hk-hkg.doh.sb
+
+# >>> Quad9 DNS
+DOMAIN-SUFFIX,quad9.net
+DOMAIN-SUFFIX,dns.quad9.net
+
+# >>> OpenDNS / Cisco Umbrella
+DOMAIN-SUFFIX,opendns.com
+DOMAIN-SUFFIX,umbrella.com
+DOMAIN-SUFFIX,doh.opendns.com
+
+# >>> AdGuard DNS (防广告/隐私保护)
+DOMAIN-SUFFIX,adguard-dns.com
+DOMAIN-SUFFIX,adguard.com
+
+# >>> NextDNS (高度自定义)
+DOMAIN-SUFFIX,nextdns.io
+DOMAIN-KEYWORD,nextdns
+
+# >>> Control D
+DOMAIN-SUFFIX,controld.com
