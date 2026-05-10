@@ -37,3 +37,4 @@ IP-CIDR,205.196.6.0/24,no-resolve
 IP-CIDR,208.64.200.0/22,no-resolve
 IP-CIDR,208.78.164.0/22,no-resolve
 IP-CIDR,209.197.64.0/18,no-resolve
+DOMAIN-KEYWORD,ipv6check
