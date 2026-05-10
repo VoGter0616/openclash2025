@@ -1,0 +1,39 @@
+# NAME: Steam_CDN
+# AUTHOR: Aethersailor / Optimized
+# 作用: 强制 Steam 下载流量直连，确保商店走代理的同时下载满速
+# 更新日期: 2026-05
+
+# >>> 核心下载域名 (Steam Content)
+DOMAIN-SUFFIX,steamcontent.com
+DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
+DOMAIN-SUFFIX,steampowered.com.8686c.com
+DOMAIN-SUFFIX,steamserver.net
+DOMAIN-SUFFIX,cm.steampowered.com
+
+# >>> 备用及 CDN 分发域名
+# 许多下载节点托管在 Akamai, Highwinds 或网宿 (8686c)
+DOMAIN-SUFFIX,edgecast.steamstatic.com
+DOMAIN-SUFFIX,steampipe.akamaized.net
+DOMAIN-SUFFIX,steam.cachefly.net
+DOMAIN,st.dl.bscstorage.net
+DOMAIN,st.dl.pinyuncloud.com
+DOMAIN,st.dl.eccdnx.com
+
+# >>> Valve 核心 IP 基础设施 (CDN & 内容分发)
+# 涵盖了你提供的内容并补充了 Valve 最新的 ASN 自治域段
+IP-CIDR,45.121.184.0/24,no-resolve
+IP-CIDR,103.10.124.0/23,no-resolve
+IP-CIDR,103.28.54.0/24,no-resolve
+IP-CIDR,119.147.222.0/24,no-resolve
+IP-CIDR,146.66.152.0/22,no-resolve
+IP-CIDR,153.254.86.0/24,no-resolve
+IP-CIDR,155.133.224.0/19,no-resolve
+IP-CIDR,162.254.192.0/21,no-resolve
+IP-CIDR,185.25.180.0/22,no-resolve
+IP-CIDR,190.217.32.0/22,no-resolve
+IP-CIDR,192.69.96.0/22,no-resolve
+IP-CIDR,205.185.194.0/24,no-resolve
+IP-CIDR,205.196.6.0/24,no-resolve
+IP-CIDR,208.64.200.0/22,no-resolve
+IP-CIDR,208.78.164.0/22,no-resolve
+IP-CIDR,209.197.64.0/18,no-resolve
