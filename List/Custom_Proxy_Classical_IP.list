@@ -1,1 +1,6 @@
 # Generated from rule/Custom_Proxy.list
+
+# Google 相关
+DOMAIN-SUFFIX,gvt2.com
+DOMAIN-SUFFIX,gvt1.com
+DOMAIN-KEYWORD,google
