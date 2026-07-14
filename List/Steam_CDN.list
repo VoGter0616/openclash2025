@@ -53,3 +53,7 @@ DOMAIN-KEYWORD,cometnetwork
 IP-CIDR,62.210.122.0/24,no-resolve
 IP-CIDR,188.165.230.0/24,no-resolve
 IP-CIDR,198.251.81.0/24,no-resolve
+
+# --- 针对所有 Tracker 的全局关键词放行规则 ---
+DOMAIN-KEYWORD,tracker
+DOMAIN-KEYWORD,announce
