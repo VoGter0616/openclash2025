@@ -1,8 +1,9 @@
-# NAME: Steam_CDN
+# NAME: Steam_CDN & BitComet_Fix
 # AUTHOR: Aethersailor / Optimized
-# 作用: 强制 Steam 下载流量直连，确保商店走代理的同时下载满速
-# 更新日期: 2026-05
+# 作用: 强制 Steam 下载与 BitComet 登录流量直连，确保核心业务满速且无冲突
+# 更新日期: 2026-07
 
+# ==================== STEAM CDN 直连规则 ====================
 # >>> 核心下载域名 (Steam Content)
 DOMAIN-SUFFIX,steamcontent.com
 DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
@@ -11,7 +12,6 @@ DOMAIN-SUFFIX,steamserver.net
 DOMAIN-SUFFIX,cm.steampowered.com
 
 # >>> 备用及 CDN 分发域名
-# 许多下载节点托管在 Akamai, Highwinds 或网宿 (8686c)
 DOMAIN-SUFFIX,edgecast.steamstatic.com
 DOMAIN-SUFFIX,steampipe.akamaized.net
 DOMAIN-SUFFIX,steam.cachefly.net
@@ -20,7 +20,6 @@ DOMAIN,st.dl.pinyuncloud.com
 DOMAIN,st.dl.eccdnx.com
 
 # >>> Valve 核心 IP 基础设施 (CDN & 内容分发)
-# 涵盖了你提供的内容并补充了 Valve 最新的 ASN 自治域段
 IP-CIDR,45.121.184.0/24,no-resolve
 IP-CIDR,103.10.124.0/23,no-resolve
 IP-CIDR,103.28.54.0/24,no-resolve
@@ -38,7 +37,14 @@ IP-CIDR,208.64.200.0/22,no-resolve
 IP-CIDR,208.78.164.0/22,no-resolve
 IP-CIDR,209.197.64.0/18,no-resolve
 
-# --- Steam IPv6 检测屏蔽 (消除报错) ---
+# --- Steam IPv6 检测屏蔽 ---
 DOMAIN,ipv6check-udp.steamserver.net
 DOMAIN,ipv6check-http.steamserver.net
 DOMAIN-KEYWORD,ipv6check
+
+# ==================== BitComet 登录与握手直连规则 ====================
+# 强行通过关键词及域名全量放行，彻底规避 Fake-IP 导致的 P2P 握手与登录失败
+DOMAIN-SUFFIX,bitcomet.com
+DOMAIN-SUFFIX,cometnetwork.com
+DOMAIN-KEYWORD,bitcomet
+DOMAIN-KEYWORD,cometnetwork
