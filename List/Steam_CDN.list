@@ -48,3 +48,8 @@ DOMAIN-SUFFIX,bitcomet.com
 DOMAIN-SUFFIX,cometnetwork.com
 DOMAIN-KEYWORD,bitcomet
 DOMAIN-KEYWORD,cometnetwork
+
+# --- BitComet 官方底层服务器 IP 兜底 ---
+IP-CIDR,62.210.122.0/24,no-resolve
+IP-CIDR,188.165.230.0/24,no-resolve
+IP-CIDR,198.251.81.0/24,no-resolve
