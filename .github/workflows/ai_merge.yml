@@ -31,6 +31,9 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add AI_Merged.list
-          git commit -m "Auto update AI rules" || exit 0
+          # 先移除根目录下可能残留的旧文件（防止冲突）
+          git rm -f AI_Merged.list || true
+          # 添加新目录下的所有内容
+          git add rule/Clash/AI_Merged.list
+          git commit -m "Auto update AI rules to rule/Clash/" || exit 0
           git push origin main
