@@ -1,8 +1,0 @@
-# NAME: Custom Port Filter
-# AUTHOR: Enhanced Version
-# 作用: 拦截所有非 80/443 的高端口流量，送去非标代理策略组
-# 更新日期: 2026-07-15
-
-PORT,1-79
-PORT,81-442
-PORT,444-65535
