@@ -1,4 +1,4 @@
-name: Update AI Rules
+name: Update Social Rules
 on:
   schedule:
     - cron: '0 4 * * *' # 每天北京时间 12:00 (UTC 4:00) 运行
