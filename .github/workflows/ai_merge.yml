@@ -12,8 +12,12 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with: {python-version: '3.9'}
-      - name: Install requests
-        run: pip install requests
+      - name: Install dependencies  # <-- 确保添加了这一步
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+      - name: Run Merge Script
+        run: python merge_ai.py
       - name: Run Merge Script
         run: python merge_ai.py
       - name: Commit and Push
