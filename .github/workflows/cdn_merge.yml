@@ -26,7 +26,7 @@ jobs:
           
       # 确保这里调用的是你刚才写好的合并脚本名
       - name: Run Merge Script
-        run: python merge_cdn.py
+        run: python .github/py/merge_cdn.py
         
       - name: Commit and Push
         run: |
