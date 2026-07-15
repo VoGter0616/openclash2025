@@ -1,6 +1,7 @@
 import requests
 import os
 
+#CDN规则
 cdn_urls = [
     "https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/rule/Clash/BitComet_CDN.list",
     "https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/rule/Clash/Steam_CDN.list",
