@@ -25,7 +25,7 @@ jobs:
           pip install requests
           
       - name: Run Merge Script
-        run: python merge_ai.py
+        run: python .github/py/merge_ai.py
         
       - name: Commit and Push
         run: |
