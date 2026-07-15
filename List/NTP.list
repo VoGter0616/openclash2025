@@ -90,6 +90,3 @@ DOMAIN-SUFFIX,time7.aliyun.com
 DOMAIN-SUFFIX,time7.apple.com
 DOMAIN-SUFFIX,tw.ntp.org.cn
 DOMAIN-SUFFIX,us.ntp.org.cn
-
-# >>> 终极端口防御位 (无视域名与纯 IP，凡是用 123 端口对时的一律强行直连)
-DST-PORT,123
