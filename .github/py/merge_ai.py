@@ -1,7 +1,6 @@
 import requests
 import os
 
-# blackmatrix7 提供的 AI 相关规则链接
 ai_urls = [
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.list",
@@ -17,21 +16,17 @@ def merge_ai_rules():
             if response.status_code == 200:
                 for line in response.text.splitlines():
                     line = line.strip()
-                    # 仅保留规则行，跳过注释和空行
                     if line and not line.startswith(('#', ';')):
                         ai_rules.add(line)
         except Exception as e:
             print(f"Error fetching {url}: {e}")
 
-    # 定义目标目录和路径
     output_dir = "rule/Clash"
     output_path = os.path.join(output_dir, "AI_Merged.list")
 
-    # 自动创建目录
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
 
-    # 保存文件
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("# AI_Merged_List\n")
         f.write("\n".join(sorted(ai_rules)))
