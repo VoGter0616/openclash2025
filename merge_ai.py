@@ -35,7 +35,7 @@ def merge_ai_rules():
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("# AI_Merged_List\n")
         f.write("\n".join(sorted(ai_rules)))
-    print(f"合并完成，共计 {len(ai_rules)} 条规则，已保存至: {output_path}")
+    print(f"AI规则合并完成，共计 {len(ai_rules)} 条规则，已保存至: {output_path}")
 
 if __name__ == "__main__":
     merge_ai_rules()
