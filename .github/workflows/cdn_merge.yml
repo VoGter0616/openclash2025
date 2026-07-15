@@ -1,4 +1,4 @@
-name: Update Social Rules
+name: Update CDN Rules
 on:
   schedule:
     - cron: '0 4 * * *' 
