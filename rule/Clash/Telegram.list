@@ -1,13 +1,18 @@
 # NAME: Telegram Optimized
-# 包含官方、第三方客户端及核心基础设施
-# 更新时间: 2026-05
+# AUTHOR: Custom Enhanced Version
+# UPDATED: 2026-07-15
+# DESCRIPTION: 包含官方全平台、主流第三方客户端（Nicegram/iMe/Swiftgram/Nekogram）及核心基础设施
+# TOTAL: 53
 
-# >>> 域名匹配 (Domain)
+# >>> 域名匹配 (Domain / Suffix / Keyword)
 DOMAIN,api.imem.app
 DOMAIN,api.swiftgram.app
+DOMAIN,api.nicegram.app
+DOMAIN,telemetry.nicegram.app
 DOMAIN-SUFFIX,cdn-telegram.org
 DOMAIN-SUFFIX,comments.app
 DOMAIN-SUFFIX,contest.com
+DOMAIN-SUFFIX,fragment.com
 DOMAIN-SUFFIX,graph.org
 DOMAIN-SUFFIX,legra.ph
 DOMAIN-SUFFIX,mbrx.app
@@ -28,9 +33,10 @@ DOMAIN-SUFFIX,tg.dev
 DOMAIN-SUFFIX,tx.me
 DOMAIN-SUFFIX,usercontent.dev
 DOMAIN-KEYWORD,nicegram
+DOMAIN-KEYWORD,telegram
 
 # >>> IP 段匹配 (IP-CIDR / IP-CIDR6)
-# 使用大段涵盖，减少匹配次数。no-resolve 解决 DNS 嗅探报错
+# 增加 no-resolve 完美避开 OpenClash 嗅探报错，收发消息秒连
 IP-CIDR,5.28.192.0/18,no-resolve
 IP-CIDR,91.108.0.0/16,no-resolve
 IP-CIDR,109.239.140.0/24,no-resolve
@@ -38,24 +44,27 @@ IP-CIDR,149.154.160.0/20,no-resolve
 IP-CIDR,185.76.151.0/24,no-resolve
 IP-CIDR,139.59.210.98/32,no-resolve
 IP-CIDR,196.55.216.167/32,no-resolve
+IP-CIDR,95.161.64.0/20,no-resolve
 IP-CIDR6,2001:67c:4e8::/48,no-resolve
 IP-CIDR6,2001:b28:f23c::/47,no-resolve
 IP-CIDR6,2a0a:f280::/29,no-resolve
 
 # >>> 自主系统号匹配 (IP-ASN)
-# Telegram 官方持有的网络自治段
-IP-ASN,211157,no-resolve
+# 用自治号从网络底层拦截所有官方物理机房，不给卡顿留死角
 IP-ASN,44907,no-resolve
 IP-ASN,59930,no-resolve
 IP-ASN,62014,no-resolve
 IP-ASN,62041,no-resolve
+IP-ASN,211157,no-resolve
 
 # >>> 进程名匹配 (Process Name)
-# 针对 PC 端和安卓端的精准分流
+# 覆盖 PC 端、Mac 端及各安卓特化第三方客户端的进程分流
 PROCESS-NAME,Telegram.exe
 PROCESS-NAME,telegram-desktop
 PROCESS-NAME,Telegram
+PROCESS-NAME,Telegram Lite
 PROCESS-NAME,org.telegram.messenger
 PROCESS-NAME,nekox.messenger
 PROCESS-NAME,tw.nekomimi.nekogram
 PROCESS-NAME,xyz.nextalone.nagram
+PROCESS-NAME,app.swiftgram.swiftgram
