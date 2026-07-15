@@ -26,7 +26,7 @@ jobs:
           
       # 调用游戏合并脚本
       - name: Run Merge Script
-        run: python merge_game.py
+        run: python .github/py/merge_game.py
         
       - name: Commit and Push
         run: |
