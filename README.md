@@ -10,14 +10,14 @@ behance.net
 --- 最高优先级时间同步直连  ---
 把下述添加到自定义规则里的优先规则
  1. 强制拦截全球所有 123 端口的时间同步流量走直连 (这行是最核心的，已经能盖住 99% 的情况)
--- DST-PORT,123,DIRECT
+- DST-PORT,123,DIRECT
 
 2. 精准补漏 NASA 时间域名，强行直连
--- DOMAIN-SUFFIX,nasa.gov,DIRECT
+- DOMAIN-SUFFIX,nasa.gov,DIRECT
 
  3. 精准补漏微软 Windows 系统自带的时间域名，强行直连
--- DOMAIN-SUFFIX,time.windows.com,DIRECT
+- DOMAIN-SUFFIX,time.windows.com,DIRECT
 
--https://github.com/Aethersailor/Custom_OpenClash_Rules/tree/main/rule
--https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash
--可以转换为：https://testingcf.jsdelivr.net/gh/{用户名}/{仓库名}@{分支名}/{文件路径}
+https://github.com/Aethersailor/Custom_OpenClash_Rules/tree/main/rule
+https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash
+可以转换为：https://testingcf.jsdelivr.net/gh/{用户名}/{仓库名}@{分支名}/{文件路径}
