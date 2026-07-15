@@ -1,11 +1,11 @@
 import requests
+import os
 
 # blackmatrix7 提供的 AI 相关规则链接
 ai_urls = [
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Anthropic/Anthropic.list",
-    "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Mistral/Mistral.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list"
 ]
 
@@ -23,11 +23,19 @@ def merge_ai_rules():
         except Exception as e:
             print(f"Error fetching {url}: {e}")
 
-    # 保存为统一的 AI.list
-    with open("AI_Merged.list", "w", encoding="utf-8") as f:
+    # 定义目标目录和路径
+    output_dir = "rule/Clash"
+    output_path = os.path.join(output_dir, "AI_Merged.list")
+
+    # 自动创建目录
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+
+    # 保存文件
+    with open(output_path, "w", encoding="utf-8") as f:
         f.write("# AI_Merged_List\n")
         f.write("\n".join(sorted(ai_rules)))
-    print(f"合并完成，共计 {len(ai_rules)} 条规则。")
+    print(f"合并完成，共计 {len(ai_rules)} 条规则，已保存至: {output_path}")
 
 if __name__ == "__main__":
     merge_ai_rules()
