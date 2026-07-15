@@ -25,7 +25,7 @@ jobs:
           pip install requests
           
       - name: Run Merge Script
-        run: python merge_social.py
+        run: python .github/py/merge_social.py
         
       - name: Commit and Push
         run: |
