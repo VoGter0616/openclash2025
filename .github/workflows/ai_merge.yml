@@ -1,0 +1,25 @@
+name: Update AI Rules
+on:
+  schedule:
+    - cron: '0 4 * * *' # 每天北京时间 12:00 (UTC 4:00) 运行
+  workflow_dispatch: # 允许你随时手动点击运行
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with: {python-version: '3.9'}
+      - name: Install requests
+        run: pip install requests
+      - name: Run Merge Script
+        run: python merge_ai.py
+      - name: Commit and Push
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add AI_Merged.list
+          git commit -m "Auto update AI rules" || exit 0
+          git push
