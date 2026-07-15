@@ -15,7 +15,6 @@ def merge_direct_rules():
             if response.status_code == 200:
                 for line in response.text.splitlines():
                     line = line.strip()
-                    # 仅保留规则行，跳过注释和空行
                     if line and not line.startswith(('#', ';')):
                         direct_rules.add(line)
         except Exception as e:
