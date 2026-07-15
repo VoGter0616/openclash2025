@@ -20,7 +20,6 @@ def merge_game_rules():
             if response.status_code == 200:
                 for line in response.text.splitlines():
                     line = line.strip()
-                    # 仅保留规则行
                     if line and not line.startswith(('#', ';')):
                         game_rules.add(line)
         except Exception as e:
