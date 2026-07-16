@@ -1,0 +1,10 @@
+# --- YouTube 核心视频流及内容补丁 ---
+# 作用：强行拦截动态生成的 YouTube 视频流 CDN 服务器及谷歌用户内容托管，防止漏网走直连
+
+# 1. 核心视频流域名（抓取所有 rr*.sn-*.googlevideo.com 乱码变动域名）
+DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-KEYWORD,googlevideo
+
+# 2. 关联的视频内容分发网络（可选辅助拦截）
+DOMAIN-SUFFIX,ytimg.com
+DOMAIN-SUFFIX,ggpht.com
