@@ -23,7 +23,7 @@ def generate_readme():
                     existing_data[filename] = (note, proxy_status)
 
     # 2. 严格还原你的 Markdown 表头模板
-    markdown_content = """<p align="center">VoGter的自用规则库</p>
+    markdown_content = """<p align="center">VoGter的自用Clash库</p>
 
 ---
 
