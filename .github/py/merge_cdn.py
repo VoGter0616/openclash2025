@@ -7,6 +7,7 @@ cdn_urls = [
     "https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/rule/Clash/Steam_CDN.list",
     "https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/rule/Clash/Apple_MS_Direct.list",
     "https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/rule/Clash/Microsoft_CN.list",
+    "https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/rule/Clash/Direct.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Nvidia/Nvidia.list"
 ]
 
