@@ -5,9 +5,7 @@
 # TOTAL: 30
 
 # === Windows 系统网络测试与检测 (防止网络图标变黄叹号) ===
-DOMAIN,msftconnecttest.com
 DOMAIN,msftncsi.com
-DOMAIN-SUFFIX,msftconnecttest.com
 DOMAIN-SUFFIX,msftncsi.com
 
 # === Windows 系统更新与应用商店下载 (走代理极度消耗流量) ===
@@ -40,10 +38,6 @@ DOMAIN-SUFFIX,chinacloudsites.cn
 DOMAIN-SUFFIX,microsoft-online.com.cn
 
 # === 必应国内版与微软中国区官方服务 ===
-DOMAIN-SUFFIX,bing.com.cn
-DOMAIN-SUFFIX,biying.cn
-DOMAIN-SUFFIX,biying.com
-DOMAIN-SUFFIX,biying.com.cn
 DOMAIN-SUFFIX,microsoftstore.com.cn
 DOMAIN-SUFFIX,microsoftonline.cn
 DOMAIN-SUFFIX,officeplus.cn
