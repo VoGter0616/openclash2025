@@ -216,5 +216,6 @@ https://github.com/Aethersailor/Custom_OpenClash_Rules/tree/main/rule
 
 https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash
 
+https://github.com/v2fly/domain-list-community/tree/master/data
 
 可以转换为：https://testingcf.jsdelivr.net/gh/{用户名}/{仓库名}@{分支名}/{文件路径}
