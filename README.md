@@ -6,10 +6,11 @@
 
 | 目录 | 描述 |
 | :--- | :--- |
-| `ipv6/` | 🌐 IPv6 设置相关的图文素材（涵盖 LEDE / OpenWrt）。 |
-| `openclash/` | 🌺 OpenClash 插件设置相关的截图。 |
-| `openwrt/` | 🐧 OpenWrt 通用设置或系统相关的图片。 |
-| `subconverter/` | 🔄 配置生成/转换相关的说明图片。 |
+| `/.github` | 自动化脚本及工具。 |
+| `/rule` | 规则集。 |
+| `Clash_custom.ini` | OpenClash自定义转换地址。 |
+| `Clash_test01.ini` | OpenClash转换前测试地址。 |
+| `Shadowrocket_basic.conf` | Shadowrocket自定义转换地址。 |
 
 > [!WARNING]
 > 仅根据自己使用情况进行更新
