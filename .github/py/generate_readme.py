@@ -14,12 +14,13 @@ def generate_readme():
         with open(readme_path, "r", encoding="utf-8") as f:
             lines = f.readlines()
             for line in lines:
-                # 使用正则匹配 Markdown 表格行，例如: | [AI_Merged.list](./Clash/AI_Merged.list) | .list | 说明 | 代理 |
-                match = re.match(r"\|\s*\[([^\]]+)\]\([^)]+\)\s*\|\s*\.list\s*\|\s*(.*?)\s*\|\s*(.*?)\s*\|", line)
+                # 🌟 升级正则：将原先写死的 \.list 改为匹配任意后缀（如 .list 或 .yaml）
+                match = re.match(r"\|\s*\[([^\]]+)\]\([^)]+\)\s*\|\s*(\.[a-zA-Z0-9]+)\s*\|\s*(.*?)\s*\|\s*(.*?)\s*\|", line)
                 if match:
                     filename = match.group(1).strip()
-                    note = match.group(2).strip()
-                    proxy_status = match.group(3).strip()
+                    # group(2) 是文件后缀，这里我们不需要，直接取说明和代理状态
+                    note = match.group(3).strip()
+                    proxy_status = match.group(4).strip()
                     existing_data[filename] = (note, proxy_status)
 
     # 2. 严格还原你的 Markdown 表头模板
@@ -35,22 +36,25 @@ def generate_readme():
 
     # 3. 扫描 rule/Clash 文件夹下的所有文件
     if os.path.exists(scan_dir):
-        files = sorted([f for f in os.listdir(scan_dir) if f.endswith('.list')])
+        # 🌟 升级扫描：同时抓取 .list 和 .yaml 文件
+        files = sorted([f for f in os.listdir(scan_dir) if f.endswith('.list') or f.endswith('.yaml')])
         
         for file in files:
             file_url = f"./Clash/{file}"
+            # 动态获取当前文件的真实后缀（例如 .list 或 .yaml）
+            _, ext = os.path.splitext(file)
             
             # 判断这个文件是否已经是历史数据
             if file in existing_data:
-                # 🌟 如果是已有的数据，原封不动继承你之前的修改，不触发任何重写逻辑
+                # 如果是已有的数据，原封不动继承你之前的修改
                 note, proxy_status = existing_data[file]
             else:
-                # 🌟 如果是最新抓取到的全新文件，严格按照你的要求：功能说明留空，是否需要代理留空
+                # 如果是最新抓取到的全新文件，功能说明和是否需要代理留空
                 note = ""
                 proxy_status = ""
             
-            # 拼接成标准的表格行
-            markdown_content += f"| [{file}]({file_url}) | .list | {note} | {proxy_status} |\n"
+            # 🌟 拼接成标准的表格行（类型列动态填入真实后缀）
+            markdown_content += f"| [{file}]({file_url}) | {ext} | {note} | {proxy_status} |\n"
             
     else:
         markdown_content += "| 暂无文件 | - | 规则目录不存在 | - |\n"
