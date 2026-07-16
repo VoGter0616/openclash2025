@@ -1,12 +1,12 @@
 import os
 
 def generate_readme():
-    # 1. 定义你的规则目录
-    rule_dir = "rule"
-    # 将 README.md 的生成路径设定在 rule 文件夹下面
-    readme_path = os.path.join(rule_dir, "README.md")
+    # 🌟 正确的路径配置：
+    scan_dir = "rule/Clash"   # 扫描这个目录下的 .list 文件
+    rule_dir = "rule"         # README 所在的父目录
+    readme_path = os.path.join(rule_dir, "README.md") # 最终写入 rule/README.md
     
-    # 2. 完美的居中标题与全新的表格表头
+    # 严格还原你的 Markdown 表头模板
     markdown_content = """<p align="center">VoGter的自用规则库</p>
 
 ---
@@ -17,36 +17,31 @@ def generate_readme():
 | :--- | :---: | :--- |:--- |
 """
 
-    # 3. 自动扫描 rule 目录下的所有 .list 文件
-    if os.path.exists(rule_dir):
-        files = sorted(os.listdir(rule_dir))
+    # 扫描 rule/Clash 文件夹下的所有文件
+    if os.path.exists(scan_dir):
+        # 过滤出所有以 .list 结尾的文件，并按字母排序
+        files = sorted([f for f in os.listdir(scan_dir) if f.endswith('.list')])
+        
         for file in files:
-            if file.endswith('.list'):
-                
-                # --- 根据你的要求智能定制每一列的内容 ---
-                if "ai" in file.lower():
-                    note = "自动抓取ai相关域名。"
-                    proxy_status = "建议优先使用美国节点，其次使用新加坡，最好不要用香港"
-                elif "game" in file.lower():
-                    note = "精确匹配游戏服务器，确保联机稳定。"
-                    proxy_status = "PROXY"
-                elif "social" in file.lower():
-                    note = "自动抓取常用社交与短视频媒体域名。"
-                    proxy_status = "PROXY"
-                else:
-                    # 默认其他文件的说明与直连状态
-                    note = f"自动抓取 {file.split('.')[0]} 相关域名。"
-                    proxy_status = "DIRECT"
-
-                # 拼接超链接（README在rule目录下，使用 ./ 即可）
-                file_url = f"./{file}"
-                
-                # 拼接成完整的表格行（类型固定为 .list）
-                markdown_content += f"| [{file}]({file_url}) | .list | {note} | {proxy_status} |\n"
+            # 🌟 修复超链接：因为 README 在 rule 目录下，而文件在 rule/Clash 目录下，
+            # 所以链接必须写成 ./Clash/文件名.list 才能正确跳转
+            file_url = f"./Clash/{file}"
+            
+            # 严格匹配你的具体文件归类逻辑
+            if "ai" in file.lower():
+                note = "自动抓取ai相关域名。"
+                proxy_status = "建议优先使用美国节点，其次使用新加坡，最好不要用香港"
+            else:
+                note = "自动抓取ai相关域名。"
+                proxy_status = "DIRECT"
+            
+            # 拼接成标准的表格行
+            markdown_content += f"| [{file}]({file_url}) | .list | {note} | {proxy_status} |\n"
+            
     else:
         markdown_content += "| 暂无文件 | - | 规则目录不存在 | - |\n"
 
-    # 4. 替换为标准的 GitHub 警告框语法
+    # 严格还原你的底部警告框模板
     markdown_content += """
 > [!WARNING]
 > 
@@ -55,11 +50,11 @@ def generate_readme():
 > 所有内容均由VoGter收集于互联网，如有侵权告知删。
 """
 
-    # 5. 强行写入 rule/README.md
+    # 写入到 rule/README.md 
     with open(readme_path, "w", encoding="utf-8") as f:
         f.write(markdown_content.strip() + "\n")
         
-    print("/rule/README.md 精美版生成成功！")
+    print(f"成功！已自动将 {len(files)} 个 .list 文件归类写入 /rule/README.md")
 
 if __name__ == "__main__":
     generate_readme()
