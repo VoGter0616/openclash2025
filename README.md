@@ -1,4 +1,6 @@
-VoGter的自用模板库
+<p align="center">VoGter的自用模板库</p>
+
+---
 
 所有内容均由VoGter收集于互联网，如有侵权告知删
 
