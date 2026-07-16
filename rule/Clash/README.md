@@ -1,4 +1,4 @@
-<p align="center">VoGter的自用规则库</p>
+<p align="center">VoGter的自用Clash库</p>
 
 ---
 
