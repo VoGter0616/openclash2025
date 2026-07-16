@@ -6,28 +6,28 @@
 
 | 规则文件 | 类型 | 功能说明 |是否需要代理|
 | :--- | :---: | :--- |:--- |
-| [AI_Merged.list](./AI_Merged.list) | .list |  |  |
-| [Apple_MS_Direct.list](./Apple_MS_Direct.list) | .list |  |  |
-| [Bank_CN.list](./Bank_CN.list) | .list |  |  |
-| [BitComet_CDN.list](./BitComet_CDN.list) | .list |  |  |
-| [CDN_Merged.list](./CDN_Merged.list) | .list |  |  |
-| [Check.list](./Check.list) | .list |  |  |
-| [Combined_Direct_Rules.list](./Combined_Direct_Rules.list) | .list |  |  |
-| [Custom_Port.list](./Custom_Port.list) | .list |  |  |
-| [Custom_Proxy.list](./Custom_Proxy.list) | .list |  |  |
-| [Custom_Proxy_Classical_IP.list](./Custom_Proxy_Classical_IP.list) | .list |  |  |
-| [Direct_Merged.list](./Direct_Merged.list) | .list |  |  |
-| [Game_Merged.list](./Game_Merged.list) | .list |  |  |
-| [Global_DNS.list](./Global_DNS.list) | .list |  |  |
+| [AI_Merged.list](./Clash/AI_Merged.list) | .list | 自动抓取合并的ai相关域名。 | 建议优先使用美国节点，其次使用新加坡，最好不要用香港。|
+| [Apple_MS_Direct.list](./Clash/Apple_MS_Direct.list) | .list | 苹果&微软国内直连域名。 | DIRECT |
+| [Bank_CN.list](./Clash/Bank_CN.list) | .list | 国内银行域名。 | DIRECT |
+| [BitComet_CDN.list](./Clash/BitComet_CDN.list) | .list | 比特彗星直连域名。 | DIRECT |
+| [CDN_Merged.list](./Clash/CDN_Merged.list) | .list | 国内CDN直连下载域名。 | DIRECT |
+| [Check.list](./Clash/Check.list) | .list | 网络测速和检测域名。 | DIRECT |
+| [Combined_Direct_Rules.list](./Clash/Combined_Direct_Rules.list) | .list | 国内CDN直连下载域名。| DIRECT |
+| [Custom_Port.list](./Clash/Custom_Port.list) | .list | 特殊端口。 | 代理 |
+| [Custom_Proxy.list](./Clash/Custom_Proxy.list) | .list | 强制代理。 | 代理 |
+| [Custom_Proxy_Classical_IP.list](./Clash/Custom_Proxy_Classical_IP.list) | .list |  |  |
+| [Direct_Merged.list](./Clash/Direct_Merged.list) | .list | 抓取国内直连合并域名。 | DIRECT |
+| [Game_Merged.list](./Clash/Game_Merged.list) | .list | 抓取代理游戏合并域名。 | 代理 |
+| [Global_DNS.list](./Clash/Global_DNS.list) | .list | 国外DNS。 | 代理 |
 | [IPv6_Block.yaml](./IPv6_Block.yaml) | .yaml |  |  |
-| [Microsoft_CN.list](./Microsoft_CN.list) | .list |  |  |
-| [NTPService.list](./NTPService.list) | .list |  |  |
-| [Proxy.list](./Proxy.list) | .list |  |  |
-| [Social_Merged.list](./Social_Merged.list) | .list |  |  |
-| [Steam_CDN.list](./Steam_CDN.list) | .list |  |  |
-| [Synology_DDNS.list](./Synology_DDNS.list) | .list |  |  |
-| [Telegram.list](./Telegram.list) | .list |  |  |
-| [Xiaomi_IoT.list](./Xiaomi_IoT.list) | .list |  |  |
+| [Microsoft_CN.list](./Clash/Microsoft_CN.list) | .list | 国内微软CDN。 | DIRECT |
+| [NTPService.list](./Clash/NTPService.list) | .list | 时间域名。 | DIRECT |
+| [Proxy.list](./Clash/Proxy.list) | .list | 综合性强制代理。 | 代理 |
+| [Social_Merged.list](./Clash/Social_Merged.list) | .list | 抓取社交平台合并域名。 | 代理 |
+| [Steam_CDN.list](./Clash/Steam_CDN.list) | .list | Steam国内下载。 | DIRECT |
+| [Synology_DDNS.list](./Clash/Synology_DDNS.list) | .list | 群晖国内DDNS。 | DIRECT |
+| [Telegram.list](./Clash/Telegram.list) | .list | 自动抓取Telegram相关域名。 | 代理 |
+| [Xiaomi_IoT.list](./Clash/Xiaomi_IoT.list) | .list | 小米IoT相关域名。 | DIRECT |
 
 > [!WARNING]
 > 
