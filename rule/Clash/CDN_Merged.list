@@ -1,18 +1,29 @@
 # CDN_Merged_List
+# DOMAIN: 1
+# DOMAIN-KEYWORD: 12
+# DOMAIN-SUFFIX: 126
+# IP-CIDR: 33
+# IP-CIDR6: 0
+# TOTAL: 172
+
 DOMAIN,msftncsi.com
 DOMAIN-KEYWORD,announce
 DOMAIN-KEYWORD,audiences
 DOMAIN-KEYWORD,broadcasthe.net
+DOMAIN-KEYWORD,m-team
 DOMAIN-KEYWORD,passthepopcorn
 DOMAIN-KEYWORD,peer
 DOMAIN-KEYWORD,privatehd
+DOMAIN-KEYWORD,quickconnect
 DOMAIN-KEYWORD,stat
+DOMAIN-KEYWORD,synology
 DOMAIN-KEYWORD,torrent
 DOMAIN-KEYWORD,tracker
 DOMAIN-SUFFIX,21vbc.com
 DOMAIN-SUFFIX,21vbluecloud.com
 DOMAIN-SUFFIX,21vbluecloud.net
 DOMAIN-SUFFIX,ajax.aspnetcdn.com
+DOMAIN-SUFFIX,apm-log-upload-os.hoyoverse.com
 DOMAIN-SUFFIX,apple.com.cn
 DOMAIN-SUFFIX,aspnetcdn.com
 DOMAIN-SUFFIX,azurecomcdn.net
@@ -29,6 +40,12 @@ DOMAIN-SUFFIX,chinacloudsites.cn
 DOMAIN-SUFFIX,cometnetwork.com
 DOMAIN-SUFFIX,content-system.net
 DOMAIN-SUFFIX,delivery.mp.microsoft.com
+DOMAIN-SUFFIX,docker.1panel.live
+DOMAIN-SUFFIX,docker.kejilion.pro
+DOMAIN-SUFFIX,docker.unsee.tech
+DOMAIN-SUFFIX,dockerpull.org
+DOMAIN-SUFFIX,dockerpull.pw
+DOMAIN-SUFFIX,emby.yun
 DOMAIN-SUFFIX,geforce.cn
 DOMAIN-SUFFIX,geforce.co.kr
 DOMAIN-SUFFIX,geforce.co.uk
@@ -42,14 +59,21 @@ DOMAIN-SUFFIX,gputechconf.com.tw
 DOMAIN-SUFFIX,gputechconf.eu
 DOMAIN-SUFFIX,gputechconf.in
 DOMAIN-SUFFIX,gputechconf.jp
+DOMAIN-SUFFIX,hf-mirror.com
 DOMAIN-SUFFIX,icloud.com.cn
 DOMAIN-SUFFIX,img-prod-cms-rt-microsoft-com.akamaized.net
 DOMAIN-SUFFIX,img-s-msn-com.akamaized.net
+DOMAIN-SUFFIX,jsdelivr.com
+DOMAIN-SUFFIX,jsdelivr.net
+DOMAIN-SUFFIX,m-team.cc
+DOMAIN-SUFFIX,m-team.io
 DOMAIN-SUFFIX,manage.microsoft.com
 DOMAIN-SUFFIX,microsoft-online.com.cn
 DOMAIN-SUFFIX,microsoft.com
 DOMAIN-SUFFIX,microsoftonline.cn
 DOMAIN-SUFFIX,microsoftstore.com.cn
+DOMAIN-SUFFIX,minor-api-os.hoyoverse.com
+DOMAIN-SUFFIX,miraiemby.com
 DOMAIN-SUFFIX,msftncsi.com
 DOMAIN-SUFFIX,mzstatic.com
 DOMAIN-SUFFIX,nvda.d2.sc.omtrdc.net
@@ -98,20 +122,29 @@ DOMAIN-SUFFIX,nvidiagrid.net
 DOMAIN-SUFFIX,office.com
 DOMAIN-SUFFIX,officecdn-microsoft-com.akamaized.net
 DOMAIN-SUFFIX,officeplus.cn
+DOMAIN-SUFFIX,qweatherapi.com
+DOMAIN-SUFFIX,registry.dockermirror.com
+DOMAIN-SUFFIX,sdk-log-upload-os.hoyoverse.com
 DOMAIN-SUFFIX,shotwithgeforce.com
 DOMAIN-SUFFIX,statics-marketingsites-eas-ms-com.akamaized.net
 DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
 DOMAIN-SUFFIX,steamcontent.com
 DOMAIN-SUFFIX,steampipe.akamaized.net
+DOMAIN-SUFFIX,tailscale.com
 DOMAIN-SUFFIX,tegrazone.co
 DOMAIN-SUFFIX,tegrazone.co.kr
 DOMAIN-SUFFIX,tegrazone.com
 DOMAIN-SUFFIX,tegrazone.jp
 DOMAIN-SUFFIX,tegrazone.kr
+DOMAIN-SUFFIX,terra-master.com
+DOMAIN-SUFFIX,tnas.link
+DOMAIN-SUFFIX,tnas.online
+DOMAIN-SUFFIX,ugdocker.link
 DOMAIN-SUFFIX,update.microsoft.com
 DOMAIN-SUFFIX,utorrent.com
 DOMAIN-SUFFIX,windowsupdate.com
 DOMAIN-SUFFIX,windowsupdate.microsoft.com
+DOMAIN-SUFFIX,zzz-log-upload-os.hoyoverse.com
 IP-CIDR,103.10.124.0/23,no-resolve
 IP-CIDR,103.28.54.0/24,no-resolve
 IP-CIDR,146.66.152.0/24,no-resolve
@@ -136,6 +169,12 @@ IP-CIDR,205.185.194.0/24,no-resolve
 IP-CIDR,205.196.6.0/24,no-resolve
 IP-CIDR,208.64.200.0/22,no-resolve
 IP-CIDR,208.78.164.0/22,no-resolve
+IP-CIDR,218.78.7.16/32,no-resolve
 IP-CIDR,45.121.184.0/24,no-resolve
+IP-CIDR,47.246.103.0/24,no-resolve
+IP-CIDR,47.246.177.0/24,no-resolve
+IP-CIDR,47.246.180.0/24,no-resolve
+IP-CIDR,47.246.99.0/24,no-resolve
 IP-CIDR,62.210.122.0/24,no-resolve
 IP-CIDR,91.121.144.0/24,no-resolve
+IP-CIDR,98.126.27.164/32,no-resolve
