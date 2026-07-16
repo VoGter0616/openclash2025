@@ -9,7 +9,6 @@ DOMAIN-SUFFIX,steamcontent.com
 DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
 DOMAIN-SUFFIX,steampowered.com.8686c.com
 DOMAIN-SUFFIX,steamserver.net
-DOMAIN-SUFFIX,cm.steampowered.com
 
 # >>> 备用及 CDN 分发域名
 DOMAIN-SUFFIX,edgecast.steamstatic.com
