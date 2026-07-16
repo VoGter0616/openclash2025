@@ -6,10 +6,10 @@
 
 | 规则文件 | 类型 | 功能说明 |是否需要代理|
 | :--- | :---: | :--- |:--- |
-| [AI_Merged.list](./Clash/AI_Merged.list) | .list | 自动抓取ai相关域名。 | 建议优先使用美国节点，其次使用新加坡，最好不要用香港 |
-| [Apple_MS_Direct.list](./Clash/Apple_MS_Direct.list) | .list | 自动抓取ai相关域名。 | DIRECT |
-| [Bank_CN.list](./Clash/Bank_CN.list) | .list | 自动抓取ai相关域名。 | DIRECT |
-| [BitComet_CDN.list](./Clash/BitComet_CDN.list) | .list | 自动抓取ai相关域名。 | DIRECT |
+| [AI_Merged.list](./Clash/AI_Merged.list) | .list | 自动抓取合并的ai相关域名。 | 建议优先使用美国节点，其次使用新加坡，最好不要用香港 |
+| [Apple_MS_Direct.list](./Clash/Apple_MS_Direct.list) | .list | 苹果&微软国内直连域名。 | DIRECT |
+| [Bank_CN.list](./Clash/Bank_CN.list) | .list | 国内银行域名。 | DIRECT |
+| [BitComet_CDN.list](./Clash/BitComet_CDN.list) | .list | 比特彗星直连域名。 | DIRECT |
 | [CDN_Merged.list](./Clash/CDN_Merged.list) | .list | 自动抓取ai相关域名。 | DIRECT |
 | [Check.list](./Clash/Check.list) | .list | 自动抓取ai相关域名。 | DIRECT |
 | [Combined_Direct_Rules.list](./Clash/Combined_Direct_Rules.list) | .list | 自动抓取ai相关域名。 | DIRECT |
