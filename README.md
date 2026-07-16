@@ -6,11 +6,11 @@
 
 | 目录 | 描述 |
 | :--- | :--- |
-| `/.github` | 自动化脚本及工具。 |
-| `/rule` | 规则集。 |
+| [/.github](./.github) | 自动化脚本及工具。 |
+| [/rule](./rule) | 规则集。 |
 | [Clash_custom.ini](./Clash_custom.ini) | OpenClash自定义转换地址。 |
-| `Clash_test01.ini` | OpenClash转换前测试地址。 |
-| `Shadowrocket_basic.conf` | Shadowrocket自定义转换地址。 |
+| [Clash_test01.ini](./Clash_test01.ini) | OpenClash转换前测试地址。 |
+| [Shadowrocket_basic.conf](./Shadowrocket_basic.conf) | Shadowrocket自定义转换地址。 |
 
 > [!WARNING]
 > 仅根据自己使用情况进行更新
