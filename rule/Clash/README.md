@@ -18,7 +18,7 @@
 | [Direct_Merged.list](./Clash/Direct_Merged.list) | .list | 抓取国内直连合并域名。 | DIRECT |
 | [Game_Merged.list](./Clash/Game_Merged.list) | .list | 抓取代理游戏合并域名。 | 代理 |
 | [Global_DNS.list](./Clash/Global_DNS.list) | .list | 国外DNS。 | 代理 |
-| [IPv6_Block.yaml](./IPv6_Block.yaml) | .yaml | 我整理的一些IPV6域名 | DIRECT |
+| [IPv6_Block.yaml](./IPv6_Block.yaml) | .yaml | 我整理的一些IPV6域名。 | DIRECT |
 | [Microsoft_CN.list](./Clash/Microsoft_CN.list) | .list | 国内微软CDN。 | DIRECT |
 | [NTPService.list](./Clash/NTPService.list) | .list | 时间域名。 | DIRECT |
 | [Proxy.list](./Clash/Proxy.list) | .list | 手动添加需要强制代理的域名。 | 代理 |
