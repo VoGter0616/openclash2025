@@ -22,10 +22,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      - name: Run Merge Script
-        run: python .github/py/merge_rules.py # 你原本的合并脚本
-        
-      # 运行自动生成 README 脚本
+      # 🌟 已经把原本的 Run Merge Script 步骤删掉了，直接运行生成脚本
       - name: Generate README
         run: python .github/py/generate_readme.py
 
@@ -34,8 +31,8 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           
-          # 🌟 修改点：直接打包添加整个 rule 文件夹（包括里面的所有 .list 和新生成的 README.md）
+          # 直接打包添加整个 rule 文件夹（包括里面的所有 .list 和新生成的 README.md）
           git add rule/
           
-          git commit -m "Auto update rules and refresh rule/README.md" || exit 0
+          git commit -m "Auto refresh rule/README.md" || exit 0
           git push origin main
