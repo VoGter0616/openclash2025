@@ -8,7 +8,10 @@ DOMAIN-KEYWORD,tracker
 DOMAIN-KEYWORD,announce
 DOMAIN-KEYWORD,torrent
 DOMAIN-KEYWORD,peer
-DOMAIN-KEYWORD,stat
+DOMAIN-KEYWORD,tracker-stat
+DOMAIN-KEYWORD,peer-stat
+DOMAIN-KEYWORD,stats-download
+DOMAIN-KEYWORD,stat-cdn
 
 # ==================== 2. PT 站特供防御线（防止代理导致封号） ====================
 DOMAIN-KEYWORD,passthepopcorn
