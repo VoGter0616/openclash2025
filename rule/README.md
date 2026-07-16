@@ -10,7 +10,7 @@
 | [Apple_MS_Direct.list](./Clash/Apple_MS_Direct.list) | .list | 苹果&微软国内直连域名。 | DIRECT |
 | [Bank_CN.list](./Clash/Bank_CN.list) | .list | 国内银行域名。 | DIRECT |
 | [BitComet_CDN.list](./Clash/BitComet_CDN.list) | .list | 比特彗星直连域名。 | DIRECT |
-| [CDN_Merged.list](./Clash/CDN_Merged.list) | .list | 国内CDN直连下载域名。 DIRECT |
+| [CDN_Merged.list](./Clash/CDN_Merged.list) | .list | 国内CDN直连下载域名。 | DIRECT |
 | [Check.list](./Clash/Check.list) | .list | 网络测速和检测域名。 | DIRECT |
 | [Combined_Direct_Rules.list](./Clash/Combined_Direct_Rules.list) | .list | 国内CDN直连下载域名。| DIRECT |
 | [Custom_Port.list](./Clash/Custom_Port.list) | .list | 特殊端口。 | 代理 |
