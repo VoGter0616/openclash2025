@@ -8,7 +8,7 @@
 | :--- | :--- |
 | `/.github` | 自动化脚本及工具。 |
 | `/rule` | 规则集。 |
-| `[Clash_custom.ini](./Clash_custom.ini)` | OpenClash自定义转换地址。 |
+| [Clash_custom.ini](./Clash_custom.ini) | OpenClash自定义转换地址。 |
 | `Clash_test01.ini` | OpenClash转换前测试地址。 |
 | `Shadowrocket_basic.conf` | Shadowrocket自定义转换地址。 |
 
