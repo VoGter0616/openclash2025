@@ -13,5 +13,6 @@
 | [Shadowrocket_basic.conf](./Shadowrocket_basic.conf) | Shadowrocket自定义转换文件。 |
 
 > [!WARNING]
-> 仅根据自己使用情况进行更新
+> 仅根据自己使用情况进行更新。
+> 如需使用，请自行斟酌后再用，有任何问题VoGter均无义务解决
 > 所有内容均由VoGter收集于互联网，如有侵权告知删。
