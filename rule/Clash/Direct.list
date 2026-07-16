@@ -1,0 +1,47 @@
+# ==================== 1. NAS、本地组网与私有云设备 ====================
+# 保证群晖、铁威马等 NAS 在局域网及内网穿透时绝对直连跑满速
+DOMAIN-KEYWORD,synology
+DOMAIN-KEYWORD,quickconnect
+DOMAIN-SUFFIX,tailscale.com
+DOMAIN-SUFFIX,terra-master.com
+DOMAIN-SUFFIX,tnas.link
+DOMAIN-SUFFIX,tnas.online
+
+# ==================== 2. PT 站防风控防线 ====================
+# M-Team 馒头顶级 PT 站，强制直连防止被机场 IP 误伤导致 BAN 号
+DOMAIN-KEYWORD,m-team
+DOMAIN-SUFFIX,m-team.cc
+DOMAIN-SUFFIX,m-team.io
+
+# ==================== 3. 国内高大宽公共/开发资源镜像 ====================
+# 包含极其常用的前端静态 CDN、Docker 国内加速拉取镜像、以及 HuggingFace 国内镜像
+DOMAIN-SUFFIX,jsdelivr.com
+DOMAIN-SUFFIX,jsdelivr.net
+DOMAIN-SUFFIX,hf-mirror.com
+DOMAIN-SUFFIX,dockerpull.org
+DOMAIN-SUFFIX,dockerpull.pw
+DOMAIN-SUFFIX,ugdocker.link
+DOMAIN-SUFFIX,docker.1panel.live
+DOMAIN-SUFFIX,docker.kejilion.pro
+DOMAIN-SUFFIX,docker.unsee.tech
+DOMAIN-SUFFIX,registry.dockermirror.com
+
+# ==================== 4. 游戏厂商本地日志与国内生活服务 ====================
+# 剥离米哈游（Hoyoverse）海外客户端的本地日志上传（直连更快，防报错）及和风天气
+DOMAIN-SUFFIX,qweatherapi.com
+DOMAIN-SUFFIX,apm-log-upload-os.hoyoverse.com
+DOMAIN-SUFFIX,minor-api-os.hoyoverse.com
+DOMAIN-SUFFIX,sdk-log-upload-os.hoyoverse.com
+DOMAIN-SUFFIX,zzz-log-upload-os.hoyoverse.com
+DOMAIN-SUFFIX,emby.yun
+DOMAIN-SUFFIX,miraiemby.com
+
+# 阿里云/海外高带宽直连优化回源段（确保大流量回源不绕远路）
+IP-CIDR,47.246.99.0/24,no-resolve
+IP-CIDR,47.246.103.0/24,no-resolve
+IP-CIDR,47.246.177.0/24,no-resolve
+IP-CIDR,47.246.180.0/24,no-resolve
+
+# 国内公共基础设施/电信联通骨干网测速及互联节点 IP（纯正国内 IP）
+IP-CIDR,218.78.7.16/32,no-resolve
+IP-CIDR,98.126.27.164/32,no-resolve
