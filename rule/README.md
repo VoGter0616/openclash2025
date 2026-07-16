@@ -5,7 +5,7 @@
 ## 📜 Clash规则列表
 
 | 规则文件 | 类型 | 功能说明 |
-| :--- | :---: | :--- |
+| :[AI_Merged.list](./rule/Clash/AI_Merged.list) | :.list: | :自动抓取ai相关域名。 |
 
 > [!WARNING]
 > 
