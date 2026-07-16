@@ -30,7 +30,7 @@ def merge_custom_rules():
                     # 仅保留规则行，跳过注释和空行
                     if line and not line.startswith(('#', ';')):       # # # 【不用动】
                         rules_set.add(line)                            # # 【不用动】
-        except Exception as e:                                          # # 【不用动】
+        except Exception as e:                                         # # 【不用动】
             print(f"Error fetching {url}: {e}")                         # # 【不用动】
 
     # # 【不用动】统一输出到 rule/Clash 目录下
@@ -45,13 +45,46 @@ def merge_custom_rules():
     if not os.path.exists(output_dir):                                 # # 【不用动】
         os.makedirs(output_dir)                                        # # 【不用动】
 
+    # 🌟 【不用动】全新加入：全自动统计各类规则数量的逻辑
+    stats = {
+        "DOMAIN": 0,
+        "DOMAIN-KEYWORD": 0,
+        "DOMAIN-SUFFIX": 0,
+        "IP-CIDR": 0,
+        "IP-CIDR6": 0,
+        "OTHER": 0  # 容错：防止存在其他未知类型
+    }
+
+    for rule in rules_set:
+        # 按照逗号分割，取第一个元素作为规则类型
+        parts = rule.split(',')
+        if parts:
+            rule_type = parts[0].strip().upper()
+            if rule_type in stats:
+                stats[rule_type] += 1
+            else:
+                stats["OTHER"] += 1
+
+    total_count = len(rules_set)
+
     # 保存文件                                                         # # 【不用动】
     with open(output_path, "w", encoding="utf-8") as f:                # # 【不用动】
-        f.write("# Merged_List\n")                                     # # 【不用动】
+        # 🌟 自动生成带格式统计的文件头部
+        f.write(f"# {output_filename.split('.')[0]}\n")
+        f.write(f"# DOMAIN: {stats['DOMAIN']}\n")
+        f.write(f"# DOMAIN-KEYWORD: {stats['DOMAIN-KEYWORD']}\n")
+        f.write(f"# DOMAIN-SUFFIX: {stats['DOMAIN-SUFFIX']}\n")
+        f.write(f"# IP-CIDR: {stats['IP-CIDR']}\n")
+        f.write(f"# IP-CIDR6: {stats['IP-CIDR6']}\n")
+        if stats['OTHER'] > 0:
+            f.write(f"# OTHER: {stats['OTHER']}\n")
+        f.write(f"# TOTAL: {total_count}\n\n")
+        
+        # 写入排序后的具体规则列表
         f.write("\n".join(sorted(rules_set)))                          # # 【不用动】
         
     # 【5. 要修改：改一下控制台输出的提示文字，方便在 GitHub Actions 日志里查看】
-    print(f"合并完成，共计 {len(rules_set)} 条规则，已保存至: {output_path}")
+    print(f"合并完成，共计 {total_count} 条规则，已保存至: {output_path}")
 
 if __name__ == "__main__":                                             # # 【不用动】
     # 【6. 要修改：这里的函数名必须和上面 【2】 定义的函数名完全一致】
