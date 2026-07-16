@@ -1,10 +1,10 @@
 # CDN_Merged_List
 # DOMAIN: 1
-# DOMAIN-KEYWORD: 12
+# DOMAIN-KEYWORD: 15
 # DOMAIN-SUFFIX: 126
 # IP-CIDR: 33
 # IP-CIDR6: 0
-# TOTAL: 172
+# TOTAL: 175
 
 DOMAIN,msftncsi.com
 DOMAIN-KEYWORD,announce
@@ -13,12 +13,15 @@ DOMAIN-KEYWORD,broadcasthe.net
 DOMAIN-KEYWORD,m-team
 DOMAIN-KEYWORD,passthepopcorn
 DOMAIN-KEYWORD,peer
+DOMAIN-KEYWORD,peer-stat
 DOMAIN-KEYWORD,privatehd
 DOMAIN-KEYWORD,quickconnect
-DOMAIN-KEYWORD,stat
+DOMAIN-KEYWORD,stat-cdn
+DOMAIN-KEYWORD,stats-download
 DOMAIN-KEYWORD,synology
 DOMAIN-KEYWORD,torrent
 DOMAIN-KEYWORD,tracker
+DOMAIN-KEYWORD,tracker-stat
 DOMAIN-SUFFIX,21vbc.com
 DOMAIN-SUFFIX,21vbluecloud.com
 DOMAIN-SUFFIX,21vbluecloud.net
