@@ -1,4 +1,4 @@
-name: Update Readme
+name: Update ClashReadme
 on:
   workflow_dispatch:      # 允许你随时手动点击运行
 
@@ -24,7 +24,7 @@ jobs:
 
       # 🌟 已经把原本的 Run Merge Script 步骤删掉了，直接运行生成脚本
       - name: Generate README
-        run: python .github/py/generate_readme.py
+        run: python .github/py/Clash_readme.py
 
       - name: Commit and Push
         run: |
