@@ -2,13 +2,21 @@
 # AUTHOR: Aethersailor & AI Patch
 # 作用：精准剥离 Steam 游戏与创意工坊 Mod 下载流量走直连，不影响商店与社区代理
 
-# --- 核心下载 CDN 域名（已补充现代高速节点） ---
+# === 1. 核心下载 CDN 与数据节点域名 (直连满速) ===
 DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
 DOMAIN-SUFFIX,steamcontent.com
 DOMAIN-SUFFIX,steampipe.akamaized.net
 DOMAIN-SUFFIX,content-system.net
+DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net
 
-# --- Valve 全球下载与游戏服务器 IP 矩阵 ---
+# === 2. 补充 Steam 国内边缘下载与推送节点 ===
+DOMAIN-SUFFIX,cs.steampowered.com
+DOMAIN-SUFFIX,cm.steampowered.com
+DOMAIN-SUFFIX,st.dl.bscstorage.net
+DOMAIN-SUFFIX,st.dl.eccdnx.com
+DOMAIN-SUFFIX,st.dl.pinyuncloud.com
+
+# === 3. Valve 全球下载、匹配及官方游戏服务器 IP 矩阵 ===
 IP-CIDR,45.121.184.0/24,no-resolve
 IP-CIDR,103.10.124.0/23,no-resolve
 IP-CIDR,103.28.54.0/24,no-resolve
