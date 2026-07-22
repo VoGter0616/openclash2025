@@ -1,12 +1,12 @@
 # Direct_Merged_List
-# UPDATED: 2026-07-22 18:10:23 (UTC+8)
+# UPDATED: 2026-07-22 18:31:40 (UTC+8)
 # DOMAIN: 0
 # DOMAIN-KEYWORD: 1
-# DOMAIN-SUFFIX: 86
+# DOMAIN-SUFFIX: 104
 # IP-CIDR: 15
 # IP-CIDR6: 0
-# NEWLY ADDED: 46
-# TOTAL: 102
+# NEWLY ADDED: 18
+# TOTAL: 120
 
 DOMAIN-KEYWORD,quickconnect
 DOMAIN-SUFFIX,10jqka.com.cn
@@ -23,10 +23,14 @@ DOMAIN-SUFFIX,bankcomm.com
 DOMAIN-SUFFIX,bankofbeijing.com.cn
 DOMAIN-SUFFIX,bankofshanghai.com
 DOMAIN-SUFFIX,boc.cn
+DOMAIN-SUFFIX,c2.synology.com
 DOMAIN-SUFFIX,ccb.com
 DOMAIN-SUFFIX,ccb.com.cn
 DOMAIN-SUFFIX,cebbank.com
 DOMAIN-SUFFIX,cgbchina.com.cn
+DOMAIN-SUFFIX,chat.synology.com
+DOMAIN-SUFFIX,checkip.synology.com
+DOMAIN-SUFFIX,checkipv6.synology.com
 DOMAIN-SUFFIX,cib.com.cn
 DOMAIN-SUFFIX,citicbank.com
 DOMAIN-SUFFIX,cmbc.com.cn
@@ -34,13 +38,17 @@ DOMAIN-SUFFIX,cmbchina.com
 DOMAIN-SUFFIX,cmbimg.com
 DOMAIN-SUFFIX,cn.quickconnect.to
 DOMAIN-SUFFIX,czbank.com
+DOMAIN-SUFFIX,ddns.synology.com
 DOMAIN-SUFFIX,dfcfw.com
 DOMAIN-SUFFIX,diskstation.me
+DOMAIN-SUFFIX,drive.synology.com
 DOMAIN-SUFFIX,eastmoney.com
+DOMAIN-SUFFIX,eu.c2.synology.com
 DOMAIN-SUFFIX,familyds.com
 DOMAIN-SUFFIX,familyds.net
 DOMAIN-SUFFIX,familyds.org
 DOMAIN-SUFFIX,futunn.com
+DOMAIN-SUFFIX,getclever.com
 DOMAIN-SUFFIX,global.download.synology.com
 DOMAIN-SUFFIX,global.synologydownload.com
 DOMAIN-SUFFIX,home.miui.com
@@ -48,6 +56,7 @@ DOMAIN-SUFFIX,hxb.com.cn
 DOMAIN-SUFFIX,i234.me
 DOMAIN-SUFFIX,icbc-ltd.com
 DOMAIN-SUFFIX,icbc.com.cn
+DOMAIN-SUFFIX,insight.synology.com
 DOMAIN-SUFFIX,iotcplatform.com
 DOMAIN-SUFFIX,mgslb.cn
 DOMAIN-SUFFIX,mgslb.com
@@ -70,22 +79,31 @@ DOMAIN-SUFFIX,netsunion.cn
 DOMAIN-SUFFIX,notify.synology.com
 DOMAIN-SUFFIX,payment.synology.com
 DOMAIN-SUFFIX,pbccrc.org.cn
+DOMAIN-SUFFIX,photos.synology.com
 DOMAIN-SUFFIX,pingan.com
 DOMAIN-SUFFIX,pingan.com.cn
 DOMAIN-SUFFIX,pkgautoupdate.synology.com
 DOMAIN-SUFFIX,psbc.com
 DOMAIN-SUFFIX,quickconnect.cn
 DOMAIN-SUFFIX,quickconnect.to
+DOMAIN-SUFFIX,security.synology.com
 DOMAIN-SUFFIX,sns.synology.com
 DOMAIN-SUFFIX,spdb.com.cn
 DOMAIN-SUFFIX,srcb.com
+DOMAIN-SUFFIX,synocommunity.com
 DOMAIN-SUFFIX,synology.cn
+DOMAIN-SUFFIX,synology.cn.cdn.cloudflare.net
 DOMAIN-SUFFIX,synology.com
 DOMAIN-SUFFIX,synology.com.cn
+DOMAIN-SUFFIX,synology.com.tw
+DOMAIN-SUFFIX,synology.hk
 DOMAIN-SUFFIX,synology.me
+DOMAIN-SUFFIX,synology.me.uk
 DOMAIN-SUFFIX,tigerbrokers.com
+DOMAIN-SUFFIX,tw.c2.synology.com
 DOMAIN-SUFFIX,unionpay.com
 DOMAIN-SUFFIX,unionpaysecure.com
+DOMAIN-SUFFIX,us.c2.synology.com
 DOMAIN-SUFFIX,xiaoaiassist.com
 DOMAIN-SUFFIX,xiaoaimobile.com
 DOMAIN-SUFFIX,xiaoaisound.com
