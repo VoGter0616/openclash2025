@@ -1,14 +1,15 @@
 # NAME: Synology_Direct_Optimized
 # AUTHOR: Custom Optimized
-# 作用: 锁定群晖 QuickConnect、DDNS、Package Center 套件中心、推送服务及 Synology Photos 备份直连，确保连接速度与稳定
+# 作用: 锁定群晖 QuickConnect、DDNS、Package Center 套件中心、推送服务、Photos/Drive 同步、C2 备份及 IP 检测直连，确保速度与稳定
 
-# === 1. QuickConnect 中继与 P2P 穿透服务 (直连确保满速与低延迟) ===
+# === 1. QuickConnect 中继与 P2P 穿透服务 ===
 DOMAIN-SUFFIX,quickconnect.to
 DOMAIN-SUFFIX,quickconnect.cn
 DOMAIN-SUFFIX,cn.quickconnect.to
 DOMAIN-KEYWORD,quickconnect
 
-# === 2. 官方 DDNS 动态域名解析服务 ===
+# === 2. 官方 DDNS 动态域名解析与外网 IP 检测服务 ===
+# 补充了群晖用于获取本地真实公网 IP 的检测节点，防止 DDNS 解析到代理 IP
 DOMAIN-SUFFIX,synology.me
 DOMAIN-SUFFIX,i234.me
 DOMAIN-SUFFIX,myds.me
@@ -16,19 +17,48 @@ DOMAIN-SUFFIX,diskstation.me
 DOMAIN-SUFFIX,familyds.com
 DOMAIN-SUFFIX,familyds.net
 DOMAIN-SUFFIX,familyds.org
+DOMAIN-SUFFIX,checkip.synology.com
+DOMAIN-SUFFIX,checkipv6.synology.com
+DOMAIN-SUFFIX,ddns.synology.com
 
-# === 3. 群晖官方网站、账户与全局 API (推送/许可/激活服务) ===
+# === 3. 群晖官方网站、账户与全局 API (推送/许可/激活/Active Insight) ===
+# 补充了 Active Insight 监控与安全中心域名
 DOMAIN-SUFFIX,synology.com
 DOMAIN-SUFFIX,synology.cn
 DOMAIN-SUFFIX,synology.com.cn
 DOMAIN-SUFFIX,account.synology.com
+DOMAIN-SUFFIX,insight.synology.com
+DOMAIN-SUFFIX,security.synology.com
 
-# === 4. DSM 系统更新、Package Center 套件中心与 CDN 静态资源下载 ===
+# === 4. DSM 系统更新、Package Center 套件中心与 CDN 下载 ===
+# 补充了各地区 CDN 节点及第三方常用套件源
 DOMAIN-SUFFIX,global.download.synology.com
 DOMAIN-SUFFIX,global.synologydownload.com
 DOMAIN-SUFFIX,pkgautoupdate.synology.com
 DOMAIN-SUFFIX,payment.synology.com
+DOMAIN-SUFFIX,synology.com.tw
+DOMAIN-SUFFIX,synology.cn.cdn.cloudflare.net
+DOMAIN-SUFFIX,synology.hk
+DOMAIN-SUFFIX,synology.me.uk
 
 # === 5. 群晖推送通知服务 (Push Notification / Mobile Alert) ===
 DOMAIN-SUFFIX,notify.synology.com
 DOMAIN-SUFFIX,sns.synology.com
+
+# === 6. Synology Drive / Photos / Mobile Apps 移动端与客户端同步 ===
+# 保证 Mobile App 在内外网切换时的长连接直连，避免数据大流量走代理
+DOMAIN-SUFFIX,drive.synology.com
+DOMAIN-SUFFIX,photos.synology.com
+DOMAIN-SUFFIX,chat.synology.com
+
+# === 7. Synology C2 云端备份与 Hyper Backup ===
+# 保障 Hyper Backup 备份到 Synology C2 时不占用代理流量且速度最大化
+DOMAIN-SUFFIX,c2.synology.com
+DOMAIN-SUFFIX,us.c2.synology.com
+DOMAIN-SUFFIX,eu.c2.synology.com
+DOMAIN-SUFFIX,tw.c2.synology.com
+
+# === 8. 常用第三方套件源 (推荐直连) ===
+# 解决第三方套件中心加载缓慢或连接失败问题
+DOMAIN-SUFFIX,synocommunity.com
+DOMAIN-SUFFIX,getclever.com
