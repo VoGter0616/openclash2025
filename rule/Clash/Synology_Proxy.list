@@ -1,0 +1,32 @@
+# NAME: Synology_Proxy_Required
+# AUTHOR: Custom Optimized
+# 作用: 涵盖群晖系统及第三方套件中依赖海外 API、ActiveInsight、Container Manager (Docker)、AI 模型及刮削服务
+
+# === 1. Container Manager / Docker 镜像拉取与注册表 ===
+# 解决国内 Docker Hub 镜像站失效后，群晖拉取 Docker 镜像超时的问题
+DOMAIN-SUFFIX,docker.com
+DOMAIN-SUFFIX,docker.io
+DOMAIN-SUFFIX,ghcr.io
+DOMAIN-SUFFIX,quay.io
+DOMAIN-SUFFIX,gcr.io
+
+# === 2. ActiveInsight 运维监控 & C2 混合云备份服务 ===
+# ActiveInsight 与 C2 存储的海外数据中心 API
+DOMAIN-SUFFIX,c2.synology.com
+DOMAIN-SUFFIX,activeinsight.synology.com
+
+# === 3. Synology Photos AI 扩展与系统插件资源下载 ===
+# 部分高阶人脸识别模型、人像/深度学习插件及依赖包拉取
+DOMAIN-SUFFIX,dl.synology.com
+DOMAIN-SUFFIX,global.dl.synology.com
+
+# === 4. Video Station / Drive / 第三方媒体套件 (TMDB 影视刮削) ===
+# 电影、电视剧海报、演员及简介信息的精准刮削
+DOMAIN-SUFFIX,themoviedb.org
+DOMAIN-SUFFIX,tmdb.org
+DOMAIN-SUFFIX,thetvdb.com
+
+# === 5. 群晖系统内整合的 Git 与 开源组件下载 ===
+# DSM 套件内使用到的 GitHub 资源库、代码同步及 Git Server 依赖
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,githubusercontent.com
