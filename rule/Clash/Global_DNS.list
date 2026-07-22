@@ -1,38 +1,50 @@
 # NAME: Global DNS Providers
-# 作用: 确保海外加密 DNS 解析请求走代理，防止 DNS 污染与监听
-# 更新日期: 2026-05
+# 作用: 确保海外加密 DNS (DoH/DoT/DoQ) 解析请求走代理，防止 DNS 污染与监听
+# 更新日期: 2026-07
 
 # >>> Google Public DNS
 DOMAIN-SUFFIX,dns.google
 DOMAIN,8888.google
+IP-CIDR,8.8.8.8/32,no-resolve
+IP-CIDR,8.8.4.4/32,no-resolve
 
 # >>> Cloudflare DNS
 DOMAIN-SUFFIX,cloudflare-dns.com
 DOMAIN-SUFFIX,1dot1dot1dot1.cloudflare-dns.com
 DOMAIN-SUFFIX,one.one.one.one
+DOMAIN,dns.cloudflare.com
+IP-CIDR,1.1.1.1/32,no-resolve
+IP-CIDR,1.0.0.1/32,no-resolve
+
+# >>> Quad9 DNS
+DOMAIN-SUFFIX,quad9.net
+DOMAIN-SUFFIX,dns.quad9.net
+DOMAIN-SUFFIX,dns10.quad9.net
+IP-CIDR,9.9.9.9/32,no-resolve
+IP-CIDR,149.112.112.112/32,no-resolve
 
 # >>> DNS.sb
 DOMAIN-SUFFIX,dns.sb
 DOMAIN-SUFFIX,dot.sb
 DOMAIN-SUFFIX,doh.dns.sb
 DOMAIN,hk-hkg.doh.sb
+IP-CIDR,185.222.222.222/32,no-resolve
 
-# >>> Quad9 DNS
-DOMAIN-SUFFIX,quad9.net
-DOMAIN-SUFFIX,dns.quad9.net
+# >>> AdGuard DNS (防广告/隐私保护)
+DOMAIN-SUFFIX,adguard-dns.com
+DOMAIN-SUFFIX,adguard-dns.io
+
+# >>> NextDNS (自定义加密解析)
+DOMAIN-SUFFIX,nextdns.io
+DOMAIN-SUFFIX,dns.nextdns.io
+
+# >>> Control D
+DOMAIN-SUFFIX,controld.com
+DOMAIN-SUFFIX,freedns.controld.com
 
 # >>> OpenDNS / Cisco Umbrella
 DOMAIN-SUFFIX,opendns.com
 DOMAIN-SUFFIX,umbrella.com
 DOMAIN-SUFFIX,doh.opendns.com
-
-# >>> AdGuard DNS (防广告/隐私保护)
-DOMAIN-SUFFIX,adguard-dns.com
-DOMAIN-SUFFIX,adguard.com
-
-# >>> NextDNS (高度自定义)
-DOMAIN-SUFFIX,nextdns.io
-DOMAIN-KEYWORD,nextdns
-
-# >>> Control D
-DOMAIN-SUFFIX,controld.com
+IP-CIDR,208.67.222.222/32,no-resolve
+IP-CIDR,208.67.220.220/32,no-resolve
