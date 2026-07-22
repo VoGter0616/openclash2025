@@ -1,0 +1,34 @@
+# NAME: Synology_Direct_Optimized
+# AUTHOR: Custom Optimized
+# 作用: 锁定群晖 QuickConnect、DDNS、Package Center 套件中心、推送服务及 Synology Photos 备份直连，确保连接速度与稳定
+
+# === 1. QuickConnect 中继与 P2P 穿透服务 (直连确保满速与低延迟) ===
+DOMAIN-SUFFIX,quickconnect.to
+DOMAIN-SUFFIX,quickconnect.cn
+DOMAIN-SUFFIX,cn.quickconnect.to
+DOMAIN-KEYWORD,quickconnect
+
+# === 2. 官方 DDNS 动态域名解析服务 ===
+DOMAIN-SUFFIX,synology.me
+DOMAIN-SUFFIX,i234.me
+DOMAIN-SUFFIX,myds.me
+DOMAIN-SUFFIX,diskstation.me
+DOMAIN-SUFFIX,familyds.com
+DOMAIN-SUFFIX,familyds.net
+DOMAIN-SUFFIX,familyds.org
+
+# === 3. 群晖官方网站、账户与全局 API (推送/许可/激活服务) ===
+DOMAIN-SUFFIX,synology.com
+DOMAIN-SUFFIX,synology.cn
+DOMAIN-SUFFIX,synology.com.cn
+DOMAIN-SUFFIX,account.synology.com
+
+# === 4. DSM 系统更新、Package Center 套件中心与 CDN 静态资源下载 ===
+DOMAIN-SUFFIX,global.download.synology.com
+DOMAIN-SUFFIX,global.synologydownload.com
+DOMAIN-SUFFIX,pkgautoupdate.synology.com
+DOMAIN-SUFFIX,payment.synology.com
+
+# === 5. 群晖推送通知服务 (Push Notification / Mobile Alert) ===
+DOMAIN-SUFFIX,notify.synology.com
+DOMAIN-SUFFIX,sns.synology.com
