@@ -1,13 +1,14 @@
 # NAME: Apple and Microsoft CN Direct
 # AUTHOR: Custom Enhanced
-# 作用: 苹果与微软国内核心 CDN 域名直连列表，提升下载与同步速度
-# 更新日期: 2026-07-15
-# TOTAL: 8
+# 作用: 苹果与微软国内核心 CDN/静态资源域名直连列表，保障下载与同步满速
+# 更新日期: 2026-07-22
 
+# === Apple 国内 CDN & 静态服务 (满速直连) ===
 DOMAIN-SUFFIX,apple.com.cn
 DOMAIN-SUFFIX,cdn-apple.com
 DOMAIN-SUFFIX,mzstatic.com
 DOMAIN-SUFFIX,icloud.com.cn
-DOMAIN-SUFFIX,microsoft.com
+
+# === Microsoft 精确 CDN 域名 (已删除高危根域名，仅保留高带宽下载/更新) ===
 DOMAIN-SUFFIX,windowsupdate.com
-DOMAIN-SUFFIX,office.com
+DOMAIN-SUFFIX,delivery.mp.microsoft.com
