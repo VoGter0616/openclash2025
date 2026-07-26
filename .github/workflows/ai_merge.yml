@@ -31,9 +31,10 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          # 先移除根目录下可能残留的旧文件（防止冲突）
+          # 清理可能残留的旧路径文件（防止历史文件遗留）
           git rm -f AI_Merged.list || true
-          # 添加新目录下的所有内容
-          git add rule/Clash/AI_Merged.list
-          git commit -m "Auto update AI rules to rule/Clash/" || exit 0
+          git rm -f rule/Clash/AI_Merged.list || true
+          # 添加 rule/Merged 目录下的文件
+          git add rule/Merged/AI_Merged.list
+          git commit -m "Auto update AI rules to rule/Merged/" || exit 0
           git push origin main
