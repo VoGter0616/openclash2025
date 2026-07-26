@@ -21,7 +21,7 @@ def get_beijing_time():
 
 
 def merge_social_rules():
-    output_dir = "rule/Clash"
+    output_dir = "rule/Merged"
     output_path = os.path.join(output_dir, "Social_Merged.list")
 
     # 1. 读取旧文件用于比对新增数量
