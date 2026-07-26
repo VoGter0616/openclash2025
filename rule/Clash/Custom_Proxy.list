@@ -1,12 +1,12 @@
 # Custom_Proxy_List
-# UPDATED: 2026-07-24 14:34:17 (UTC+8)
+# UPDATED: 2026-07-26 14:43:41 (UTC+8)
 # DOMAIN: 10
 # DOMAIN-KEYWORD: 26
-# DOMAIN-SUFFIX: 6764
+# DOMAIN-SUFFIX: 6766
 # IP-CIDR: 93
 # IP-CIDR6: 4
 # NEWLY ADDED: 2
-# TOTAL: 6897
+# TOTAL: 6899
 
 DOMAIN,api.waqi.info
 DOMAIN,aqi.aqicn.org
@@ -1160,6 +1160,7 @@ DOMAIN-SUFFIX,ciciai.com
 DOMAIN-SUFFIX,cienen.com
 DOMAIN-SUFFIX,cineastentreff.de
 DOMAIN-SUFFIX,cipfg.org
+DOMAIN-SUFFIX,circle19.org
 DOMAIN-SUFFIX,circlethebayfortibet.org
 DOMAIN-SUFFIX,cirosantilli.com
 DOMAIN-SUFFIX,citizencn.com
@@ -3196,6 +3197,7 @@ DOMAIN-SUFFIX,kanzhongguo.com
 DOMAIN-SUFFIX,kanzhongguo.eu
 DOMAIN-SUFFIX,kaotic.com
 DOMAIN-SUFFIX,karayou.com
+DOMAIN-SUFFIX,kards.com
 DOMAIN-SUFFIX,karkhung.com
 DOMAIN-SUFFIX,karmapa-teachings.org
 DOMAIN-SUFFIX,karmapa.org
