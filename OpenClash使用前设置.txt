@@ -1,9 +1,8 @@
 *自定义上游DNS服务器
 NameServer
-223.5.5.5/dns-query     HTTPS
 223.6.6.6/dns-query     HTTPS
-https://doh.pub/dns-query     HTTPS
-https://dns.alidns.com/dns-query     HTTPS
+rubyfish.cn/dns-query     HTTPS
+dns.pub/dns-query     HTTPS
 
 FallBack
 dns.google/dns-query     HTTPS
@@ -11,6 +10,8 @@ cloudflare-dns.com/dns-query     HTTPS
 
 Default-NameServer
 223.5.5.5     UDP
+119.29.29.29     UDP
+1.0.0.1     UDP
 
 Fake-IP-Filter
 黑名单模式
