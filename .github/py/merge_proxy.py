@@ -17,8 +17,8 @@ def get_beijing_time():
 
 
 def merge_proxy_rules():
-    output_dir = "rule/Clash"
-    output_path = os.path.join(output_dir, "Custom_Proxy.list")
+    output_dir = "rule/Merged"
+    output_path = os.path.join(output_dir, "Proxy_Merged.list")
 
     # 1. 读取旧文件用于比对新增数量
     old_rules = set()
