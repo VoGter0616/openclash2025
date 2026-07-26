@@ -19,8 +19,10 @@ def get_beijing_time():
 
 
 def merge_ai_rules():
+    # 默认输出目录已更改为 rule/Merged
     output_dir = "rule/Merged"
-    output_path = os.path.join(output_dir, "AI_Merged.list")
+    output_filename = "AI_Merged.list"
+    output_path = os.path.join(output_dir, output_filename)
 
     # 1. 读取旧文件用于比对新增数量
     old_rules = set()
@@ -78,7 +80,7 @@ def merge_ai_rules():
 
     # 6. 写入文件（头部全为纯数字计数）
     with open(output_path, "w", encoding="utf-8") as f:
-        f.write("# AI_Merged_List\n")
+        f.write(f"# {output_filename.split('.')[0]}\n")
         f.write(f"# UPDATED: {updated_at} (UTC+8)\n")
         f.write(f"# DOMAIN: {stats['DOMAIN']}\n")
         f.write(f"# DOMAIN-KEYWORD: {stats['DOMAIN-KEYWORD']}\n")
@@ -96,6 +98,7 @@ def merge_ai_rules():
     # 控制台日志
     print(
         f"AI规则合并完成！\n"
+        f"保存位置: {output_path}\n"
         f"更新时间: {updated_at}\n"
         f"当前总计: {total_count} 条 | 相比上次新增: {added_count} 条"
     )
