@@ -32,7 +32,7 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          # 这里一定要和脚本里 output_path 设置的路径完全一致
-          git add rule/Clash/Custom_Proxy.list
-          git commit -m "Auto update Social rules" || exit 0
+          # 添加 rule/Merged 目录下的文件
+          git add rule/Merged/Proxy_Merged.list
+          git commit -m "Auto update Proxy rules to rule/Merged/" || exit 0
           git push origin main
