@@ -31,6 +31,9 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add rule/Clash/Social_Merged.list
-          git commit -m "Auto update Social rules" || exit 0
+          # 清理旧路径残留（防止历史文件遗留）
+          git rm -f rule/Clash/Social_Merged.list || true
+          # 添加 rule/Merged 目录下的文件
+          git add rule/Merged/Social_Merged.list
+          git commit -m "Auto update Social rules to rule/Merged/" || exit 0
           git push origin main
