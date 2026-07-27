@@ -227,9 +227,8 @@ fhnfile.oss-cn-shenzhen.aliyuncs.com
 
 | 服务器分组 | 服务器地址 | 服务器类型 | 状态 |
 | --- | --- | --- | --- |
-| nameserver | 223.6.6.6/dns-query | HTTPS | 启用 |
+| nameserver | 223.5.5.5/dns-query | HTTPS | 启用 |
 | nameserver | dns.pub/dns-query | HTTPS | 启用 |
-| nameserver | 119.29.29.29/dns-query | HTTPS | 启用 |
 | fallback | 1.1.1.1/dns-query | HTTPS | 启用 |
 | fallback | dns.google/dns-query | HTTPS | 启用 |
 | default- nameserver | 223.5.5.5 | UDP | 启用 |
