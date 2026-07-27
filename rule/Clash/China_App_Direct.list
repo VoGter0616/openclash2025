@@ -1,0 +1,64 @@
+# NAME: China-App-Direct
+# AUTHOR: Custom Optimized
+# UPDATED: 2026-07-27
+# DESCRIPTION: 国内常用 App (腾讯/字节/小红书)、115 网盘及测速服务直连列表
+
+# === 腾讯系 (QQ / 微信 / 财付通 / 腾讯云) ===
+DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,tencent.com
+DOMAIN-SUFFIX,wechat.com
+DOMAIN-SUFFIX,servicewechat.com
+DOMAIN-SUFFIX,gtimg.com
+DOMAIN-SUFFIX,gtimg.cn
+DOMAIN-SUFFIX,qpic.cn
+DOMAIN-SUFFIX,qlogo.cn
+DOMAIN-SUFFIX,tenpay.com
+DOMAIN-SUFFIX,myqcloud.com
+DOMAIN-SUFFIX,qcloud.com
+
+# === 字节跳动系 (抖音 / 头条 / 静态资源 CDN) ===
+DOMAIN-SUFFIX,douyin.com
+DOMAIN-SUFFIX,douyincdn.com
+DOMAIN-SUFFIX,douyinpic.com
+DOMAIN-SUFFIX,douyinstatic.com
+DOMAIN-SUFFIX,douyinliving.com
+DOMAIN-SUFFIX,iesdouyin.com
+DOMAIN-SUFFIX,douyinvod.com
+DOMAIN-SUFFIX,douyinvideo.net
+DOMAIN-SUFFIX,amemv.com
+DOMAIN-SUFFIX,snssdk.com
+DOMAIN-SUFFIX,byteimg.com
+DOMAIN-SUFFIX,bytecdn.cn
+DOMAIN-SUFFIX,ibytedtos.com
+DOMAIN-SUFFIX,zijieapi.com
+DOMAIN-SUFFIX,pstatp.com
+DOMAIN-SUFFIX,toutiao.com
+DOMAIN-SUFFIX,toutiaovod.com
+DOMAIN-SUFFIX,bytedance.net
+
+# === 小红书 ===
+DOMAIN-SUFFIX,xhscdn.com
+DOMAIN-SUFFIX,xhscdn.net
+DOMAIN-SUFFIX,xhslink.com
+DOMAIN-SUFFIX,xhsimg.com
+DOMAIN-SUFFIX,xiaohongshu.com
+
+# === 115 网盘与存储边缘 ===
+DOMAIN-SUFFIX,115.com
+DOMAIN-SUFFIX,115cdn.com
+DOMAIN-SUFFIX,115cdn.net
+DOMAIN-SUFFIX,115img.com
+DOMAIN-SUFFIX,116cd.cn
+DOMAIN-SUFFIX,116cd.com
+DOMAIN-SUFFIX,116cd.net
+DOMAIN-SUFFIX,anxia.com
+DOMAIN-SUFFIX,sq.cc
+DOMAIN,fhnfile.oss-cn-shenzhen.aliyuncs.com
+
+# === 测速与网络连通性检测 (防止将本地带宽测为代理节点速度) ===
+DOMAIN-SUFFIX,speedtest.net
+DOMAIN-SUFFIX,ooklaserver.net
+DOMAIN-SUFFIX,speedtestcustom.com
+DOMAIN-SUFFIX,measurementlab.net
+DOMAIN-SUFFIX,speedtest.cn
+DOMAIN,speed.cloudflare.com
