@@ -25,16 +25,12 @@
 
 `cfg` 根目录共有 4 个模板：
 
-| 版本 | 文件 | OpenClash 内置名称 | 定位 |
-| --- | --- | --- | --- |
-| 标准版 | [`Custom_Clash.ini`](./Custom_Clash.ini) | Aethersailor 规则 标准版 Custom_Clash | 均衡的日常分流，建议多数用户优先选择 |
-| 标准 Fallback 版 | [`Custom_Clash_Fallback.ini`](./Custom_Clash_Fallback.ini) | — | 标准版策略组改为故障转移，减少人工切换 |
-| 轻量版 | [`Custom_Clash_Lite.ini`](./Custom_Clash_Lite.ini) | Aethersailor 规则 轻量版 Custom_Clash_Lite | 减少业务策略组，结构更简洁 |
-| 轻量 Fallback 版 | [`Custom_Clash_Lite_Fallback.ini`](./Custom_Clash_Lite_Fallback.ini) | — | 轻量结构与自动故障转移结合 |
-| 极简 GFW 版 | [`Custom_Clash_GFW.ini`](./Custom_Clash_GFW.ini) | Aethersailor 规则 极简版(GFW) Custom_Clash_GFW | 主要代理 GFW 相关流量，其余默认直连 |
-| 极简 GFW Fallback 版 | [`Custom_Clash_GFW_Fallback.ini`](./Custom_Clash_GFW_Fallback.ini) | — | 极简分流与自动故障转移结合 |
-| 重度分流版 | [`Custom_Clash_Full.ini`](./Custom_Clash_Full.ini) | Aethersailor 规则 重度分流版 Custom_Clash_Full | 更多业务、地区与节点用途分组 |
-| 重度分流 Fallback 版 | [`Custom_Clash_Full_Fallback.ini`](./Custom_Clash_Full_Fallback.ini) | — | 重度分流结构与自动故障转移结合 |
+| 文件 | 定位 |
+| --- | --- |
+| [Clash_custom.ini](./cfg/Clash_custom.ini) | OpenClash自定义转换文件。 |
+| [Clash_test01.ini](./cfg/Clash_test01.ini) | OpenClash转换前测试文件。 |
+| [Clash_Verge.ini](./cfg/Clash_Verge.ini) | Clash Verge自定义转换文件。 |
+| [Shadowrocket_basic.conf](./cfg/Shadowrocket_basic.conf) | Shadowrocket自定义转换文件。 |
 
 
 ---
