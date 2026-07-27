@@ -4,8 +4,6 @@
 
 </div>
 
----
-
 <details>
 <summary><b>📄 点击展开 / 折叠查看：OpenClash 设置指南</b></summary>
 
