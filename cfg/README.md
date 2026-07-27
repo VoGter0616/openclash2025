@@ -6,6 +6,17 @@
 
 ---
 
+## 📁 `.ini` 模板列表
+
+`cfg` 根目录共有 4 个模板：
+
+| 文件 | 定位 |
+| --- | --- |
+| [Clash_custom.ini](./cfg/Clash_custom.ini) | OpenClash自定义转换文件。 |
+| [Clash_test01.ini](./cfg/Clash_test01.ini) | OpenClash转换前测试文件。 |
+| [Clash_Verge.ini](./cfg/Clash_Verge.ini) | Clash Verge自定义转换文件。 |
+| [Shadowrocket_basic.conf](./cfg/Shadowrocket_basic.conf) | Shadowrocket自定义转换文件。 |
+
 > [!IMPORTANT]
 > 三种路径解决的是“如何获得并维护策略组、规则和节点来源”，不能替代 OpenClash LuCI 中的插件设置。建议选择一种主路径，不要在不了解执行顺序和覆盖关系时叠加使用。
 
@@ -19,19 +30,6 @@
 
 > [!NOTE]
 > 本项目提供的订阅转换模板和 YAML，均由维护者依据典型场景与使用经验推定设计——通俗地说，包含一定程度的“合理脑补”。它们不可能 100% 贴合每个人的节点、地区、业务和网络环境。需要完全个性化的行为时，请自行编写或深度修改 YAML。
-
-
-## 📁 `.ini` 模板列表
-
-`cfg` 根目录共有 4 个模板：
-
-| 文件 | 定位 |
-| --- | --- |
-| [Clash_custom.ini](./cfg/Clash_custom.ini) | OpenClash自定义转换文件。 |
-| [Clash_test01.ini](./cfg/Clash_test01.ini) | OpenClash转换前测试文件。 |
-| [Clash_Verge.ini](./cfg/Clash_Verge.ini) | Clash Verge自定义转换文件。 |
-| [Shadowrocket_basic.conf](./cfg/Shadowrocket_basic.conf) | Shadowrocket自定义转换文件。 |
-
 
 ---
 
