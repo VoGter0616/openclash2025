@@ -291,6 +291,8 @@ fhnfile.oss-cn-shenzhen.aliyuncs.com
 >
 > https://github.com/v2fly/domain-list-community/tree/master/data
 >
+> https://github.com/MetaCubeX/meta-rules-dat/tree/master?tab=readme-ov-file
+>
 > 感谢以上大佬的代码开源，如有侵权告知删
 > 
 > 如需使用，请自行斟酌后再用，有任何问题VoGter均无义务解决。
