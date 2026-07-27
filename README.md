@@ -10,7 +10,7 @@
 | [/rule](./rule) | 规则集。 |
 | [Clash_custom.ini](./cfg/Clash_custom.ini) | OpenClash自定义转换文件。 |
 | [Clash_test01.ini](./cfg/Clash_test01.ini) | OpenClash转换前测试文件。 |
-| [Clash_custom.ini](./cfg/Clash_custom.ini) | OpenClash自定义转换文件。 |
+| [Clash_Verge.ini](./cfg/Clash_Verge.ini) | Clash Verge自定义转换文件。 |
 | [Shadowrocket_basic.conf](./cfg/Shadowrocket_basic.conf) | Shadowrocket自定义转换文件。 |
 
 ---
