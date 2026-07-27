@@ -4,19 +4,37 @@
 # DESCRIPTION: 微软国内边缘节点、CDN 静态资源、世纪互联及 Windows 系统更新/网络测试（强行直连）
 
 # === Windows 系统网络测试与检测 (防止网络图标显示无 Internet) ===
-DOMAIN,msftncsi.com
-DOMAIN,msftconnecttest.com
 DOMAIN-SUFFIX,msftncsi.com
 DOMAIN-SUFFIX,msftconnecttest.com
 
 # === Windows 系统更新与应用商店大文件下载 (直连跑满带宽) ===
 DOMAIN-SUFFIX,windowsupdate.com
-DOMAIN-SUFFIX,windowsupdate.microsoft.com
 DOMAIN-SUFFIX,update.microsoft.com
 DOMAIN-SUFFIX,delivery.mp.microsoft.com
-DOMAIN-SUFFIX,download.windowsupdate.com
 DOMAIN-SUFFIX,download.microsoft.com
 DOMAIN-SUFFIX,manage.microsoft.com
+
+# === 微软核心服务、Office 及 Windows 账户鉴权 ===
+DOMAIN-SUFFIX,microsoft.com
+DOMAIN-SUFFIX,office.com
+DOMAIN-SUFFIX,office.net
+DOMAIN-SUFFIX,office365.com
+DOMAIN-SUFFIX,officeplus.cn
+DOMAIN-SUFFIX,live.com
+DOMAIN-SUFFIX,live.net
+DOMAIN-SUFFIX,outlook.com
+DOMAIN-SUFFIX,microsoftonline.com
+DOMAIN-SUFFIX,microsoftonline-p.com
+DOMAIN-SUFFIX,microsoftonline.cn
+DOMAIN-SUFFIX,microsoftstore.com.cn
+DOMAIN-SUFFIX,sharepoint.com
+DOMAIN-SUFFIX,sharepointonline.com
+DOMAIN-SUFFIX,onedrive.com
+DOMAIN-SUFFIX,skype.com
+DOMAIN-SUFFIX,msauth.net
+DOMAIN-SUFFIX,msauthimages.net
+DOMAIN-SUFFIX,msftauth.net
+DOMAIN-SUFFIX,msftauthimages.net
 
 # === 微软全球及国内静态资源与 CDN 域名 ===
 DOMAIN-SUFFIX,aspnetcdn.com
@@ -40,8 +58,5 @@ DOMAIN-SUFFIX,chinacloudapp.cn
 DOMAIN-SUFFIX,chinacloudsites.cn
 DOMAIN-SUFFIX,microsoft-online.com.cn
 
-# === 必应国内版与微软中国区官方商城/办公服务 ===
-DOMAIN-SUFFIX,microsoftstore.com.cn
-DOMAIN-SUFFIX,microsoftonline.cn
-DOMAIN-SUFFIX,officeplus.cn
+# === 必应国内版 ===
 DOMAIN,cn.bing.com
