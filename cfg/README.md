@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧩 OpenClash 订阅转换模板
+# 🧩 OpenClash 订阅转换配置模板
 
 </div>
 
