@@ -2,6 +2,10 @@
 
 # 🧩 OpenClash 订阅转换模板
 
+</div>
+
+---
+
 <details>
 <summary><b>📄 点击展开 / 折叠查看：OpenClash 设置指南</b></summary>
 
@@ -327,9 +331,6 @@ https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/cfg/S
 
 </details>
 
-</div>
-
----
 
 ## 📁 `.ini` 模板列表
 
