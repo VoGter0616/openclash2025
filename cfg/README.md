@@ -337,7 +337,7 @@ https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/cfg/S
 | --- | --- | --- |
 | [Clash_custom.ini](./cfg/Clash_custom.ini) | ini | OpenClash自定义转换文件。 |
 | [Clash_test01.ini](./cfg/Clash_test01.ini) | ini | OpenClash转换前测试文件。 |
-| [Clash_Verge.ini](./cfg/Clash_Verge.ini) | ini | Clash Verge自定义转换文件。 |
+| [Clash_Verge.ini](.cfg/Clash_Verge.ini) | ini | Clash Verge自定义转换文件。 |
 | [Shadowrocket_basic.conf](./cfg/Shadowrocket_basic.conf) | conf | Shadowrocket自定义转换文件。 |
 | [best.yaml](./cfg/yaml/best.yaml) | yaml | Clash Verge头文件组成的yaml。 |
 
