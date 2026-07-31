@@ -335,11 +335,11 @@ https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/cfg/S
 
 | 文件 | 文件类型 | 定位 |
 | --- | --- | --- |
-| [Clash_custom.ini](./cfg/Clash_custom.ini) | ini | OpenClash自定义转换文件。 |
-| [Clash_test01.ini](./cfg/Clash_test01.ini) | ini | OpenClash转换前测试文件。 |
-| [Clash_Verge.ini](./cfg/Clash_Verge.ini) | ini | Clash Verge自定义转换文件。 |
-| [Shadowrocket_basic.conf](./cfg/Shadowrocket_basic.conf) | conf | Shadowrocket自定义转换文件。 |
-| [best.yaml](./cfg/yaml/best.yaml) | yaml | Clash Verge头文件组成的yaml。 |
+| [Clash_custom.ini](./Clash_custom.ini) | ini | OpenClash自定义转换文件。 |
+| [Clash_test01.ini](./Clash_test01.ini) | ini | OpenClash转换前测试文件。 |
+| [Clash_Verge.ini](./Clash_Verge.ini) | ini | Clash Verge自定义转换文件。 |
+| [Shadowrocket_basic.conf](./Shadowrocket_basic.conf) | conf | Shadowrocket自定义转换文件。 |
+| [best.yaml](./yaml/best.yaml) | yaml | Clash Verge头文件组成的yaml。 |
 
 > [!IMPORTANT]
 > 三种路径解决的是“如何获得并维护策略组、规则和节点来源”，不能替代 OpenClash LuCI 中的插件设置。建议选择一种主路径，不要在不了解执行顺序和覆盖关系时叠加使用。
