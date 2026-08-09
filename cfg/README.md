@@ -209,7 +209,19 @@ fhnfile.oss-cn-shenzhen.aliyuncs.com
 "+.中国": [223.5.5.5, 119.29.29.29, 2400:3200::1]
 "+.公司": [223.5.5.5, 119.29.29.29, 2400:3200::1]
 "+.网络": [223.5.5.5, 119.29.29.29, 2400:3200::1]
-"geosite:google,openai,anthropic,geolocation-!cn": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
+
+"+.qq.com": [223.5.5.5, 10.10.10.1]
+"+.tencent.com": [223.5.5.5, 10.10.10.1]
+"+.baidu.com": [223.5.5.5, 10.10.10.1]
+"+.bilibili.com": [223.5.5.5, 10.10.10.1]
+"+.taobao.com": [223.5.5.5, 10.10.10.1]
+"+.jd.com": [223.5.5.5, 10.10.10.1]
+"+.douyin.com": [223.5.5.5, 10.10.10.1]
+"+.163.com": [223.5.5.5, 10.10.10.1]
+"+.iqiyi.com": [223.5.5.5, 10.10.10.1]
+"+.youku.com": [223.5.5.5, 10.10.10.1]
+
+"geosite:google,openai,anthropic,github,telegram,twitter,geolocation-!cn": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
 ```
 
 **设置自定义上游 DNS 服务器**（在上方设置中启用本功能后生效）：
