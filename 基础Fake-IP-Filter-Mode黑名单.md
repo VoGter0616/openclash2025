@@ -1,7 +1,6 @@
-基础Fake-IP-Filter-Mode黑名单
+**基础Fake-IP-Filter-Mode黑名单**
 
----
-
+```
 *.lan
 *.local
 +.localdomain
@@ -74,4 +73,4 @@ fhnfile.oss-cn-shenzhen.aliyuncs.com
 +.anxia.com
 +.sq.cc
 
----
+```
