@@ -1,12 +1,12 @@
 # Custom_Proxy_List
-# UPDATED: 2026-08-08 13:05:15 (UTC+8)
+# UPDATED: 2026-08-09 16:10:35 (UTC+8)
 # DOMAIN: 10
 # DOMAIN-KEYWORD: 26
-# DOMAIN-SUFFIX: 6768
+# DOMAIN-SUFFIX: 6769
 # IP-CIDR: 93
 # IP-CIDR6: 4
-# NEWLY ADDED: 0
-# TOTAL: 6901
+# NEWLY ADDED: 1
+# TOTAL: 6902
 
 DOMAIN,api.waqi.info
 DOMAIN,aqi.aqicn.org
@@ -838,6 +838,7 @@ DOMAIN-SUFFIX,broadbook.com
 DOMAIN-SUFFIX,broadpressinc.com
 DOMAIN-SUFFIX,brockbbs.com
 DOMAIN-SUFFIX,brookings.edu
+DOMAIN-SUFFIX,browserleaks.com
 DOMAIN-SUFFIX,brucewang.net
 DOMAIN-SUFFIX,brutaltgp.com
 DOMAIN-SUFFIX,bsky.app
