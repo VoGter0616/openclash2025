@@ -1,6 +1,6 @@
 **fallback-filter**
 
-···
+```
 fallback-filter:
   geoip: true
   geoip-code: CN
@@ -33,4 +33,4 @@ fallback-filter:
     - "+.browserleaks.com"
     - "+.msftconnecttest.com"
     - "+.msftncsi.com"
-    ···
+```
