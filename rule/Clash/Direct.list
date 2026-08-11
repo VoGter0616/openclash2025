@@ -25,6 +25,7 @@ DOMAIN-SUFFIX,docker.1panel.live
 DOMAIN-SUFFIX,docker.kejilion.pro
 DOMAIN-SUFFIX,docker.unsee.tech
 DOMAIN-SUFFIX,registry.dockermirror.com
+DOMAIN-SUFFIX,shangxuannet.com
 
 # ==================== 4. 游戏厂商本地日志与国内生活服务 ====================
 # 剥离米哈游（Hoyoverse）海外客户端的本地日志上传（直连更快，防报错）及和风天气
