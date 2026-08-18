@@ -1,0 +1,47 @@
+# NAME: SSL OCSP & CRL Direct List
+# AUTHOR: Enhanced Version
+# 说明: 全球主流 CA 机构证书吊销与状态校验域名（强制直连，防止 HTTPS 连接白屏/卡顿）
+# 更新日期: 2026-08-19
+
+# --- 1. Sectigo / Comodo / UserTrust ---
+DOMAIN-SUFFIX,sectigo.com
+DOMAIN-SUFFIX,usertrust.com
+DOMAIN-SUFFIX,comodoca.com
+
+# --- 2. DigiCert / GeoTrust / VeriSign / Thawte ---
+DOMAIN-SUFFIX,digicert.com
+DOMAIN-SUFFIX,geotrust.com
+DOMAIN-SUFFIX,verisign.com
+DOMAIN-SUFFIX,thawte.com
+
+# --- 3. Let's Encrypt / ISRG ---
+DOMAIN-SUFFIX,letsencrypt.org
+DOMAIN-SUFFIX,lencr.org
+
+# --- 4. GlobalSign / Alphassl ---
+DOMAIN-SUFFIX,globalsign.com
+DOMAIN-SUFFIX,globalsign.hn
+DOMAIN-SUFFIX,alphassl.com
+
+# --- 5. GoDaddy / Starfield ---
+DOMAIN-SUFFIX,godaddy.com
+DOMAIN-SUFFIX,starfieldtech.com
+
+# --- 6. Entrust ---
+DOMAIN-SUFFIX,entrust.net
+DOMAIN-SUFFIX,entrust.com
+
+# --- 7. Certum / Asseco ---
+DOMAIN-SUFFIX,certum.pl
+DOMAIN-SUFFIX,certum.com
+
+# --- 8. Apple 系统原生 OCSP 校验 ---
+DOMAIN,ocsp.apple.com
+DOMAIN,ocsp2.apple.com
+DOMAIN,crl.apple.com
+
+# --- 9. 其他常见国际 CA 机构 (Buypass / ZeroSSL / Actalis / IdentityTrust) ---
+DOMAIN-SUFFIX,buypass.com
+DOMAIN-SUFFIX,zerossl.com
+DOMAIN-SUFFIX,actalis.com
+DOMAIN-SUFFIX,identitytrust.de
