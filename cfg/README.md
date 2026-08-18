@@ -347,6 +347,7 @@ https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/cfg/S
 
 | 文件 | 文件类型 | 定位 |
 | --- | --- | --- |
+| [Clash_IPLC_VIP.ini](./Clash_IPLC_VIP.ini) | ini | OpenClash自定义转换文件，IPLC.VIP专用转换。 |
 | [Clash_custom.ini](./Clash_custom.ini) | ini | OpenClash自定义转换文件。 |
 | [Clash_test01.ini](./Clash_test01.ini) | ini | OpenClash转换前测试文件。 |
 | [Clash_Verge.ini](./Clash_Verge.ini) | ini | Clash Verge自定义转换文件。 |
