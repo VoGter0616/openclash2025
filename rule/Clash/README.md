@@ -12,7 +12,7 @@
 | [BitComet_CDN.list](./BitComet_CDN.list) | .list | 比特彗星直连域名。 | DIRECT |
 | [Check.list](./Check.list) | .list | 网络测速和检测域名。 | DIRECT |
 | [Combined_Direct_Rules.list](./Combined_Direct_Rules.list) | .list | 国内CDN直连下载域名。 | DIRECT |
-| [Custom_Port.list](./Custom_Port.list) | .list | 特殊端口。 | 代理 |
+| [Custom_Port_Direct](./Custom_Port_Direct) | .list | 特殊端口。 | DIRECT |
 | [Direct.list](./Direct.list) | .list | 直连域名。 | DIRECT |
 | [Global_DNS.list](./Global_DNS.list) | .list | 国外DNS。 | 代理 |
 | [IPv6_Block.yaml](./IPv6_Block.yaml) | .yaml | 我整理的一些IPV6域名。 | DIRECT |
