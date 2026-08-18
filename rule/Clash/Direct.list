@@ -46,3 +46,31 @@ IP-CIDR,47.246.180.0/24,no-resolve
 # 国内公共基础设施/电信联通骨干网测速及互联节点 IP（纯正国内 IP）
 IP-CIDR,218.78.7.16/32,no-resolve
 IP-CIDR,98.126.27.164/32,no-resolve
+
+# --- 1. SSL 证书校验 (CRL / OCSP) ---
+DOMAIN-SUFFIX,usertrust.com
+DOMAIN-SUFFIX,digicert.com
+DOMAIN-SUFFIX,sectigo.com
+DOMAIN-SUFFIX,entrust.net
+
+# --- 2. 游戏激励广告 SDK (防止看完广告不发奖励) ---
+DOMAIN-SUFFIX,unity3dusercontent.com
+DOMAIN-SUFFIX,unityads.unity3d.com
+DOMAIN-SUFFIX,applovin.com
+DOMAIN-SUFFIX,applvn.com
+DOMAIN-SUFFIX,ironsource.com
+DOMAIN-SUFFIX,vungle.com
+
+# --- 3. 国内常见静态资源与广告 SDK ---
+DOMAIN-SUFFIX,ugdtimg.com
+DOMAIN-SUFFIX,gdt.qq.com
+DOMAIN-SUFFIX,ctobsnssdk.com
+DOMAIN-SUFFIX,pstatp.com
+DOMAIN-SUFFIX,umeng.com
+DOMAIN-SUFFIX,umengcloud.com
+
+# --- 4. 网络时间同步 (NTP) ---
+DOMAIN,time.apple.com
+DOMAIN,time.asia.apple.com
+DOMAIN,time.windows.com
+DOMAIN-SUFFIX,pool.ntp.org
