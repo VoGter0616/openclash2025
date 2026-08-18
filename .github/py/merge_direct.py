@@ -7,6 +7,7 @@ direct_urls = [
     "https://raw.githubusercontent.com/VoGter0616/openclash2025/main/rule/Clash/Bank_CN.list",
     "https://raw.githubusercontent.com/VoGter0616/openclash2025/main/rule/Clash/Synology_DIRECT.list",
     "https://raw.githubusercontent.com/VoGter0616/openclash2025/main/rule/Clash/China_App_Direct.list",
+    "https://raw.githubusercontent.com/VoGter0616/openclash2025/main/rule/Clash/SSL_OCSP_Direct.list",
     "https://raw.githubusercontent.com/VoGter0616/openclash2025/main/rule/Clash/Xiaomi_IoT.list",
 ]
 
