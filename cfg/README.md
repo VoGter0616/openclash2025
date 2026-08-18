@@ -259,8 +259,10 @@ fhnfile.oss-cn-shenzhen.aliyuncs.com
 - 自定义规则
 
 ```
+# 1.NTP 端口强制直连
+- DST-PORT,123,DIRECT
 
-# 1. 禁用阿里系 UDP 443 端口 (HTTP/3 / QUIC)，强制回退到 TCP 提升加载稳定性
+# 2. 禁用阿里系 UDP 443 端口 (HTTP/3 / QUIC)，强制回退到 TCP 提升加载稳定性
 - AND,((NETWORK,UDP),(DST-PORT,443),(GEOSITE,alibaba)),REJECT
 ```
 
