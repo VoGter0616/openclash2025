@@ -1,13 +1,12 @@
 # Direct_Merged_List
-# UPDATED: 2026-08-19 03:14:50 (UTC+8)
+# UPDATED: 2026-08-19 03:19:59 (UTC+8)
 # DOMAIN: 2
 # DOMAIN-KEYWORD: 1
 # DOMAIN-SUFFIX: 152
 # IP-CIDR: 15
 # IP-CIDR6: 0
-# OTHER: 1
-# NEWLY ADDED: 1
-# TOTAL: 171
+# NEWLY ADDED: 0
+# TOTAL: 170
 
 DOMAIN,fhnfile.oss-cn-shenzhen.aliyuncs.com
 DOMAIN,speed.cloudflare.com
@@ -164,7 +163,6 @@ DOMAIN-SUFFIX,xiaomicache.com
 DOMAIN-SUFFIX,xiaomiev.com
 DOMAIN-SUFFIX,xmpush.xiaomi.com
 DOMAIN-SUFFIX,zijieapi.com
-DST-PORT,123
 IP-CIDR,1.189.0.0/16,no-resolve
 IP-CIDR,101.231.0.0/16,no-resolve
 IP-CIDR,103.22.181.0/24,no-resolve
