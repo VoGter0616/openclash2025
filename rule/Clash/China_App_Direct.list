@@ -3,9 +3,6 @@
 # UPDATED: 2026-07-27
 # DESCRIPTION: 国内常用 App (腾讯/字节/小红书)、115 网盘及测速服务直连列表
 
-# NTP 端口强制直连
-DST-PORT,123
-
 # === 腾讯系 (QQ / 微信 / 财付通 / 腾讯云) ===
 DOMAIN-SUFFIX,qq.com
 DOMAIN-SUFFIX,tencent.com
