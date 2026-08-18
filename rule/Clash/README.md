@@ -19,6 +19,7 @@
 | [Microsoft_CN.list](./Microsoft_CN.list) | .list | 国内微软CDN。 | DIRECT |
 | [NTPService.list](./NTPService.list) | .list | 时间域名。 | DIRECT |
 | [Proxy.list](./Proxy.list) | .list | 手动添加需要强制代理的域名。 | 代理 |
+| [SSL_OCSP_Direct.list](./SSL_OCSP_Direct.list) | .list | 全球主流 CA 机构证书吊销与状态校验域名。 | DIRECT |
 | [Steam_CDN.list](./Steam_CDN.list) | .list | Steam国内下载。 | DIRECT |
 | [Synology_DIRECT.list](./Synology_DIRECT.list) | .list | 群晖直连域名。 | DIRECT |
 | [Synology_Proxy.list](./Synology_Proxy.list) | .list | 群晖代理域名。 | 代理 |
