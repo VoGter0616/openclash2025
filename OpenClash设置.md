@@ -21,7 +21,7 @@
 
 **绕过指定区域IPv4黑名单里添加：**
 
-```
+```yaml
 services.googleapis.cn
 googleapis.cn
 xn--ngstr-lra8j.com
@@ -29,7 +29,6 @@ adobe.com
 adobelogin.com
 adobe.io
 behance.net
-
 ```
 
 - 其他默认
