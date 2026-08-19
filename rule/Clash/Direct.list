@@ -77,3 +77,34 @@ DOMAIN,time.apple.com
 DOMAIN,time.asia.apple.com
 DOMAIN,time.windows.com
 DOMAIN-SUFFIX,pool.ntp.org
+
+# === 1. 消息推送 SDK (Push Services) ===
+DOMAIN-SUFFIX,jpush.io
+DOMAIN-SUFFIX,jiguang.cn
+DOMAIN-SUFFIX,getui.net
+DOMAIN-SUFFIX,igexin.com
+DOMAIN-SUFFIX,mipush.com
+
+# === 2. 统计分析与崩溃报告 (Analytics & Crash Reports) ===
+DOMAIN-SUFFIX,umeng.com
+DOMAIN-SUFFIX,umengcloud.com
+DOMAIN-SUFFIX,sensorsdata.cn
+DOMAIN-SUFFIX,talkingdata.com
+DOMAIN-SUFFIX,bugly.qq.com
+DOMAIN-SUFFIX,growingio.com
+DOMAIN-SUFFIX,reyun.com
+
+# === 3. 广告投放与效果监测 (Ad SDKs & Tracking) ===
+DOMAIN-SUFFIX,miaozhen.com
+DOMAIN-SUFFIX,admaster.com.cn
+DOMAIN-SUFFIX,ubixioe.com
+DOMAIN-SUFFIX,beizi.biz
+DOMAIN-SUFFIX,fancydsp.com
+DOMAIN-SUFFIX,pangle.io
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
+
+# === 4. 音视频 RTC 与实时通信 (RTC & IM Services) ===
+DOMAIN-SUFFIX,agora.io
+DOMAIN-SUFFIX,agorartc.com
+DOMAIN-SUFFIX,netease.im
+DOMAIN-SUFFIX,rongcloud.cn
