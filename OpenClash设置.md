@@ -203,20 +203,16 @@ fhnfile.oss-cn-shenzhen.aliyuncs.com
 
 **设置自定义上游 DNS 服务器**（在上方设置中启用本功能后生效）：
 
-| 服务器分组 | 服务器地址 | 服务器类型 | 状态 |
+| 服务器分组 | 服务器地址 | 服务器类型 | 状态 | 操作 |
 | --- | --- | --- | --- |
-| nameserver | 223.5.5.5 | UDP | 启用 |
-| nameserver | 119.29.29.29 | UDP | 启用 |
-| nameserver | 223.5.5.5/dns-query | HTTPS | 启用 |
-| nameserver | dns.pub/dns-query | HTTPS | 启用 |
-| fallback | 1.1.1.1/dns-query | HTTPS | 启用 |
-| fallback | 8.8.8.8/dns-query | HTTPS | 启用 |
-| fallback | doh.dns.sb/dns-query | HTTPS | 启用 |
-| fallback | dns.google/dns-query | HTTPS | 启用 |
-| default- nameserver | 223.5.5.5 | UDP | 启用 |
-| default- nameserver | 119.29.29.29 | UDP | 启用 |
-| default- nameserver | 1.1.1.1 | UDP | 启用 |
-| default- nameserver | 2400:3200::1 | UDP | 启用 |
+| nameserver | 223.5.5.5 | UDP | 启用 | |
+| nameserver | 119.29.29.29 | UDP | 启用 | |
+| nameserver | dns.alidns.com/dns-query | HTTPS | 启用 | |
+| fallback | 1.1.1.1/dns-query | HTTPS | 启用 | |
+| fallback | dns.google/dns-query | HTTPS | 启用 | |
+| default- nameserver | 223.5.5.5 | UDP | 启用 | 编辑-勾选节点域名解析 |
+| default- nameserver | 119.29.29.29 | UDP | 启用 | 编辑-勾选节点域名解析 |
+| default- nameserver | 2400:3200::1 | UDP | 启用 | |
 
 ### Meta设置
 
@@ -229,6 +225,113 @@ fhnfile.oss-cn-shenzhen.aliyuncs.com
 - 启用流量（域名）探测
 - 探测（嗅探）纯 IP 连接
 - 自定义流量探测（嗅探）设置
+
+```
+# 嗅探域名 可选配置
+sniffer:
+  ## 对 redir-host 类型识别的流量进行强制嗅探
+  ## 如：Tun、Redir 和 TProxy 并 DNS 为 redir-host 皆属于
+  force-dns-mapping: true
+  ## 对所有未获取到域名的流量进行强制嗅探
+  parse-pure-ip: true
+  # 是否使用嗅探结果作为实际访问，默认 true
+  # 全局配置，优先级低于 sniffer.sniff 实际配置
+  override-destination: true
+  sniff: # TLS 和 QUIC 默认如果不配置 ports 默认嗅探 443
+    QUIC:
+      ports: [ 443 ]
+
+    TLS:
+      ports: [443, 8443]
+
+    # 默认嗅探 80
+    HTTP:
+      ports: [80, 8080-8880]
+      # 是否使用嗅探结果作为实际访问
+      override-destination: true
+  force-domain:
+#  - '+' # Force all domain to use sniffer
+  - "+.netflix.com"
+  - "+.nflxvideo.net"
+  - "+.amazonaws.com"
+  - "+.media.dssott.com"
+  ## 对嗅探结果进行跳过
+  skip-domain:
+  - Mijia Cloud
+  - dlg.io.mi.com
+  - "+.push.apple.com"
+  # 腾讯/微信系
+  - "+.qq.com"
+  - "+.tencent.com"
+  - "+.wechat.com"
+  - "+.servicewechat.com"
+  - "+.gtimg.com"
+  - "+.gtimg.cn"
+  - "+.qpic.cn"
+  - "+.qlogo.cn"
+  - "+.tenpay.com"
+  - "+.myqcloud.com"
+  - "+.qcloud.com"
+  # 字节跳动/抖音系
+  - "+.douyin.com"
+  - "+.douyincdn.com"
+  - "+.douyinpic.com"
+  - "+.douyinstatic.com"
+  - "+.douyinliving.com"
+  - "+.iesdouyin.com"
+  - "+.douyinvod.com"
+  - "+.douyinvideo.net"
+  - "+.amemv.com"
+  - "+.snssdk.com"
+  - "+.byteimg.com"
+  - "+.bytecdn.cn"
+  - "+.ibytedtos.com"
+  - "+.zijieapi.com"
+  - "+.pstatp.com"
+  - "+.toutiao.com"
+  - "+.toutiaovod.com"
+  - "+.bytedance.net"
+  # 小红书
+  - "+.xiaohongshu.com"
+  - "+.xhscdn.com"
+  - "+.xhscdn.net"
+  - "+.xhslink.com"
+  - "+.xhsimg.com"
+  # 阿里/淘宝/高德系
+  - "+.taobao.com"
+  - "+.tmall.com"
+  - "+.tbcdn.cn"
+  - "+.alicdn.com"
+  - "+.alibaba.com"
+  - "+.alibabausercontent.com"
+  - "+.alipay.com"
+  - "+.alipayobjects.com"
+  - "+.goofish.com"
+  - "+.idlefish.com"
+  - "+.aliyun.com"
+  - "+.aliyuncs.com"
+  - "+.mmstat.com"
+  - "+.cainiao.com"
+  - "+.amap.com"
+  - "+.autonavi.com"
+  - fhnfile.oss-cn-shenzhen.aliyuncs.com
+  # 115 网盘
+  - "+.115.com"
+  - "+.115cdn.com"
+  - "+.115cdn.net"
+  - "+.115img.com"
+  - "+.116cd.cn"
+  - "+.116cd.com"
+  - "+.116cd.net"
+  - "+.anxia.com"
+  - "+.sq.cc"
+  #- geosite:cn
+  # skip-src-address: # 对于来源ip跳过嗅探
+  #   - 192.168.0.3/32
+  # skip-dst-address: # 对于目标ip跳过嗅探
+  #   - 192.168.0.3/32
+
+```
 
 ### Smart设置
 
