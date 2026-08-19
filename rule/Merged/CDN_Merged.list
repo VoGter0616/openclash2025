@@ -1,12 +1,12 @@
 # CDN_Merged_List
-# UPDATED: 2026-08-19 12:37:28 (UTC+8)
+# UPDATED: 2026-08-19 18:53:52 (UTC+8)
 # DOMAIN: 4
 # DOMAIN-KEYWORD: 13
-# DOMAIN-SUFFIX: 177
+# DOMAIN-SUFFIX: 198
 # IP-CIDR: 33
 # IP-CIDR6: 0
-# NEWLY ADDED: 0
-# TOTAL: 227
+# NEWLY ADDED: 21
+# TOTAL: 248
 
 DOMAIN,cn.bing.com
 DOMAIN,time.apple.com
@@ -28,6 +28,9 @@ DOMAIN-KEYWORD,tracker-stat
 DOMAIN-SUFFIX,21vbc.com
 DOMAIN-SUFFIX,21vbluecloud.com
 DOMAIN-SUFFIX,21vbluecloud.net
+DOMAIN-SUFFIX,admaster.com.cn
+DOMAIN-SUFFIX,agora.io
+DOMAIN-SUFFIX,agorartc.com
 DOMAIN-SUFFIX,apm-log-upload-os.hoyoverse.com
 DOMAIN-SUFFIX,apple.com.cn
 DOMAIN-SUFFIX,applovin.com
@@ -37,9 +40,11 @@ DOMAIN-SUFFIX,azurecomcdn.net
 DOMAIN-SUFFIX,azurecr.cn
 DOMAIN-SUFFIX,azureedge-test.net
 DOMAIN-SUFFIX,azureedge.net
+DOMAIN-SUFFIX,beizi.biz
 DOMAIN-SUFFIX,bitcomet.com
 DOMAIN-SUFFIX,bitcomet.net
 DOMAIN-SUFFIX,bluecloudprod.com
+DOMAIN-SUFFIX,bugly.qq.com
 DOMAIN-SUFFIX,cdn-apple.com
 DOMAIN-SUFFIX,chdbits.co
 DOMAIN-SUFFIX,chinacloudapi.cn
@@ -60,12 +65,14 @@ DOMAIN-SUFFIX,dockerpull.pw
 DOMAIN-SUFFIX,download.microsoft.com
 DOMAIN-SUFFIX,emby.yun
 DOMAIN-SUFFIX,entrust.net
+DOMAIN-SUFFIX,fancydsp.com
 DOMAIN-SUFFIX,gdt.qq.com
 DOMAIN-SUFFIX,geforce.cn
 DOMAIN-SUFFIX,geforce.co.kr
 DOMAIN-SUFFIX,geforce.co.uk
 DOMAIN-SUFFIX,geforce.com
 DOMAIN-SUFFIX,geforce.com.tw
+DOMAIN-SUFFIX,getui.net
 DOMAIN-SUFFIX,gputechconf.cn
 DOMAIN-SUFFIX,gputechconf.co.kr
 DOMAIN-SUFFIX,gputechconf.com
@@ -74,13 +81,17 @@ DOMAIN-SUFFIX,gputechconf.com.tw
 DOMAIN-SUFFIX,gputechconf.eu
 DOMAIN-SUFFIX,gputechconf.in
 DOMAIN-SUFFIX,gputechconf.jp
+DOMAIN-SUFFIX,growingio.com
 DOMAIN-SUFFIX,hdchina.org
 DOMAIN-SUFFIX,hdsky.me
 DOMAIN-SUFFIX,hf-mirror.com
 DOMAIN-SUFFIX,icloud.com.cn
+DOMAIN-SUFFIX,igexin.com
 DOMAIN-SUFFIX,img-prod-cms-rt-microsoft-com.akamaized.net
 DOMAIN-SUFFIX,img-s-msn-com.akamaized.net
 DOMAIN-SUFFIX,ironsource.com
+DOMAIN-SUFFIX,jiguang.cn
+DOMAIN-SUFFIX,jpush.io
 DOMAIN-SUFFIX,jsdelivr.com
 DOMAIN-SUFFIX,jsdelivr.net
 DOMAIN-SUFFIX,live.com
@@ -88,6 +99,7 @@ DOMAIN-SUFFIX,live.net
 DOMAIN-SUFFIX,m-team.cc
 DOMAIN-SUFFIX,m-team.io
 DOMAIN-SUFFIX,manage.microsoft.com
+DOMAIN-SUFFIX,miaozhen.com
 DOMAIN-SUFFIX,microsoft-online.com.cn
 DOMAIN-SUFFIX,microsoft.com
 DOMAIN-SUFFIX,microsoftonline-p.com
@@ -95,6 +107,7 @@ DOMAIN-SUFFIX,microsoftonline.cn
 DOMAIN-SUFFIX,microsoftonline.com
 DOMAIN-SUFFIX,microsoftstore.com.cn
 DOMAIN-SUFFIX,minor-api-os.hoyoverse.com
+DOMAIN-SUFFIX,mipush.com
 DOMAIN-SUFFIX,miraiemby.com
 DOMAIN-SUFFIX,msauth.net
 DOMAIN-SUFFIX,msauthimages.net
@@ -103,6 +116,7 @@ DOMAIN-SUFFIX,msftauthimages.net
 DOMAIN-SUFFIX,msftconnecttest.com
 DOMAIN-SUFFIX,msftncsi.com
 DOMAIN-SUFFIX,mzstatic.com
+DOMAIN-SUFFIX,netease.im
 DOMAIN-SUFFIX,nexusphp.org
 DOMAIN-SUFFIX,nvda.d2.sc.omtrdc.net
 DOMAIN-SUFFIX,nvidia.asia
@@ -158,6 +172,8 @@ DOMAIN-SUFFIX,openbittorrent.com
 DOMAIN-SUFFIX,opentracker.i2p.rocks
 DOMAIN-SUFFIX,ourbits.club
 DOMAIN-SUFFIX,outlook.com
+DOMAIN-SUFFIX,pangle.io
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
 DOMAIN-SUFFIX,pool.ntp.org
 DOMAIN-SUFFIX,pstatp.com
 DOMAIN-SUFFIX,pthome.net
@@ -165,8 +181,11 @@ DOMAIN-SUFFIX,publicbt.com
 DOMAIN-SUFFIX,qbittorrent.org
 DOMAIN-SUFFIX,qweatherapi.com
 DOMAIN-SUFFIX,registry.dockermirror.com
+DOMAIN-SUFFIX,reyun.com
+DOMAIN-SUFFIX,rongcloud.cn
 DOMAIN-SUFFIX,sdk-log-upload-os.hoyoverse.com
 DOMAIN-SUFFIX,sectigo.com
+DOMAIN-SUFFIX,sensorsdata.cn
 DOMAIN-SUFFIX,shangxuannet.com
 DOMAIN-SUFFIX,sharepoint.com
 DOMAIN-SUFFIX,sharepointonline.com
@@ -181,6 +200,7 @@ DOMAIN-SUFFIX,steamcontent.com
 DOMAIN-SUFFIX,steampipe.akamaized.net
 DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net
 DOMAIN-SUFFIX,tailscale.com
+DOMAIN-SUFFIX,talkingdata.com
 DOMAIN-SUFFIX,tegrazone.co
 DOMAIN-SUFFIX,tegrazone.co.kr
 DOMAIN-SUFFIX,tegrazone.com
@@ -190,6 +210,7 @@ DOMAIN-SUFFIX,terra-master.com
 DOMAIN-SUFFIX,tnas.link
 DOMAIN-SUFFIX,tnas.online
 DOMAIN-SUFFIX,transmissionbt.com
+DOMAIN-SUFFIX,ubixioe.com
 DOMAIN-SUFFIX,ugdocker.link
 DOMAIN-SUFFIX,ugdtimg.com
 DOMAIN-SUFFIX,umeng.com
