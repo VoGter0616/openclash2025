@@ -227,7 +227,7 @@ fhnfile.oss-cn-shenzhen.aliyuncs.com
 **设置自定义上游 DNS 服务器**（在上方设置中启用本功能后生效）：
 
 | 服务器分组 | 服务器地址 | 服务器类型 | 状态 | 操作 |
-| --- | --- | --- | --- |
+| --- | --- | --- | --- | --- |
 | nameserver | 223.5.5.5 | UDP | 启用 | |
 | nameserver | 119.29.29.29 | UDP | 启用 | |
 | nameserver | dns.alidns.com/dns-query | HTTPS | 启用 | |
@@ -249,7 +249,7 @@ fhnfile.oss-cn-shenzhen.aliyuncs.com
 - 探测（嗅探）纯 IP 连接
 - 自定义流量探测（嗅探）设置
 
-```
+```yaml
 # 嗅探域名 可选配置
 sniffer:
   ## 对 redir-host 类型识别的流量进行强制嗅探
@@ -353,7 +353,6 @@ sniffer:
   #   - 192.168.0.3/32
   # skip-dst-address: # 对于目标ip跳过嗅探
   #   - 192.168.0.3/32
-
 ```
 
 ### Smart设置
