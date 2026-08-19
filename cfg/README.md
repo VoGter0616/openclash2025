@@ -15,8 +15,8 @@
 
 ### 模式设置
 
-- 运行模式：Fake-ip（增强）模式
-- 默认勾选：UDP流量转发
+- 运行模式：Fake-ip（TUN）模式
+- 网络栈类型：Mixed
 - 代理模式：Rule（策略代理）
 - 如果是旁路由勾选旁路网关（旁路由）兼容
 - 其他默认
@@ -32,7 +32,7 @@
 
 **绕过指定区域IPv4黑名单里添加：**
 
-```
+```yaml
 services.googleapis.cn
 googleapis.cn
 xn--ngstr-lra8j.com
@@ -40,7 +40,6 @@ adobe.com
 adobelogin.com
 adobe.io
 behance.net
-
 ```
 
 - 其他默认
@@ -64,8 +63,12 @@ behance.net
 
 ### IPv6设置
 
-- 默认勾选：允许 IPv6 类型 DNS 解析
+- 默认勾选：
+- IPv6 流量代理允许
+- IPv6 类型 DNS 解析
+- IPv6 代理模式:Mix混合模式
 - Fake-IP 地址范围 (IPv6 Cidr)：fdfe:dcba:9876::1/64
+- 开启绕过中国大陆
 - 其他默认
 
 ### GEO数据库订阅
@@ -204,42 +207,46 @@ fhnfile.oss-cn-shenzhen.aliyuncs.com
 #### Nameserver-Policy
 
 ```yaml
-"geosite:private,cn,geolocation-cn,apple-cn,microsoft@cn,steam@cn,bytedance,xiaohongshu": [223.5.5.5, 119.29.29.29, 2400:3200::1]
-"+.cn": [223.5.5.5, 119.29.29.29, 2400:3200::1]
-"+.中国": [223.5.5.5, 119.29.29.29, 2400:3200::1]
-"+.公司": [223.5.5.5, 119.29.29.29, 2400:3200::1]
-"+.网络": [223.5.5.5, 119.29.29.29, 2400:3200::1]
-
-"+.qq.com": [223.5.5.5, 10.10.10.1]
-"+.tencent.com": [223.5.5.5, 10.10.10.1]
-"+.baidu.com": [223.5.5.5, 10.10.10.1]
-"+.bilibili.com": [223.5.5.5, 10.10.10.1]
-"+.taobao.com": [223.5.5.5, 10.10.10.1]
-"+.jd.com": [223.5.5.5, 10.10.10.1]
-"+.douyin.com": [223.5.5.5, 10.10.10.1]
-"+.163.com": [223.5.5.5, 10.10.10.1]
-"+.iqiyi.com": [223.5.5.5, 10.10.10.1]
-"+.youku.com": [223.5.5.5, 10.10.10.1]
-
-"geosite:google,openai,anthropic,github,telegram,twitter,geolocation-!cn": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
+    "geosite:private,cn,geolocation-cn,apple-cn,microsoft@cn,steam@cn": [223.5.5.5, 119.29.29.29]
+    "+.speedtest.net": [223.5.5.5, 119.29.29.29]
+    "+.ooklaserver.net": [223.5.5.5, 119.29.29.29]
+    "+.speed.cloudflare.com": [223.5.5.5, 119.29.29.29]
+    "+.measurementlab.net": [223.5.5.5, 119.29.29.29]
+    "+.microsoft.com": [223.5.5.5, 119.29.29.29]
+    "+.live.com": [223.5.5.5, 119.29.29.29]
+    "+.office.com": [223.5.5.5, 119.29.29.29]
+    "+.microsoftonline.com": [223.5.5.5, 119.29.29.29]
+    "+.sharepointonline.com": [223.5.5.5, 119.29.29.29]
+    "+.google.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
+    "+.googleapis.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
+    "+.googleapis.cn": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
+    "+.gstatic.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
+    "+.gvt1.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
+    "+.gvt2.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
+    "+.gvt3.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
+    "+.googleusercontent.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
+    "+.ggpht.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
+    "+.android.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
+    "+.xn--ngstr-lra8j.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
+    "+.openai.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
+    "+.chatgpt.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
+    "+.anthropic.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
+    "+.claude.ai": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
+    "geosite:geolocation-!cn": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
 ```
 
 **设置自定义上游 DNS 服务器**（在上方设置中启用本功能后生效）：
 
-| 服务器分组 | 服务器地址 | 服务器类型 | 状态 |
-| --- | --- | --- | --- |
-| nameserver | 223.5.5.5 | UDP | 启用 |
-| nameserver | 119.29.29.29 | UDP | 启用 |
-| nameserver | 223.5.5.5/dns-query | HTTPS | 启用 |
-| nameserver | dns.pub/dns-query | HTTPS | 启用 |
-| fallback | 1.1.1.1/dns-query | HTTPS | 启用 |
-| fallback | 8.8.8.8/dns-query | HTTPS | 启用 |
-| fallback | doh.dns.sb/dns-query | HTTPS | 启用 |
-| fallback | dns.google/dns-query | HTTPS | 启用 |
-| default- nameserver | 223.5.5.5 | UDP | 启用 |
-| default- nameserver | 119.29.29.29 | UDP | 启用 |
-| default- nameserver | 1.1.1.1 | UDP | 启用 |
-| default- nameserver | 2400:3200::1 | UDP | 启用 |
+| 服务器分组 | 服务器地址 | 服务器类型 | 状态 | 操作 |
+| --- | --- | --- | --- | --- |
+| nameserver | 223.5.5.5 | UDP | 启用 | |
+| nameserver | 119.29.29.29 | UDP | 启用 | |
+| nameserver | dns.alidns.com/dns-query | HTTPS | 启用 | |
+| fallback | 1.1.1.1/dns-query | HTTPS | 启用 | |
+| fallback | dns.google/dns-query | HTTPS | 启用 | |
+| default- nameserver | 223.5.5.5 | UDP | 启用 | 编辑-勾选节点域名解析 |
+| default- nameserver | 119.29.29.29 | UDP | 启用 | 编辑-勾选节点域名解析 |
+| default- nameserver | 2400:3200::1 | UDP | 启用 | |
 
 ### Meta设置
 
@@ -252,6 +259,112 @@ fhnfile.oss-cn-shenzhen.aliyuncs.com
 - 启用流量（域名）探测
 - 探测（嗅探）纯 IP 连接
 - 自定义流量探测（嗅探）设置
+
+```yaml
+# 嗅探域名 可选配置
+sniffer:
+  ## 对 redir-host 类型识别的流量进行强制嗅探
+  ## 如：Tun、Redir 和 TProxy 并 DNS 为 redir-host 皆属于
+  force-dns-mapping: true
+  ## 对所有未获取到域名的流量进行强制嗅探
+  parse-pure-ip: true
+  # 是否使用嗅探结果作为实际访问，默认 true
+  # 全局配置，优先级低于 sniffer.sniff 实际配置
+  override-destination: true
+  sniff: # TLS 和 QUIC 默认如果不配置 ports 默认嗅探 443
+    QUIC:
+      ports: [ 443 ]
+
+    TLS:
+      ports: [443, 8443]
+
+    # 默认嗅探 80
+    HTTP:
+      ports: [80, 8080-8880]
+      # 是否使用嗅探结果作为实际访问
+      override-destination: true
+  force-domain:
+#  - '+' # Force all domain to use sniffer
+  - "+.netflix.com"
+  - "+.nflxvideo.net"
+  - "+.amazonaws.com"
+  - "+.media.dssott.com"
+  ## 对嗅探结果进行跳过
+  skip-domain:
+  - Mijia Cloud
+  - dlg.io.mi.com
+  - "+.push.apple.com"
+  # 腾讯/微信系
+  - "+.qq.com"
+  - "+.tencent.com"
+  - "+.wechat.com"
+  - "+.servicewechat.com"
+  - "+.gtimg.com"
+  - "+.gtimg.cn"
+  - "+.qpic.cn"
+  - "+.qlogo.cn"
+  - "+.tenpay.com"
+  - "+.myqcloud.com"
+  - "+.qcloud.com"
+  # 字节跳动/抖音系
+  - "+.douyin.com"
+  - "+.douyincdn.com"
+  - "+.douyinpic.com"
+  - "+.douyinstatic.com"
+  - "+.douyinliving.com"
+  - "+.iesdouyin.com"
+  - "+.douyinvod.com"
+  - "+.douyinvideo.net"
+  - "+.amemv.com"
+  - "+.snssdk.com"
+  - "+.byteimg.com"
+  - "+.bytecdn.cn"
+  - "+.ibytedtos.com"
+  - "+.zijieapi.com"
+  - "+.pstatp.com"
+  - "+.toutiao.com"
+  - "+.toutiaovod.com"
+  - "+.bytedance.net"
+  # 小红书
+  - "+.xiaohongshu.com"
+  - "+.xhscdn.com"
+  - "+.xhscdn.net"
+  - "+.xhslink.com"
+  - "+.xhsimg.com"
+  # 阿里/淘宝/高德系
+  - "+.taobao.com"
+  - "+.tmall.com"
+  - "+.tbcdn.cn"
+  - "+.alicdn.com"
+  - "+.alibaba.com"
+  - "+.alibabausercontent.com"
+  - "+.alipay.com"
+  - "+.alipayobjects.com"
+  - "+.goofish.com"
+  - "+.idlefish.com"
+  - "+.aliyun.com"
+  - "+.aliyuncs.com"
+  - "+.mmstat.com"
+  - "+.cainiao.com"
+  - "+.amap.com"
+  - "+.autonavi.com"
+  - fhnfile.oss-cn-shenzhen.aliyuncs.com
+  # 115 网盘
+  - "+.115.com"
+  - "+.115cdn.com"
+  - "+.115cdn.net"
+  - "+.115img.com"
+  - "+.116cd.cn"
+  - "+.116cd.com"
+  - "+.116cd.net"
+  - "+.anxia.com"
+  - "+.sq.cc"
+  #- geosite:cn
+  # skip-src-address: # 对于来源ip跳过嗅探
+  #   - 192.168.0.3/32
+  # skip-dst-address: # 对于目标ip跳过嗅探
+  #   - 192.168.0.3/32
+```
 
 ### Smart设置
 
@@ -280,9 +393,10 @@ fhnfile.oss-cn-shenzhen.aliyuncs.com
 | 在线订阅转换 | √ |
 | 订阅转换服务地址 | （自己的后端或者api.wcc.best） |
 | 订阅转换模板 | 自定义模板 |
-| 自定义模板地址 | https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/cfg/Clash_test01.ini |
+| 自定义模板地址 | https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/Clash_test01.ini |
 
 其他参数根据自身情况设置。
+
 
 
 </details>
