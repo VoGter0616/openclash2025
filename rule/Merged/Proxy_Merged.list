@@ -1,11 +1,11 @@
 # Custom_Proxy_List
-# UPDATED: 2026-08-19 16:42:36 (UTC+8)
+# UPDATED: 2026-08-20 12:45:13 (UTC+8)
 # DOMAIN: 10
 # DOMAIN-KEYWORD: 26
 # DOMAIN-SUFFIX: 6772
 # IP-CIDR: 94
 # IP-CIDR6: 4
-# NEWLY ADDED: 0
+# NEWLY ADDED: 1
 # TOTAL: 6906
 
 DOMAIN,api.waqi.info
@@ -1275,7 +1275,6 @@ DOMAIN-SUFFIX,commandarms.com
 DOMAIN-SUFFIX,comments.app
 DOMAIN-SUFFIX,commentshk.com
 DOMAIN-SUFFIX,communistcrimes.org
-DOMAIN-SUFFIX,community.windy.com
 DOMAIN-SUFFIX,communitychoicecu.com
 DOMAIN-SUFFIX,comodoca.com
 DOMAIN-SUFFIX,comparitech.com
@@ -6419,6 +6418,7 @@ DOMAIN-SUFFIX,willw.net
 DOMAIN-SUFFIX,wilsoncenter.org
 DOMAIN-SUFFIX,windowsphoneme.com
 DOMAIN-SUFFIX,windscribe.com
+DOMAIN-SUFFIX,windy.com
 DOMAIN-SUFFIX,wingamestore.com
 DOMAIN-SUFFIX,wingy.site
 DOMAIN-SUFFIX,winning11.com
