@@ -108,3 +108,6 @@ DOMAIN-SUFFIX,agora.io
 DOMAIN-SUFFIX,agorartc.com
 DOMAIN-SUFFIX,netease.im
 DOMAIN-SUFFIX,rongcloud.cn
+
+# === 5. 代理机场 ===
+DOMAIN-SUFFIX,lamgo.io
