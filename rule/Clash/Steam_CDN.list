@@ -7,7 +7,6 @@ DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
 DOMAIN-SUFFIX,steamcontent.com
 DOMAIN-SUFFIX,steampipe.akamaized.net
 DOMAIN-SUFFIX,content-system.net
-DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net
 
 # === 2. 补充 Steam 国内边缘下载与推送节点 ===
 DOMAIN-SUFFIX,cs.steampowered.com
