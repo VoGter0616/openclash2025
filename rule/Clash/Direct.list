@@ -1,6 +1,6 @@
 # NAME: Direct
 # 强制直连列表，来自个人收集
-# 按照标签分类填写添加新的域名
+# 根据标签分类添加域名
 
 # ==================== 1. NAS、本地组网与私有云设备 ====================
 DOMAIN-KEYWORD,synology
@@ -45,11 +45,32 @@ IP-CIDR,47.246.180.0/24,no-resolve
 IP-CIDR,218.78.7.16/32,no-resolve
 IP-CIDR,98.126.27.164/32,no-resolve
 
-# ==================== 6. SSL 证书校验 (CRL / OCSP) ====================
-DOMAIN-SUFFIX,usertrust.com
-DOMAIN-SUFFIX,digicert.com
+# ==================== 6. SSL 证书 OCSP & CRL 校验（全量防卡顿） ====================
 DOMAIN-SUFFIX,sectigo.com
+DOMAIN-SUFFIX,usertrust.com
+DOMAIN-SUFFIX,comodoca.com
+DOMAIN-SUFFIX,digicert.com
+DOMAIN-SUFFIX,geotrust.com
+DOMAIN-SUFFIX,verisign.com
+DOMAIN-SUFFIX,thawte.com
+DOMAIN-SUFFIX,letsencrypt.org
+DOMAIN-SUFFIX,lencr.org
+DOMAIN-SUFFIX,globalsign.com
+DOMAIN-SUFFIX,globalsign.hn
+DOMAIN-SUFFIX,alphassl.com
+DOMAIN-SUFFIX,godaddy.com
+DOMAIN-SUFFIX,starfieldtech.com
 DOMAIN-SUFFIX,entrust.net
+DOMAIN-SUFFIX,entrust.com
+DOMAIN-SUFFIX,certum.pl
+DOMAIN-SUFFIX,certum.com
+DOMAIN,ocsp.apple.com
+DOMAIN,ocsp2.apple.com
+DOMAIN,crl.apple.com
+DOMAIN-SUFFIX,buypass.com
+DOMAIN-SUFFIX,zerossl.com
+DOMAIN-SUFFIX,actalis.com
+DOMAIN-SUFFIX,identitytrust.de
 
 # ==================== 7. 游戏激励广告 SDK ====================
 DOMAIN-SUFFIX,unity3dusercontent.com
@@ -100,4 +121,4 @@ DOMAIN-SUFFIX,agorartc.com
 DOMAIN-SUFFIX,netease.im
 DOMAIN-SUFFIX,rongcloud.cn
 
-# ==================== 13. 其他未分类 ====================
+# ==================== 13. 其他 ====================
