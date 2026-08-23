@@ -1,16 +1,20 @@
-# Game_Merged_List
-# UPDATED: 2026-08-23 12:24:58 (UTC+8)
-# DOMAIN: 4
+# Game_Merged
+# UPDATED: 2026-08-23 13:25:41 (UTC+8)
+# DOMAIN: 8
 # DOMAIN-KEYWORD: 3
-# DOMAIN-SUFFIX: 508
+# DOMAIN-SUFFIX: 592
 # IP-CIDR: 24
 # IP-CIDR6: 0
-# NEWLY ADDED: 0
-# TOTAL: 539
+# NEWLY ADDED: 98
+# TOTAL: 627
 
 DOMAIN,eaasserts-a.akamaihd.net
+DOMAIN,img-prod-cms-rt-microsoft-com.akamaized.net
+DOMAIN,login.live.com
+DOMAIN,logincdn.msauth.net
 DOMAIN,originasserts.akamaized.net
 DOMAIN,sonyliveevents-nonssai.akamaized.net
+DOMAIN,store-images.s-microsoft.com
 DOMAIN,uplaypc-s-ubisoft.cdn.ubi.com
 DOMAIN-KEYWORD,steambroadcast
 DOMAIN-KEYWORD,steamstore
@@ -24,7 +28,6 @@ DOMAIN-SUFFIX,apexlegends.com
 DOMAIN-SUFFIX,awayoutgame.com
 DOMAIN-SUFFIX,ayudanintendo.com
 DOMAIN-SUFFIX,battle.net
-DOMAIN-SUFFIX,battlebreakers.com
 DOMAIN-SUFFIX,battlefield.com
 DOMAIN-SUFFIX,battlefield1943.com
 DOMAIN-SUFFIX,battlefield3.com
@@ -40,6 +43,10 @@ DOMAIN-SUFFIX,battlenet.com
 DOMAIN-SUFFIX,battlenet.com.cn
 DOMAIN-SUFFIX,bejeweledstars.com
 DOMAIN-SUFFIX,bejewled-stars.com
+DOMAIN-SUFFIX,beth.games
+DOMAIN-SUFFIX,bethesda.net
+DOMAIN-SUFFIX,bethesdagamestudios.com
+DOMAIN-SUFFIX,bethsoft.com
 DOMAIN-SUFFIX,bioware.com
 DOMAIN-SUFFIX,biowarestore.com
 DOMAIN-SUFFIX,blackboxgames.com
@@ -61,6 +68,7 @@ DOMAIN-SUFFIX,bnetcmsus-a.akamaihd.net
 DOMAIN-SUFFIX,bnetproduct-a.akamaihd.net
 DOMAIN-SUFFIX,bnetshopus.akamaized.net
 DOMAIN-SUFFIX,bowsersinsidestory.com
+DOMAIN-SUFFIX,callersbane.com
 DOMAIN-SUFFIX,camelot-europe.com
 DOMAIN-SUFFIX,camelotherald.com
 DOMAIN-SUFFIX,camelotherald.net
@@ -69,12 +77,14 @@ DOMAIN-SUFFIX,cdn-ali.content.steamchina.com
 DOMAIN-SUFFIX,cdn-qc.content.steamchina.com
 DOMAIN-SUFFIX,cdn-ws.content.steamchina.com
 DOMAIN-SUFFIX,cdp.cloud.unity3d.com
+DOMAIN-SUFFIX,championshipseriesleague.com
 DOMAIN-SUFFIX,chillingo.com
 DOMAIN-SUFFIX,cloudsync-prod.s3.amazonaws.com
 DOMAIN-SUFFIX,cn-playnow.com.cn
 DOMAIN-SUFFIX,cncrivals.com
 DOMAIN-SUFFIX,commandandconquer.com
 DOMAIN-SUFFIX,conquerwithcharacter.com
+DOMAIN-SUFFIX,convrgencegame.com
 DOMAIN-SUFFIX,crysis.jp
 DOMAIN-SUFFIX,csgo.wmsj.cn
 DOMAIN-SUFFIX,daoc.net
@@ -110,7 +120,6 @@ DOMAIN-SUFFIX,ea.tt.omtrdc.net
 DOMAIN-SUFFIX,eaaccess.com
 DOMAIN-SUFFIX,eaassets-a.akamaihd.net
 DOMAIN-SUFFIX,eablackbox.com
-DOMAIN-SUFFIX,eac-cdn.com
 DOMAIN-SUFFIX,eacashcard.com
 DOMAIN-SUFFIX,eacodigos.com
 DOMAIN-SUFFIX,eafootballworld.com
@@ -130,8 +139,6 @@ DOMAIN-SUFFIX,easportsfootballclub.com
 DOMAIN-SUFFIX,easportsmma.com
 DOMAIN-SUFFIX,easportsworld.com
 DOMAIN-SUFFIX,eastore.com
-DOMAIN-SUFFIX,easy.ac
-DOMAIN-SUFFIX,easyanticheat.net
 DOMAIN-SUFFIX,edge.steam-dns.top.comcast.net
 DOMAIN-SUFFIX,electronicarts.com
 DOMAIN-SUFFIX,electronicarts.fr
@@ -146,10 +153,13 @@ DOMAIN-SUFFIX,fire-emblem-heroes.com
 DOMAIN-SUFFIX,fireemblemawakening.com
 DOMAIN-SUFFIX,firesidegatherings.com
 DOMAIN-SUFFIX,flipnotestudio.com
-DOMAIN-SUFFIX,fortnite.com
+DOMAIN-SUFFIX,forzamotorsport.net
+DOMAIN-SUFFIX,forzaracingchampionship.com
+DOMAIN-SUFFIX,forzarc.com
 DOMAIN-SUFFIX,frostbite.com
 DOMAIN-SUFFIX,futpromos.com
 DOMAIN-SUFFIX,futunited.com
+DOMAIN-SUFFIX,gamepass.com
 DOMAIN-SUFFIX,ghostgames.com
 DOMAIN-SUFFIX,ginzasonypark.jp
 DOMAIN-SUFFIX,giratina.com
@@ -160,16 +170,45 @@ DOMAIN-SUFFIX,helpshift.com
 DOMAIN-SUFFIX,heroes.nos.netease.com
 DOMAIN-SUFFIX,heroesofdragonage.com
 DOMAIN-SUFFIX,heroesofthestorm.com
+DOMAIN-SUFFIX,historyofdota.com
+DOMAIN-SUFFIX,historyofdota.net
+DOMAIN-SUFFIX,historyofdota.org
 DOMAIN-SUFFIX,humblebundle.com
 DOMAIN-SUFFIX,hutpromos.com
 DOMAIN-SUFFIX,imageworks.com
 DOMAIN-SUFFIX,industrialtoys.com
+DOMAIN-SUFFIX,instituteofwar.org
 DOMAIN-SUFFIX,kirbysepicyarn.com
 DOMAIN-SUFFIX,kirbysuperstarultra.com
 DOMAIN-SUFFIX,kyurem.com
+DOMAIN-SUFFIX,lcsmerch.com
+DOMAIN-SUFFIX,leaguehighschool.com
+DOMAIN-SUFFIX,leagueoflegends.ca
+DOMAIN-SUFFIX,leagueoflegends.cn
+DOMAIN-SUFFIX,leagueoflegends.co.kr
+DOMAIN-SUFFIX,leagueoflegends.com
+DOMAIN-SUFFIX,leagueoflegends.info
+DOMAIN-SUFFIX,leagueoflegends.kr
+DOMAIN-SUFFIX,leagueoflegends.net
+DOMAIN-SUFFIX,leagueoflegends.org
+DOMAIN-SUFFIX,leagueoflegendsscripts.com
+DOMAIN-SUFFIX,leaguesharp.info
+DOMAIN-SUFFIX,leaguoflegends.com
+DOMAIN-SUFFIX,learnwithleague.com
 DOMAIN-SUFFIX,legendofzelda.cn
 DOMAIN-SUFFIX,legendofzelda.com.cn
+DOMAIN-SUFFIX,lol-europe.com
+DOMAIN-SUFFIX,lolclub.org
+DOMAIN-SUFFIX,lolespor.com
+DOMAIN-SUFFIX,lolesports.com
+DOMAIN-SUFFIX,lolfanart.net
+DOMAIN-SUFFIX,lolpcs.com
+DOMAIN-SUFFIX,lolshop.co.kr
+DOMAIN-SUFFIX,lolstatic-a.akamaihd.net
+DOMAIN-SUFFIX,lolstatic.com
+DOMAIN-SUFFIX,lolusercontent.com
 DOMAIN-SUFFIX,lordofultima.com
+DOMAIN-SUFFIX,lpl.com.cn
 DOMAIN-SUFFIX,maddenchampionship.com
 DOMAIN-SUFFIX,maddenrewards.com
 DOMAIN-SUFFIX,maddenseason.info
@@ -188,12 +227,17 @@ DOMAIN-SUFFIX,maxis.com
 DOMAIN-SUFFIX,miitomo.com
 DOMAIN-SUFFIX,miitomo.com.cn
 DOMAIN-SUFFIX,miiverse.com
+DOMAIN-SUFFIX,minecraft.net
+DOMAIN-SUFFIX,minecraftshop.com
 DOMAIN-SUFFIX,mirrorsedge.com
 DOMAIN-SUFFIX,mirrorsedge.jp
 DOMAIN-SUFFIX,mirrorsedge.net
 DOMAIN-SUFFIX,mirrorsedge2.com
 DOMAIN-SUFFIX,mirrorsedge2d.com
+DOMAIN-SUFFIX,mojang.com
+DOMAIN-SUFFIX,molesports.com
 DOMAIN-SUFFIX,motionpictureser.com
+DOMAIN-SUFFIX,msgamestudios.com
 DOMAIN-SUFFIX,mysims.com
 DOMAIN-SUFFIX,mysimsracing.com
 DOMAIN-SUFFIX,mythicentertainment.com
@@ -257,9 +301,11 @@ DOMAIN-SUFFIX,nintendoswitch.net
 DOMAIN-SUFFIX,nintendoswitchtogether.com
 DOMAIN-SUFFIX,nintendowifi.net
 DOMAIN-SUFFIX,nintendowii.com
+DOMAIN-SUFFIX,ol.epicgames.com
 DOMAIN-SUFFIX,origin-a.akamaihd.net
 DOMAIN-SUFFIX,origin.com
 DOMAIN-SUFFIX,origin.tv
+DOMAIN-SUFFIX,orithegame.com
 DOMAIN-SUFFIX,overwatch.nosdn.127.net
 DOMAIN-SUFFIX,paragon.com
 DOMAIN-SUFFIX,personaltrainermath.com
@@ -270,12 +316,12 @@ DOMAIN-SUFFIX,playartifact.com
 DOMAIN-SUFFIX,playhearthstone.com
 DOMAIN-SUFFIX,playnintendo.com
 DOMAIN-SUFFIX,playoverwatch.com
-DOMAIN-SUFFIX,playparagon.com
 DOMAIN-SUFFIX,playshow.io
 DOMAIN-SUFFIX,playshowtv.com
 DOMAIN-SUFFIX,playstation.com
 DOMAIN-SUFFIX,playstation.net
 DOMAIN-SUFFIX,playstationnetwork.com
+DOMAIN-SUFFIX,playvalorant.com
 DOMAIN-SUFFIX,playwarcraft3.com
 DOMAIN-SUFFIX,pogo.com
 DOMAIN-SUFFIX,pogobeta.com
@@ -303,13 +349,31 @@ DOMAIN-SUFFIX,pokemonvgc.com
 DOMAIN-SUFFIX,pokemonwifi.net
 DOMAIN-SUFFIX,popcap.com
 DOMAIN-SUFFIX,projectapex.com
+DOMAIN-SUFFIX,pvp.net
+DOMAIN-SUFFIX,pvp.tv
 DOMAIN-SUFFIX,pvzgw2.com
 DOMAIN-SUFFIX,pvzheroes.com
-DOMAIN-SUFFIX,roborecall.com
+DOMAIN-SUFFIX,renovacionxboxlive.com
+DOMAIN-SUFFIX,rgpub.io
+DOMAIN-SUFFIX,riot-games.com
+DOMAIN-SUFFIX,riot.com
+DOMAIN-SUFFIX,riot.net
+DOMAIN-SUFFIX,riotcdn.net
+DOMAIN-SUFFIX,riotforgegames.com
+DOMAIN-SUFFIX,riotgames.co.kr
+DOMAIN-SUFFIX,riotgames.com
+DOMAIN-SUFFIX,riotgames.info
+DOMAIN-SUFFIX,riotgames.jp
+DOMAIN-SUFFIX,riotgames.net
+DOMAIN-SUFFIX,riotgames.tv
+DOMAIN-SUFFIX,riotgames.zendesk.com
+DOMAIN-SUFFIX,riotpin.com
+DOMAIN-SUFFIX,riotpoints.com
+DOMAIN-SUFFIX,rstatic.net
+DOMAIN-SUFFIX,ruinedking.com
 DOMAIN-SUFFIX,s.team
 DOMAIN-SUFFIX,sc2.nosdn.127.net
 DOMAIN-SUFFIX,seaofsolitude.com
-DOMAIN-SUFFIX,shadowcomplex.com
 DOMAIN-SUFFIX,simcity-buildit.com
 DOMAIN-SUFFIX,simcity.com
 DOMAIN-SUFFIX,skate2.com
@@ -420,7 +484,6 @@ DOMAIN-SUFFIX,spearhead.kr
 DOMAIN-SUFFIX,speedhunters.com
 DOMAIN-SUFFIX,splatoon2tournament.com
 DOMAIN-SUFFIX,spore.com
-DOMAIN-SUFFIX,spyjinx.com
 DOMAIN-SUFFIX,ssx3.com
 DOMAIN-SUFFIX,st.dl.bscstorage.net
 DOMAIN-SUFFIX,st.dl.eccdnx.com
@@ -473,11 +536,14 @@ DOMAIN-SUFFIX,supermariorun.com
 DOMAIN-SUFFIX,superpapermario.com
 DOMAIN-SUFFIX,supersmashbros.cn
 DOMAIN-SUFFIX,supersmashbros.com.cn
+DOMAIN-SUFFIX,supremacy.com
+DOMAIN-SUFFIX,supremacy.net
 DOMAIN-SUFFIX,swjedifallenorder.com
 DOMAIN-SUFFIX,swjfo.com
 DOMAIN-SUFFIX,swtor.com
 DOMAIN-SUFFIX,swtor.net
 DOMAIN-SUFFIX,teamneedforspeed.com
+DOMAIN-SUFFIX,tellmewhygame.com
 DOMAIN-SUFFIX,thedreadwolfrises.com
 DOMAIN-SUFFIX,thelegendarystarfy.com
 DOMAIN-SUFFIX,thesims.com
@@ -489,13 +555,13 @@ DOMAIN-SUFFIX,tiberiumalliances.com
 DOMAIN-SUFFIX,tiburon.com
 DOMAIN-SUFFIX,titanfall.com
 DOMAIN-SUFFIX,tnt-ea.com
+DOMAIN-SUFFIX,ulol.com
 DOMAIN-SUFFIX,ultimaforever.com
 DOMAIN-SUFFIX,ultimaonline.com
 DOMAIN-SUFFIX,underlords.com
 DOMAIN-SUFFIX,unravel2.com
 DOMAIN-SUFFIX,unraveltwo.com
 DOMAIN-SUFFIX,unrealengine.com
-DOMAIN-SUFFIX,unrealtournament.com
 DOMAIN-SUFFIX,uo.com
 DOMAIN-SUFFIX,uoherald.com
 DOMAIN-SUFFIX,valvesoftware.com
@@ -516,6 +582,28 @@ DOMAIN-SUFFIX,worldofwarcraft.com
 DOMAIN-SUFFIX,wow.nosdn.127.net
 DOMAIN-SUFFIX,wowchina.com
 DOMAIN-SUFFIX,wwtbam.com
+DOMAIN-SUFFIX,xbox.co
+DOMAIN-SUFFIX,xbox.com
+DOMAIN-SUFFIX,xbox.eu
+DOMAIN-SUFFIX,xbox.org
+DOMAIN-SUFFIX,xbox360.co
+DOMAIN-SUFFIX,xbox360.com
+DOMAIN-SUFFIX,xbox360.eu
+DOMAIN-SUFFIX,xbox360.org
+DOMAIN-SUFFIX,xboxab.com
+DOMAIN-SUFFIX,xboxab.net
+DOMAIN-SUFFIX,xboxgamepass.com
+DOMAIN-SUFFIX,xboxgamestudios.com
+DOMAIN-SUFFIX,xboxlive.cn
+DOMAIN-SUFFIX,xboxlive.com
+DOMAIN-SUFFIX,xboxone.co
+DOMAIN-SUFFIX,xboxone.com
+DOMAIN-SUFFIX,xboxone.eu
+DOMAIN-SUFFIX,xboxplayanywhere.com
+DOMAIN-SUFFIX,xboxservice.com
+DOMAIN-SUFFIX,xboxservices.com
+DOMAIN-SUFFIX,xboxstudios.com
+DOMAIN-SUFFIX,xbx.lv
 DOMAIN-SUFFIX,xdsummit.com
 DOMAIN-SUFFIX,xenoblade.com
 DOMAIN-SUFFIX,xn--mts47c3w9b1qr.cn
