@@ -1,12 +1,12 @@
 # Custom_Proxy_List
-# UPDATED: 2026-08-21 12:47:35 (UTC+8)
+# UPDATED: 2026-08-23 12:45:16 (UTC+8)
 # DOMAIN: 10
 # DOMAIN-KEYWORD: 26
-# DOMAIN-SUFFIX: 6772
+# DOMAIN-SUFFIX: 6773
 # IP-CIDR: 94
 # IP-CIDR6: 4
-# NEWLY ADDED: 0
-# TOTAL: 6906
+# NEWLY ADDED: 1
+# TOTAL: 6907
 
 DOMAIN,api.waqi.info
 DOMAIN,aqi.aqicn.org
@@ -4179,6 +4179,7 @@ DOMAIN-SUFFIX,oklink.com
 DOMAIN-SUFFIX,okpool.me
 DOMAIN-SUFFIX,okx.com
 DOMAIN-SUFFIX,old-cat.net
+DOMAIN-SUFFIX,oldmapsonline.org
 DOMAIN-SUFFIX,olehdtv.com
 DOMAIN-SUFFIX,olelive.com
 DOMAIN-SUFFIX,olevod.com
