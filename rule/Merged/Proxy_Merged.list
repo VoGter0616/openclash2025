@@ -1,12 +1,12 @@
 # Custom_Proxy_List
-# UPDATED: 2026-08-23 12:45:16 (UTC+8)
+# UPDATED: 2026-08-24 02:54:35 (UTC+8)
 # DOMAIN: 10
 # DOMAIN-KEYWORD: 26
-# DOMAIN-SUFFIX: 6773
-# IP-CIDR: 94
+# DOMAIN-SUFFIX: 6778
+# IP-CIDR: 93
 # IP-CIDR6: 4
-# NEWLY ADDED: 1
-# TOTAL: 6907
+# NEWLY ADDED: 6
+# TOTAL: 6911
 
 DOMAIN,api.waqi.info
 DOMAIN,aqi.aqicn.org
@@ -830,6 +830,7 @@ DOMAIN-SUFFIX,breakgfw.com
 DOMAIN-SUFFIX,breaking911.com
 DOMAIN-SUFFIX,breakingtweets.com
 DOMAIN-SUFFIX,breakwall.net
+DOMAIN-SUFFIX,briarproject.org
 DOMAIN-SUFFIX,briefdream.com
 DOMAIN-SUFFIX,briian.com
 DOMAIN-SUFFIX,brill.com
@@ -1048,6 +1049,7 @@ DOMAIN-SUFFIX,chapm25.com
 DOMAIN-SUFFIX,character.ai
 DOMAIN-SUFFIX,chat.com
 DOMAIN-SUFFIX,chat.openai.com
+DOMAIN-SUFFIX,chatgpt.site
 DOMAIN-SUFFIX,chatnook.com
 DOMAIN-SUFFIX,chatpdf.com
 DOMAIN-SUFFIX,chaturbate.com
@@ -2628,6 +2630,7 @@ DOMAIN-SUFFIX,himemix.com
 DOMAIN-SUFFIX,himemix.net
 DOMAIN-SUFFIX,hindustantimes.com
 DOMAIN-SUFFIX,hinet.net
+DOMAIN-SUFFIX,historylines.net
 DOMAIN-SUFFIX,hitbtc.com
 DOMAIN-SUFFIX,hitomi.la
 DOMAIN-SUFFIX,hitun.io
@@ -3244,6 +3247,7 @@ DOMAIN-SUFFIX,kinokuniya.com
 DOMAIN-SUFFIX,kir.jp
 DOMAIN-SUFFIX,kissjav.com
 DOMAIN-SUFFIX,kiwi.kz
+DOMAIN-SUFFIX,kiwix.org
 DOMAIN-SUFFIX,kk-whys.co.jp
 DOMAIN-SUFFIX,kkbox.com
 DOMAIN-SUFFIX,kknews.cc
@@ -3574,6 +3578,7 @@ DOMAIN-SUFFIX,maxing.jp
 DOMAIN-SUFFIX,mayimayi.com
 DOMAIN-SUFFIX,mcadforums.com
 DOMAIN-SUFFIX,mcaf.ee
+DOMAIN-SUFFIX,mceindex.com
 DOMAIN-SUFFIX,mcfog.com
 DOMAIN-SUFFIX,mcreasite.com
 DOMAIN-SUFFIX,mcusercontent.com
@@ -4881,6 +4886,7 @@ DOMAIN-SUFFIX,saveuighur.org
 DOMAIN-SUFFIX,savevid.com
 DOMAIN-SUFFIX,say2.info
 DOMAIN-SUFFIX,sb-cd.com
+DOMAIN-SUFFIX,sb.sb
 DOMAIN-SUFFIX,sbme.me
 DOMAIN-SUFFIX,sbs.com.au
 DOMAIN-SUFFIX,sbti.unun.dev
@@ -5297,7 +5303,6 @@ DOMAIN-SUFFIX,strongwindpress.com
 DOMAIN-SUFFIX,student.tw
 DOMAIN-SUFFIX,studentsforafreetibet.org
 DOMAIN-SUFFIX,stumbleupon.com
-DOMAIN-SUFFIX,stun.playstation.net
 DOMAIN-SUFFIX,stupidvideos.com
 DOMAIN-SUFFIX,stweetly.com
 DOMAIN-SUFFIX,subacme.rerouted.org
@@ -6867,7 +6872,6 @@ IP-CIDR,180.163.151.34/32,no-resolve
 IP-CIDR,184.173.128.0/17,no-resolve
 IP-CIDR,185.60.216.0/22,no-resolve
 IP-CIDR,185.76.151.0/24,no-resolve
-IP-CIDR,194.221.250.0/24,no-resolve
 IP-CIDR,203.104.103.0/24,no-resolve
 IP-CIDR,203.104.128.0/19,no-resolve
 IP-CIDR,203.174.66.64/26,no-resolve
