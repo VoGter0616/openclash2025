@@ -2,17 +2,28 @@ import os
 from datetime import datetime, timezone, timedelta
 import requests
 
-# 游戏规则源列表
+# 游戏规则源列表（补充了 Riot、Xbox 及 Epic 完整库）
 game_urls = [
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam.list",
-    "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Epic/Epic.list",
+    "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Epic.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Nintendo/Nintendo.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/EA/EA.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Sony/Sony.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Blizzard/Blizzard.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Ubisoft/Ubisoft.list",
+    "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Riot/Riot.list",
+    "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Xbox/Xbox.list",
 ]
 
+# 有效规则前缀白名单
+VALID_PREFIXES = (
+    "DOMAIN",
+    "DOMAIN-SUFFIX",
+    "DOMAIN-KEYWORD",
+    "IP-CIDR",
+    "IP-CIDR6",
+    "PROCESS-NAME",
+)
 
 def get_beijing_time():
     """获取当前的北京时间字符串 (UTC+8)"""
@@ -20,10 +31,17 @@ def get_beijing_time():
     beijing_now = utc_now.astimezone(timezone(timedelta(hours=8)))
     return beijing_now.strftime("%Y-%m-%d %H:%M:%S")
 
+def is_valid_rule(line):
+    """判断当前行是否为标准 Clash 规则字符串"""
+    line = line.strip()
+    if not line or line.startswith(("#", ";", "payload:", "-")):
+        return False
+    return line.startswith(VALID_PREFIXES)
 
 def merge_game_rules():
     output_dir = "rule/Merged"
-    output_path = os.path.join(output_dir, "Game_Merged.list")
+    output_filename = "Game_Merged.list"
+    output_path = os.path.join(output_dir, output_filename)
 
     # 1. 读取旧文件用于比对新增数量
     old_rules = set()
@@ -32,7 +50,9 @@ def merge_game_rules():
             with open(output_path, "r", encoding="utf-8") as f:
                 for line in f.readlines():
                     line = line.strip()
-                    if line and not line.startswith(("#", ";")):
+                    if line.startswith("- "):
+                        line = line[2:].strip()
+                    if is_valid_rule(line):
                         old_rules.add(line)
         except Exception as e:
             print(f"读取旧文件失败或旧文件不存在: {e}")
@@ -45,7 +65,7 @@ def merge_game_rules():
             if response.status_code == 200:
                 for line in response.text.splitlines():
                     line = line.strip()
-                    if line and not line.startswith(("#", ";")):
+                    if is_valid_rule(line):
                         new_rules.add(line)
         except Exception as e:
             print(f"Error fetching {url}: {e}")
@@ -79,9 +99,9 @@ def merge_game_rules():
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
 
-    # 6. 写入文件（头部全为纯数字计数）
+    # 6. 写入文件
     with open(output_path, "w", encoding="utf-8") as f:
-        f.write("# Game_Merged_List\n")
+        f.write(f"# {output_filename.split('.')[0]}\n")
         f.write(f"# UPDATED: {updated_at} (UTC+8)\n")
         f.write(f"# DOMAIN: {stats['DOMAIN']}\n")
         f.write(f"# DOMAIN-KEYWORD: {stats['DOMAIN-KEYWORD']}\n")
@@ -94,15 +114,16 @@ def merge_game_rules():
         f.write(f"# TOTAL: {total_count}\n\n")
 
         # 写入排序后的具体规则列表
-        f.write("\n".join(sorted(new_rules)))
+        for rule in sorted(new_rules):
+            f.write(f"{rule}\n")
 
     # 控制台日志
     print(
         f"游戏规则合并完成！\n"
+        f"保存位置: {output_path}\n"
         f"更新时间: {updated_at}\n"
         f"当前总计: {total_count} 条 | 相比上次新增: {added_count} 条"
     )
-
 
 if __name__ == "__main__":
     merge_game_rules()
