@@ -1,35 +1,41 @@
 # NAME: Proxy
 # 强制代理列表，来自个人收集
+# 根据标签分类添加域名与 IP 段
 
-# OpenClash 首页 IP 地址探测
+# ==================== 1. OpenClash 首页与 IP 地址探测 ====================
 DOMAIN-SUFFIX,ip.sb
 DOMAIN-SUFFIX,ipify.org
-# GooglePlay 相关
+DOMAIN-SUFFIX,browserleaks.com
+
+# ==================== 2. Google / GooglePlay 核心与服务补丁 ====================
 DOMAIN-SUFFIX,services.googleapis.cn
 DOMAIN-SUFFIX,clientservices.googleapis.com
 DOMAIN-SUFFIX,googleapis.cn
 DOMAIN-SUFFIX,xn--ngstr-lra8j.com
-# Google 相关
 DOMAIN-SUFFIX,mtalk.google.com
-# PS5 STUN
-DOMAIN-SUFFIX,stun.playstation.net
-# 嵌入式相关
+
+# ==================== 3. 嵌入式与开发者工具 ====================
 DOMAIN-SUFFIX,platformio.org
 DOMAIN-SUFFIX,arduino.cc
-# PT 相关
+
+# ==================== 4. PT 站与动漫资源索引 (蜜柑计划) ====================
 DOMAIN-SUFFIX,dmhy.org
-# EA Desktop 云同步
+DOMAIN-SUFFIX,mikanani.me
+
+# ==================== 5. 游戏与云服务 (EA / 米哈游海外 / 腾讯云专线) ====================
 DOMAIN-SUFFIX,cloudsync-prod.s3.us-east-1.amazonaws.com
-# HoYoLAB
 DOMAIN-SUFFIX,hoyolab.com
-# OneDrive 网页版
-DOMAIN-SUFFIX,onedrive.live.com
-# 其他
-DOMAIN-SUFFIX,7pzzv.us
 DOMAIN-SUFFIX,hoyoverse.com
 DOMAIN,link-47nbcuc7.gaapqcloud.com.cn
-DOMAIN-SUFFIX,browserleaks.com
-#telegram漏网之鱼
-IP-CIDR,194.221.250.0/24,no-resolve
+
+# ==================== 6. OneDrive 网页版 ====================
+DOMAIN-SUFFIX,onedrive.live.com
+
+# ==================== 7. 其他特殊与强校验域名 ====================
+DOMAIN-SUFFIX,7pzzv.us
+
+# ==================== 8. Telegram 核心数据段 (漏网之鱼 CIDR) ====================
+GEOIP,telegram,no-resolve
 IP-CIDR,91.108.0.0/16,no-resolve
 IP-CIDR,149.154.160.0/20,no-resolve
+IP-CIDR,194.221.250.0/24,no-resolve
