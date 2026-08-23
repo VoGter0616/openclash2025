@@ -1,12 +1,12 @@
 # CDN_Merged
-# UPDATED: 2026-08-23 13:24:09 (UTC+8)
+# UPDATED: 2026-08-23 13:43:21 (UTC+8)
 # DOMAIN: 6
 # DOMAIN-KEYWORD: 12
-# DOMAIN-SUFFIX: 164
+# DOMAIN-SUFFIX: 163
 # IP-CIDR: 33
 # IP-CIDR6: 0
-# NEWLY ADDED: 21
-# TOTAL: 215
+# NEWLY ADDED: 0
+# TOTAL: 214
 
 DOMAIN,crl.apple.com
 DOMAIN,ocsp.apple.com
@@ -165,7 +165,6 @@ DOMAIN-SUFFIX,starfieldtech.com
 DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
 DOMAIN-SUFFIX,steamcontent.com
 DOMAIN-SUFFIX,steampipe.akamaized.net
-DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net
 DOMAIN-SUFFIX,tailscale.com
 DOMAIN-SUFFIX,talkingdata.com
 DOMAIN-SUFFIX,tegrazone.co
