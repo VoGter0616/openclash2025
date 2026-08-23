@@ -34,8 +34,3 @@ DOMAIN-SUFFIX,onedrive.live.com
 # ==================== 7. 其他特殊与强校验域名 ====================
 DOMAIN-SUFFIX,7pzzv.us
 
-# ==================== 8. Telegram 核心数据段 (漏网之鱼 CIDR) ====================
-GEOIP,telegram,no-resolve
-IP-CIDR,91.108.0.0/16,no-resolve
-IP-CIDR,149.154.160.0/20,no-resolve
-IP-CIDR,194.221.250.0/24,no-resolve
