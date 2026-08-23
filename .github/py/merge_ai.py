@@ -2,14 +2,25 @@ import os
 from datetime import datetime, timezone, timedelta
 import requests
 
-# AI规则源地址
+# AI规则源地址（补充了 Claude 与 Perplexity 专项规则）
 ai_urls = [
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Anthropic/Anthropic.list",
+    "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/perplexity.list",
 ]
 
+# 有效规则前缀白名单（确保滤除 YAML 声明、注释与非法行）
+VALID_PREFIXES = (
+    "DOMAIN",
+    "DOMAIN-SUFFIX",
+    "DOMAIN-KEYWORD",
+    "IP-CIDR",
+    "IP-CIDR6",
+    "PROCESS-NAME",
+)
 
 def get_beijing_time():
     """获取当前的北京时间字符串 (UTC+8)"""
@@ -17,9 +28,14 @@ def get_beijing_time():
     beijing_now = utc_now.astimezone(timezone(timedelta(hours=8)))
     return beijing_now.strftime("%Y-%m-%d %H:%M:%S")
 
+def is_valid_rule(line):
+    """判断当前行是否为标准 Clash 规则字符串"""
+    line = line.strip()
+    if not line or line.startswith(("#", ";", "payload:", "-")):
+        return False
+    return line.startswith(VALID_PREFIXES)
 
 def merge_ai_rules():
-    # 默认输出目录已更改为 rule/Merged
     output_dir = "rule/Merged"
     output_filename = "AI_Merged.list"
     output_path = os.path.join(output_dir, output_filename)
@@ -31,7 +47,10 @@ def merge_ai_rules():
             with open(output_path, "r", encoding="utf-8") as f:
                 for line in f.readlines():
                     line = line.strip()
-                    if line and not line.startswith(("#", ";")):
+                    # 兼容可能带有 "- " 缩进的规则提取
+                    if line.startswith("- "):
+                        line = line[2:].strip()
+                    if is_valid_rule(line):
                         old_rules.add(line)
         except Exception as e:
             print(f"读取旧文件失败或旧文件不存在: {e}")
@@ -44,7 +63,7 @@ def merge_ai_rules():
             if response.status_code == 200:
                 for line in response.text.splitlines():
                     line = line.strip()
-                    if line and not line.startswith(("#", ";")):
+                    if is_valid_rule(line):
                         new_rules.add(line)
         except Exception as e:
             print(f"Error fetching {url}: {e}")
@@ -74,11 +93,11 @@ def merge_ai_rules():
     total_count = len(new_rules)
     updated_at = get_beijing_time()
 
-    # 5. 确保目录存在
+    # 5. 确保输出目录存在
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
 
-    # 6. 写入文件（头部全为纯数字计数）
+    # 6. 写入标准 Clash Classic 规则文件
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(f"# {output_filename.split('.')[0]}\n")
         f.write(f"# UPDATED: {updated_at} (UTC+8)\n")
@@ -92,8 +111,9 @@ def merge_ai_rules():
         f.write(f"# NEWLY ADDED: {added_count}\n")
         f.write(f"# TOTAL: {total_count}\n\n")
 
-        # 写入排序后的具体规则列表
-        f.write("\n".join(sorted(new_rules)))
+        # 写入具体规则列表（兼容Subconverter与Clash Provider）
+        for rule in sorted(new_rules):
+            f.write(f"{rule}\n")
 
     # 控制台日志
     print(
@@ -102,7 +122,6 @@ def merge_ai_rules():
         f"更新时间: {updated_at}\n"
         f"当前总计: {total_count} 条 | 相比上次新增: {added_count} 条"
     )
-
 
 if __name__ == "__main__":
     merge_ai_rules()
