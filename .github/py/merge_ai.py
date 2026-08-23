@@ -2,17 +2,25 @@ import os
 from datetime import datetime, timezone, timedelta
 import requests
 
-# AI规则源地址（补充了 Claude 与 Perplexity 专项规则）
+# 稳定的远程 AI 规则源地址
 ai_urls = [
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Anthropic/Anthropic.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
-    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/perplexity.list",
 ]
 
-# 有效规则前缀白名单（确保滤除 YAML 声明、注释与非法行）
+# 本地补丁域名（包含 Perplexity 等未单独建库的 AI 域名，自动转化为 DOMAIN-SUFFIX）
+manual_ai_domains = [
+    "+.perplexity.ai",
+    "+.pplx.ai",
+    "+.labs.perplexity.ai",
+    "+.computer.perplexity.ai",
+    "+.poe.com",            # Poe 聚合 AI
+    "+.openrouter.ai",     # OpenRouter API
+]
+
 VALID_PREFIXES = (
     "DOMAIN",
     "DOMAIN-SUFFIX",
@@ -28,50 +36,60 @@ def get_beijing_time():
     beijing_now = utc_now.astimezone(timezone(timedelta(hours=8)))
     return beijing_now.strftime("%Y-%m-%d %H:%M:%S")
 
-def is_valid_rule(line):
-    """判断当前行是否为标准 Clash 规则字符串"""
+def parse_rule_line(line):
+    """提取并清洗行字符，自动将 +.domain 转化为 DOMAIN-SUFFIX,domain"""
     line = line.strip()
     if not line or line.startswith(("#", ";", "payload:", "-")):
-        return False
-    return line.startswith(VALID_PREFIXES)
+        return None
+    
+    if line.startswith("+."):
+        domain = line[2:].strip()
+        return f"DOMAIN-SUFFIX,{domain}"
+    
+    if line.startswith(VALID_PREFIXES):
+        return line
+        
+    return None
 
 def merge_ai_rules():
     output_dir = "rule/Merged"
     output_filename = "AI_Merged.list"
     output_path = os.path.join(output_dir, output_filename)
 
-    # 1. 读取旧文件用于比对新增数量
+    # 1. 读取旧文件用于增量比对
     old_rules = set()
     if os.path.exists(output_path):
         try:
             with open(output_path, "r", encoding="utf-8") as f:
                 for line in f.readlines():
-                    line = line.strip()
-                    # 兼容可能带有 "- " 缩进的规则提取
-                    if line.startswith("- "):
-                        line = line[2:].strip()
-                    if is_valid_rule(line):
-                        old_rules.add(line)
+                    rule = parse_rule_line(line)
+                    if rule:
+                        old_rules.add(rule)
         except Exception as e:
-            print(f"读取旧文件失败或旧文件不存在: {e}")
+            print(f"读取旧文件失败: {e}")
 
-    # 2. 抓取最新规则
+    # 2. 抓取最新远程规则
     new_rules = set()
     for url in ai_urls:
         try:
             response = requests.get(url, timeout=15)
             if response.status_code == 200:
                 for line in response.text.splitlines():
-                    line = line.strip()
-                    if is_valid_rule(line):
-                        new_rules.add(line)
+                    rule = parse_rule_line(line)
+                    if rule:
+                        new_rules.add(rule)
         except Exception as e:
             print(f"Error fetching {url}: {e}")
 
-    # 3. 计算新增规则的数量
+    # 3. 追加本地 Perplexity 等补丁域名
+    for raw_domain in manual_ai_domains:
+        rule = parse_rule_line(raw_domain)
+        if rule:
+            new_rules.add(rule)
+
     added_count = len(new_rules - old_rules)
 
-    # 4. 统计各类规则数量
+    # 4. 统计类型数量
     stats = {
         "DOMAIN": 0,
         "DOMAIN-KEYWORD": 0,
@@ -93,11 +111,10 @@ def merge_ai_rules():
     total_count = len(new_rules)
     updated_at = get_beijing_time()
 
-    # 5. 确保输出目录存在
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
 
-    # 6. 写入标准 Clash Classic 规则文件
+    # 5. 写入规则列表文件
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(f"# {output_filename.split('.')[0]}\n")
         f.write(f"# UPDATED: {updated_at} (UTC+8)\n")
@@ -111,11 +128,9 @@ def merge_ai_rules():
         f.write(f"# NEWLY ADDED: {added_count}\n")
         f.write(f"# TOTAL: {total_count}\n\n")
 
-        # 写入具体规则列表（兼容Subconverter与Clash Provider）
         for rule in sorted(new_rules):
             f.write(f"{rule}\n")
 
-    # 控制台日志
     print(
         f"AI规则合并完成！\n"
         f"保存位置: {output_path}\n"
