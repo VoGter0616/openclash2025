@@ -121,4 +121,6 @@ DOMAIN-SUFFIX,agorartc.com
 DOMAIN-SUFFIX,netease.im
 DOMAIN-SUFFIX,rongcloud.cn
 
-# ==================== 13. 其他 ====================
+# ==================== 13. P2P 联机与 NAT 穿透 (STUN 协议) ====================
+DOMAIN-SUFFIX,stun.playstation.net
+DOMAIN-KEYWORD,stun
