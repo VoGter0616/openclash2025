@@ -8,6 +8,7 @@
 | :--- | :--- |
 | [/.github](./.github) | 自动化脚本及工具。 |
 | [/rule](./rule) | 规则集。 |
+| [Clash_IPLC_VIP.ini](./cfg/Clash_IPLC_VIP.ini) | OpenClash自定义转换文件，机场IPLC.PLUS专用。 |
 | [Clash_custom.ini](./cfg/Clash_custom.ini) | OpenClash自定义转换文件。 |
 | [Clash_test01.ini](./cfg/Clash_test01.ini) | OpenClash转换前测试文件。 |
 | [Clash_Verge.ini](./cfg/Clash_Verge.ini) | Clash Verge自定义转换文件。 |
