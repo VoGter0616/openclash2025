@@ -2,16 +2,23 @@ import os
 from datetime import datetime, timezone, timedelta
 import requests
 
-# CDN规则源地址
+# CDN/直连加速规则源地址
 cdn_urls = [
     "https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/rule/Clash/BitComet_CDN.list",
     "https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/rule/Clash/Steam_CDN.list",
-    "https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/rule/Clash/Apple_MS_Direct.list",
-    "https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/rule/Clash/Microsoft_CN.list",
     "https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/rule/Clash/Direct.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Nvidia/Nvidia.list",
 ]
 
+# 有效规则前缀白名单
+VALID_PREFIXES = (
+    "DOMAIN",
+    "DOMAIN-SUFFIX",
+    "DOMAIN-KEYWORD",
+    "IP-CIDR",
+    "IP-CIDR6",
+    "PROCESS-NAME",
+)
 
 def get_beijing_time():
     """获取当前的北京时间字符串 (UTC+8)"""
@@ -19,20 +26,35 @@ def get_beijing_time():
     beijing_now = utc_now.astimezone(timezone(timedelta(hours=8)))
     return beijing_now.strftime("%Y-%m-%d %H:%M:%S")
 
+def parse_rule_line(line):
+    """清洗提取行内容，支持将 +.domain 转义为 DOMAIN-SUFFIX"""
+    line = line.strip()
+    if not line or line.startswith(("#", ";", "payload:", "-")):
+        return None
+    
+    if line.startswith("+."):
+        domain = line[2:].strip()
+        return f"DOMAIN-SUFFIX,{domain}"
+    
+    if line.startswith(VALID_PREFIXES):
+        return line
+        
+    return None
 
 def merge_cdn_rules():
     output_dir = "rule/Merged"
-    output_path = os.path.join(output_dir, "CDN_Merged.list")
+    output_filename = "CDN_Merged.list"
+    output_path = os.path.join(output_dir, output_filename)
 
-    # 1. 读取旧文件用于比对新增数量
+    # 1. 读取旧文件用于增量比对
     old_rules = set()
     if os.path.exists(output_path):
         try:
             with open(output_path, "r", encoding="utf-8") as f:
                 for line in f.readlines():
-                    line = line.strip()
-                    if line and not line.startswith(("#", ";")):
-                        old_rules.add(line)
+                    rule = parse_rule_line(line)
+                    if rule:
+                        old_rules.add(rule)
         except Exception as e:
             print(f"读取旧文件失败或旧文件不存在: {e}")
 
@@ -43,9 +65,9 @@ def merge_cdn_rules():
             response = requests.get(url, timeout=15)
             if response.status_code == 200:
                 for line in response.text.splitlines():
-                    line = line.strip()
-                    if line and not line.startswith(("#", ";")):
-                        new_rules.add(line)
+                    rule = parse_rule_line(line)
+                    if rule:
+                        new_rules.add(rule)
         except Exception as e:
             print(f"Error fetching {url}: {e}")
 
@@ -78,9 +100,9 @@ def merge_cdn_rules():
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
 
-    # 6. 写入文件（头部全为纯数字计数）
+    # 6. 写入文件
     with open(output_path, "w", encoding="utf-8") as f:
-        f.write("# CDN_Merged_List\n")
+        f.write(f"# {output_filename.split('.')[0]}\n")
         f.write(f"# UPDATED: {updated_at} (UTC+8)\n")
         f.write(f"# DOMAIN: {stats['DOMAIN']}\n")
         f.write(f"# DOMAIN-KEYWORD: {stats['DOMAIN-KEYWORD']}\n")
@@ -92,16 +114,17 @@ def merge_cdn_rules():
         f.write(f"# NEWLY ADDED: {added_count}\n")
         f.write(f"# TOTAL: {total_count}\n\n")
 
-        # 写入排序后的具体规则列表
-        f.write("\n".join(sorted(new_rules)))
+        # 写入排序后的规则列表
+        for rule in sorted(new_rules):
+            f.write(f"{rule}\n")
 
     # 控制台日志
     print(
-        f"CDN规则合并完成！\n"
+        f"CDN直连规则合并完成！\n"
+        f"保存位置: {output_path}\n"
         f"更新时间: {updated_at}\n"
         f"当前总计: {total_count} 条 | 相比上次新增: {added_count} 条"
     )
-
 
 if __name__ == "__main__":
     merge_cdn_rules()
