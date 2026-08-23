@@ -1,13 +1,13 @@
-# Social_Merged_List
-# UPDATED: 2026-08-23 12:39:19 (UTC+8)
+# Social_Merged
+# UPDATED: 2026-08-23 13:26:20 (UTC+8)
 # DOMAIN: 5
 # DOMAIN-KEYWORD: 7
-# DOMAIN-SUFFIX: 623
+# DOMAIN-SUFFIX: 631
 # IP-CIDR: 48
-# IP-CIDR6: 3
-# OTHER: 15
-# NEWLY ADDED: 0
-# TOTAL: 701
+# IP-CIDR6: 4
+# OTHER: 9
+# NEWLY ADDED: 9
+# TOTAL: 704
 
 DOMAIN,api.imem.app
 DOMAIN,api.nicegram.app
@@ -567,6 +567,14 @@ DOMAIN-SUFFIX,react.com
 DOMAIN-SUFFIX,reactjs.com
 DOMAIN-SUFFIX,reactjs.org
 DOMAIN-SUFFIX,recoiljs.org
+DOMAIN-SUFFIX,redd.it
+DOMAIN-SUFFIX,reddit.com
+DOMAIN-SUFFIX,redditmail.com
+DOMAIN-SUFFIX,redditmedia.com
+DOMAIN-SUFFIX,redditstatic.com
+DOMAIN-SUFFIX,reddituploads.com
+DOMAIN-SUFFIX,reddituploads.com.cdn-cf.behance.net
+DOMAIN-SUFFIX,reddituploads.com.cdn-cf.dropbox.com
 DOMAIN-SUFFIX,redkix.com
 DOMAIN-SUFFIX,rocksdb.com
 DOMAIN-SUFFIX,rocksdb.net
@@ -644,12 +652,6 @@ DOMAIN-SUFFIX,x.com
 DOMAIN-SUFFIX,yogalayout.com
 DOMAIN-SUFFIX,zuckerberg.com
 DOMAIN-SUFFIX,zuckerberg.net
-IP-ASN,211157,no-resolve
-IP-ASN,32934,no-resolve
-IP-ASN,44907,no-resolve
-IP-ASN,59930,no-resolve
-IP-ASN,62014,no-resolve
-IP-ASN,62041,no-resolve
 IP-CIDR,108.168.176.192/26,no-resolve
 IP-CIDR,108.168.177.0/27,no-resolve
 IP-CIDR,108.168.180.96/27,no-resolve
@@ -700,6 +702,7 @@ IP-CIDR,91.108.0.0/16,no-resolve
 IP-CIDR,95.161.64.0/20,no-resolve
 IP-CIDR6,2001:67c:4e8::/48,no-resolve
 IP-CIDR6,2001:b28:f23c::/47,no-resolve
+IP-CIDR6,2001:b28:f23f::/48,no-resolve
 IP-CIDR6,2a0a:f280::/29,no-resolve
 PROCESS-NAME,Telegram
 PROCESS-NAME,Telegram Lite
