@@ -1,13 +1,12 @@
 # AI_Merged
-# UPDATED: 2026-08-23 12:31:09 (UTC+8)
-# DOMAIN: 25
+# UPDATED: 2026-08-23 13:23:25 (UTC+8)
+# DOMAIN: 26
 # DOMAIN-KEYWORD: 5
-# DOMAIN-SUFFIX: 37
+# DOMAIN-SUFFIX: 43
 # IP-CIDR: 2
 # IP-CIDR6: 0
-# OTHER: 2
-# NEWLY ADDED: 0
-# TOTAL: 71
+# NEWLY ADDED: 7
+# TOTAL: 76
 
 DOMAIN,ai.google.dev
 DOMAIN,alkalimakersuite-pa.clients6.google.com
@@ -15,6 +14,7 @@ DOMAIN,api.msn.com
 DOMAIN,api.statsig.com
 DOMAIN,assets.msn.com
 DOMAIN,browser-intake-datadoghq.com
+DOMAIN,cdn.usefathom.com
 DOMAIN,chat.openai.com.cdn.cloudflare.net
 DOMAIN,copilot.microsoft.com
 DOMAIN,gateway.bingviz.microsoft.net
@@ -53,6 +53,7 @@ DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,chatgpt.livekit.cloud
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,client-api.arkoselabs.com
+DOMAIN-SUFFIX,computer.perplexity.ai
 DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,deepmind.google
 DOMAIN-SUFFIX,edgeservices.bing.com
@@ -64,6 +65,7 @@ DOMAIN-SUFFIX,host.livekit.cloud
 DOMAIN-SUFFIX,identrust.com
 DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,labs.perplexity.ai
 DOMAIN-SUFFIX,launchdarkly.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
@@ -71,12 +73,14 @@ DOMAIN-SUFFIX,observeit.net
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,openaicom.imgix.net
+DOMAIN-SUFFIX,openrouter.ai
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,poe.com
+DOMAIN-SUFFIX,pplx.ai
 DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
 DOMAIN-SUFFIX,segment.io
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,turn.livekit.cloud
-IP-ASN,14061,no-resolve
-IP-ASN,20473,no-resolve
 IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
