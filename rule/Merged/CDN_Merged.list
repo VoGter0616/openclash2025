@@ -1,12 +1,12 @@
 # CDN_Merged
-# UPDATED: 2026-08-27 23:01:33 (UTC+8)
+# UPDATED: 2026-08-28 00:55:30 (UTC+8)
 # DOMAIN: 6
 # DOMAIN-KEYWORD: 13
-# DOMAIN-SUFFIX: 164
+# DOMAIN-SUFFIX: 178
 # IP-CIDR: 33
 # IP-CIDR6: 0
-# NEWLY ADDED: 0
-# TOTAL: 216
+# NEWLY ADDED: 14
+# TOTAL: 230
 
 DOMAIN,crl.apple.com
 DOMAIN,ocsp.apple.com
@@ -49,14 +49,25 @@ DOMAIN-SUFFIX,content-system.net
 DOMAIN-SUFFIX,cs.steampowered.com
 DOMAIN-SUFFIX,ctobsnssdk.com
 DOMAIN-SUFFIX,digicert.com
+DOMAIN-SUFFIX,diskstation.me
 DOMAIN-SUFFIX,docker.1panel.live
 DOMAIN-SUFFIX,docker.kejilion.pro
 DOMAIN-SUFFIX,docker.unsee.tech
 DOMAIN-SUFFIX,dockerpull.org
 DOMAIN-SUFFIX,dockerpull.pw
+DOMAIN-SUFFIX,dscloud.biz
+DOMAIN-SUFFIX,dscloud.com
+DOMAIN-SUFFIX,dscloud.me
+DOMAIN-SUFFIX,dscloud.mobi
+DOMAIN-SUFFIX,dsmynas.com
+DOMAIN-SUFFIX,dsmynas.net
+DOMAIN-SUFFIX,dsmynas.org
 DOMAIN-SUFFIX,emby.yun
 DOMAIN-SUFFIX,entrust.com
 DOMAIN-SUFFIX,entrust.net
+DOMAIN-SUFFIX,familyds.com
+DOMAIN-SUFFIX,familyds.net
+DOMAIN-SUFFIX,familyds.org
 DOMAIN-SUFFIX,fancydsp.com
 DOMAIN-SUFFIX,gdt.qq.com
 DOMAIN-SUFFIX,geforce.cn
@@ -81,6 +92,7 @@ DOMAIN-SUFFIX,growingio.com
 DOMAIN-SUFFIX,hdchina.org
 DOMAIN-SUFFIX,hdsky.me
 DOMAIN-SUFFIX,hf-mirror.com
+DOMAIN-SUFFIX,i234.me
 DOMAIN-SUFFIX,identitytrust.de
 DOMAIN-SUFFIX,igexin.com
 DOMAIN-SUFFIX,ironsource.com
@@ -96,6 +108,7 @@ DOMAIN-SUFFIX,m-team.io
 DOMAIN-SUFFIX,miaozhen.com
 DOMAIN-SUFFIX,mipush.com
 DOMAIN-SUFFIX,miraiemby.com
+DOMAIN-SUFFIX,myds.me
 DOMAIN-SUFFIX,netease.im
 DOMAIN-SUFFIX,nexusphp.org
 DOMAIN-SUFFIX,nvda.d2.sc.omtrdc.net
@@ -167,6 +180,7 @@ DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
 DOMAIN-SUFFIX,steamcontent.com
 DOMAIN-SUFFIX,steampipe.akamaized.net
 DOMAIN-SUFFIX,stun.playstation.net
+DOMAIN-SUFFIX,synology.me
 DOMAIN-SUFFIX,tailscale.com
 DOMAIN-SUFFIX,talkingdata.com
 DOMAIN-SUFFIX,tegrazone.co
