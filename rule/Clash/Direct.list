@@ -9,20 +9,6 @@ DOMAIN-SUFFIX,tailscale.com
 DOMAIN-SUFFIX,terra-master.com
 DOMAIN-SUFFIX,tnas.link
 DOMAIN-SUFFIX,tnas.online
-DOMAIN-SUFFIX,synology.me
-DOMAIN-SUFFIX,diskstation.me
-DOMAIN-SUFFIX,i234.me
-DOMAIN-SUFFIX,myds.me
-DOMAIN-SUFFIX,dscloud.biz
-DOMAIN-SUFFIX,dscloud.me
-DOMAIN-SUFFIX,dscloud.com
-DOMAIN-SUFFIX,dscloud.mobi
-DOMAIN-SUFFIX,dsmynas.com
-DOMAIN-SUFFIX,dsmynas.net
-DOMAIN-SUFFIX,dsmynas.org
-DOMAIN-SUFFIX,familyds.com
-DOMAIN-SUFFIX,familyds.net
-DOMAIN-SUFFIX,familyds.org
 
 # ==================== 2. PT 站防风控防线 ====================
 DOMAIN-SUFFIX,m-team.cc
