@@ -402,12 +402,12 @@ shark007.net
 | --- | --- | --- | --- | --- |
 | nameserver | 223.5.5.5 | UDP | 启用 | |
 | nameserver | 119.29.29.29 | UDP | 启用 | |
-| nameserver | dns.alidns.com/dns-query | HTTPS | 启用 | |
-| fallback | 1.1.1.1/dns-query | HTTPS | 启用 | |
-| fallback | dns.google/dns-query | HTTPS | 启用 | |
-| default- nameserver | 223.5.5.5 | UDP | 启用 | 编辑-勾选节点域名解析 |
-| default- nameserver | 119.29.29.29 | UDP | 启用 | 编辑-勾选节点域名解析 |
-| default- nameserver | 2400:3200::1 | UDP | 启用 | |
+| nameserver | 专用dns,用来解析新协议 | HTTPS | 启用 | 编辑-勾选节点域名解析 |
+| nameserver | 专用dns,用来解析新协议 | HTTPS | 启用 | 编辑-勾选节点域名解析 |
+| fallback | 1.1.1.1/dns-query#PROXY | HTTPS | 启用 | |
+| fallback | dns.google/dns-query#PROXY | HTTPS | 启用 | |
+| default- nameserver | 223.5.5.5 | UDP | 启用 |  |
+| default- nameserver | 119.29.29.29 | UDP | 启用 |  |
 
 ### Meta设置
 
@@ -553,6 +553,6 @@ sniffer:
 | 在线订阅转换 | √ |
 | 订阅转换服务地址 | （自己的后端或者api.wcc.best） |
 | 订阅转换模板 | 自定义模板 |
-| 自定义模板地址 | https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/Clash_test01.ini |
+| 自定义模板地址 | https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/cfg/Clash_test01.ini |
 
 其他参数根据自身情况设置。
