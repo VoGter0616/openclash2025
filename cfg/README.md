@@ -128,57 +128,144 @@ behance.net
 - Fake-IP 地址范围 (IPv4 Cidr)：198.18.0.1/16
 - Fake-IP 持久化
 - Fake-IP-Filter
+
+```
+fallback-filter:
+  geoip: true
+  geoip-code: CN
+  ipcidr:
+    - 10.0.0.0/8
+    - 100.64.0.0/10
+    - 127.0.0.0/8
+    - 169.254.0.0/16
+    - 172.16.0.0/12
+    - 192.168.0.0/16
+    - 224.0.0.0/4
+  domain:
+    - "+.google.com"
+    - "+.googleapis.com"
+    - "+.gstatic.com"
+    - "+.youtube.com"
+    - "+.googlevideo.com"
+    - "+.facebook.com"
+    - "+.instagram.com"
+    - "+.x.com"
+    - "+.twitter.com"
+    - "+.telegram.org"
+    - "+.openai.com"
+    - "+.chatgpt.com"
+    - "+.anthropic.com"
+    - "+.claude.ai"
+    - "+.github.com"
+    - "+.browserleaks.com"
+    - "+.pool.ntp.org"
+```
+
 - Fake-IP-Filter-Mode：黑名单模式
 
 ```
+*.somethingstranges.com
 *.lan
+*.localdomain
+*.example
+*.invalid
+*.localhost
+*.test
 *.local
-+.localdomain
-localhost.ptlogin2.qq.com
-time.apple.com
+*.home.arpa
+*.direct
+cable.auth.com
+network-test.debian.org
+detectportal.firefox.com
+resolver1.opendns.com
+global.turn.twilio.com
+global.stun.twilio.com
+app.yinxiang.com
+injections.adguard.org
+localhost.*.weixin.qq.com
+*.blzstatic.cn
+*.cmpassport.com
+id6.me
+open.e.189.cn
+opencloud.wostore.cn
+id.mail.wo.cn
+mdn.open.wo.cn
+hmrz.wo.cn
+nishub1.10010.com
+enrichgw.10010.com
+*.wosms.cn
+*.jegotrip.com.cn
+*.icitymobile.mobi
+*.pingan.com.cn
+*.cmbchina.com
+*.10099.com.cn
+*.microdone.cn
++.msftconnecttest.com
++.msftncsi.com
+time.*.com
+time.*.gov
+time.*.edu.cn
+time.*.apple.com
+time1.*.com
+time2.*.com
+time3.*.com
+time4.*.com
+time5.*.com
+time6.*.com
+time7.*.com
+ntp.*.com
+ntp1.*.com
+ntp2.*.com
+ntp3.*.com
+ntp4.*.com
+ntp5.*.com
+ntp6.*.com
+ntp7.*.com
++.pool.ntp.org
+*.time.edu.cn
+*.ntp.org.cn
 time.android.com
 time.windows.com
-+.ntp.org.cn
-+.pool.ntp.org
-+.xn--ngstr-lra8j.com
+music.163.com
+*.music.163.com
+*.126.net
+musicapi.taihe.com
+music.taihe.com
+songsearch.kugou.com
+trackercdn.kugou.com
+*.kuwo.cn
+api-jooxtt.sanook.com
+api.joox.com
+joox.com
+y.qq.com
+*.y.qq.com
+streamoc.music.tc.qq.com
+mobileoc.music.tc.qq.com
+isure.stream.qqmusic.qq.com
+dl.stream.qqmusic.qq.com
+aqqmusic.tc.qq.com
+amobile.music.tc.qq.com
+*.xiami.com
+*.music.migu.cn
+music.migu.cn
+localhost.ptlogin2.qq.com
+localhost.sec.qq.com
 +.qq.com
 +.tencent.com
 +.wechat.com
 +.servicewechat.com
++.weixin.qq.com
++.qqmail.com
 +.gtimg.com
-+.gtimg.cn
 +.qpic.cn
 +.qlogo.cn
 +.tenpay.com
 +.myqcloud.com
 +.qcloud.com
-+.douyin.com
-+.douyincdn.com
-+.douyinpic.com
-+.douyinstatic.com
-+.douyinliving.com
-+.iesdouyin.com
-+.douyinvod.com
-+.douyinvideo.net
-+.amemv.com
-+.snssdk.com
-+.byteimg.com
-+.bytecdn.cn
-+.ibytedtos.com
-+.zijieapi.com
-+.pstatp.com
-+.toutiao.com
-+.toutiaovod.com
-+.bytedance.net
-+.xiaohongshu.com
-+.xhscdn.com
-+.xhscdn.net
-+.xhslink.com
-+.xhsimg.com
-dlg.io.mi.com
++.qcloudcdn.com
++.dnsv1.com
 +.taobao.com
 +.tmall.com
-+.tbcdn.cn
 +.alicdn.com
 +.alibaba.com
 +.alibabausercontent.com
@@ -192,47 +279,132 @@ dlg.io.mi.com
 +.cainiao.com
 +.amap.com
 +.autonavi.com
-fhnfile.oss-cn-shenzhen.aliyuncs.com
++.fhnfile.oss-cn-shenzhen.aliyuncs.com
++.kunlunca.com
++.kunlungr.com
++.aliclouddns.com
++.baidu.com
++.shifen.com
++.bdstatic.com
++.bdydns.com
++.baidubce.com
++.bcebos.com
++.douyin.com
++.douyincdn.com
++.douyinpic.com
++.douyinstatic.com
++.douyinliving.com
++.iesdouyin.com
++.douyinvod.com
++.douyinvideo.net
++.amemv.com
++.snssdk.com
++.byteimg.com
++.ibytedtos.com
++.zijieapi.com
++.pstatp.com
++.toutiao.com
++.toutiaovod.com
++.bytedance.net
++.jd.com
++.jcloudimg.com
++.jd360.hk
++.360buyimg.com
++.jcloud.com
++.bilibili.com
++.bilicdn1.com
++.hdslb.com
++.163.com
++.126.com
++.netease.com
++.163jiasu.com
++.iqiyi.com
++.qy.net
++.iqiyipic.com
++.youku.com
++.ykimg.com
++.tudou.com
++.xiaohongshu.com
++.xhscdn.com
++.xhscdn.net
++.xhslink.com
++.xhsimg.com
++.pinduoduo.com
++.pinduoduo.net
++.yangkeduo.com
++.kuaishou.com
++.yximgs.com
++.ksapisrv.com
++.meituan.com
++.meituan.net
++.dianping.com
++.dpfile.com
++.zhihu.com
++.zhimg.com
++.sina.com.cn
++.weibo.com
+dlg.io.mi.com
 +.115.com
 +.115cdn.com
 +.115cdn.net
 +.115img.com
-+.116cd.cn
 +.116cd.com
 +.116cd.net
 +.anxia.com
 +.sq.cc
-```
-
-#### Nameserver-Policy
-
-```yaml
-    "geosite:private,cn,geolocation-cn,apple-cn,microsoft@cn,steam@cn": [223.5.5.5, 119.29.29.29]
-    "+.speedtest.net": [223.5.5.5, 119.29.29.29]
-    "+.ooklaserver.net": [223.5.5.5, 119.29.29.29]
-    "+.speed.cloudflare.com": [223.5.5.5, 119.29.29.29]
-    "+.measurementlab.net": [223.5.5.5, 119.29.29.29]
-    "+.microsoft.com": [223.5.5.5, 119.29.29.29]
-    "+.live.com": [223.5.5.5, 119.29.29.29]
-    "+.office.com": [223.5.5.5, 119.29.29.29]
-    "+.microsoftonline.com": [223.5.5.5, 119.29.29.29]
-    "+.sharepointonline.com": [223.5.5.5, 119.29.29.29]
-    "+.google.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "+.googleapis.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "+.googleapis.cn": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "+.gstatic.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "+.gvt1.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "+.gvt2.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "+.gvt3.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "+.googleusercontent.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "+.ggpht.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "+.android.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "+.xn--ngstr-lra8j.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "+.openai.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "+.chatgpt.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "+.anthropic.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "+.claude.ai": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "geosite:geolocation-!cn": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
++.xunlei.com
++.sandai.net
++.n0808.com
++.wscdns.com
++.chinanetcenter.com
++.ourglu.com
++.qingcdn.com
++.qiniu.com
++.qiniucdn.com
++.clouddn.com
++.ksyun.com
++.ksyuncs.com
++.360tpcdn.com
++.mi.com
++.xiaomi.com
++.miui.com
++.huawei.com
++.vmall.com
++.csdn.net
++.jianshu.com
++.sohu.com
++.sogou.com
++.cn
++.battlenet.com.cn
++.wotgame.cn
++.wggames.cn
++.wowsgame.cn
+mesu.apple.com
+swscan.apple.com
+swquery.apple.com
+swdownload.apple.com
+swcdn.apple.com
+swdist.apple.com
+lens.l.google.com
+stun.l.google.com
+na.b.g-tun.com
+stun.*.*
+stun.*.*.*
++.stun.*.*
++.stun.*.*.*
++.stun.*.*.*.*
++.stun.*.*.*.*.*
++.stun.playstation.net
+heartbeat.belkin.com
+*.linksys.com
+*.linksyssmartwifi.com
+*.router.asus.com
+local.adguard.org
++.pub.3gppnetwork.org
++.uu.163.com
+ps.res.netease.com
++.media.dssott.com
+shark007.net
 ```
 
 **设置自定义上游 DNS 服务器**（在上方设置中启用本功能后生效）：
@@ -241,12 +413,12 @@ fhnfile.oss-cn-shenzhen.aliyuncs.com
 | --- | --- | --- | --- | --- |
 | nameserver | 223.5.5.5 | UDP | 启用 | |
 | nameserver | 119.29.29.29 | UDP | 启用 | |
-| nameserver | dns.alidns.com/dns-query | HTTPS | 启用 | |
-| fallback | 1.1.1.1/dns-query | HTTPS | 启用 | |
-| fallback | dns.google/dns-query | HTTPS | 启用 | |
-| default- nameserver | 223.5.5.5 | UDP | 启用 | 编辑-勾选节点域名解析 |
-| default- nameserver | 119.29.29.29 | UDP | 启用 | 编辑-勾选节点域名解析 |
-| default- nameserver | 2400:3200::1 | UDP | 启用 | |
+| nameserver | 专用dns,用来解析新协议 | HTTPS | 启用 | 编辑-勾选节点域名解析 |
+| nameserver | 专用dns,用来解析新协议 | HTTPS | 启用 | 编辑-勾选节点域名解析 |
+| fallback | 1.1.1.1/dns-query#PROXY | HTTPS | 启用 | |
+| fallback | dns.google/dns-query#PROXY | HTTPS | 启用 | |
+| default- nameserver | 223.5.5.5 | UDP | 启用 |  |
+| default- nameserver | 119.29.29.29 | UDP | 启用 |  |
 
 ### Meta设置
 
@@ -263,106 +435,96 @@ fhnfile.oss-cn-shenzhen.aliyuncs.com
 ```yaml
 # 嗅探域名 可选配置
 sniffer:
-  ## 对 redir-host 类型识别的流量进行强制嗅探
-  ## 如：Tun、Redir 和 TProxy 并 DNS 为 redir-host 皆属于
   force-dns-mapping: true
-  ## 对所有未获取到域名的流量进行强制嗅探
   parse-pure-ip: true
-  # 是否使用嗅探结果作为实际访问，默认 true
-  # 全局配置，优先级低于 sniffer.sniff 实际配置
   override-destination: true
-  sniff: # TLS 和 QUIC 默认如果不配置 ports 默认嗅探 443
+  sniff:
     QUIC:
-      ports: [ 443 ]
-
+      ports: [443]
     TLS:
       ports: [443, 8443]
-
-    # 默认嗅探 80
     HTTP:
       ports: [80, 8080-8880]
-      # 是否使用嗅探结果作为实际访问
       override-destination: true
   force-domain:
-#  - '+' # Force all domain to use sniffer
-  - "+.netflix.com"
-  - "+.nflxvideo.net"
-  - "+.amazonaws.com"
-  - "+.media.dssott.com"
-  ## 对嗅探结果进行跳过
+    - "+.netflix.com"
+    - "+.nflxvideo.net"
+    - "+.amazonaws.com"
+    - "+.media.dssott.com"
+    - "+.google.com"
+    - "+.googleapis.com"
+    - "+.youtube.com"
+    - "+.googlevideo.com"
+    - "+.facebook.com"
+    - "+.instagram.com"
+    - "+.twitter.com"
+    - "+.telegram.org"
+    - "+.openai.com"
+    - "+.chatgpt.com"
   skip-domain:
-  - Mijia Cloud
-  - dlg.io.mi.com
-  - "+.push.apple.com"
-  # 腾讯/微信系
-  - "+.qq.com"
-  - "+.tencent.com"
-  - "+.wechat.com"
-  - "+.servicewechat.com"
-  - "+.gtimg.com"
-  - "+.gtimg.cn"
-  - "+.qpic.cn"
-  - "+.qlogo.cn"
-  - "+.tenpay.com"
-  - "+.myqcloud.com"
-  - "+.qcloud.com"
-  # 字节跳动/抖音系
-  - "+.douyin.com"
-  - "+.douyincdn.com"
-  - "+.douyinpic.com"
-  - "+.douyinstatic.com"
-  - "+.douyinliving.com"
-  - "+.iesdouyin.com"
-  - "+.douyinvod.com"
-  - "+.douyinvideo.net"
-  - "+.amemv.com"
-  - "+.snssdk.com"
-  - "+.byteimg.com"
-  - "+.bytecdn.cn"
-  - "+.ibytedtos.com"
-  - "+.zijieapi.com"
-  - "+.pstatp.com"
-  - "+.toutiao.com"
-  - "+.toutiaovod.com"
-  - "+.bytedance.net"
-  # 小红书
-  - "+.xiaohongshu.com"
-  - "+.xhscdn.com"
-  - "+.xhscdn.net"
-  - "+.xhslink.com"
-  - "+.xhsimg.com"
-  # 阿里/淘宝/高德系
-  - "+.taobao.com"
-  - "+.tmall.com"
-  - "+.tbcdn.cn"
-  - "+.alicdn.com"
-  - "+.alibaba.com"
-  - "+.alibabausercontent.com"
-  - "+.alipay.com"
-  - "+.alipayobjects.com"
-  - "+.goofish.com"
-  - "+.idlefish.com"
-  - "+.aliyun.com"
-  - "+.aliyuncs.com"
-  - "+.mmstat.com"
-  - "+.cainiao.com"
-  - "+.amap.com"
-  - "+.autonavi.com"
-  - fhnfile.oss-cn-shenzhen.aliyuncs.com
-  # 115 网盘
-  - "+.115.com"
-  - "+.115cdn.com"
-  - "+.115cdn.net"
-  - "+.115img.com"
-  - "+.116cd.cn"
-  - "+.116cd.com"
-  - "+.116cd.net"
-  - "+.anxia.com"
-  - "+.sq.cc"
-  #- geosite:cn
-  # skip-src-address: # 对于来源ip跳过嗅探
+    # 腾讯/微信系（精简）
+    - "+.qq.com"
+    - "+.tencent.com"
+    - "+.wechat.com"
+    - "+.gtimg.com"
+    - "+.qpic.cn"
+    - "+.qlogo.cn"
+    - "+.myqcloud.com"
+    - "+.qcloud.com"
+    # 字节跳动/抖音系（精简）
+    - "+.douyin.com"
+    - "+.douyincdn.com"
+    - "+.douyinpic.com"
+    - "+.iesdouyin.com"
+    - "+.douyinvod.com"
+    - "+.amemv.com"
+    - "+.snssdk.com"
+    - "+.byteimg.com"
+    - "+.ibytedtos.com"
+    - "+.toutiao.com"
+    - "+.bytedance.net"
+    # 小红书
+    - "+.xiaohongshu.com"
+    - "+.xhscdn.com"
+    - "+.xhslink.com"
+    # 阿里系（精简）
+    - "+.taobao.com"
+    - "+.tmall.com"
+    - "+.alicdn.com"
+    - "+.alibaba.com"
+    - "+.alipay.com"
+    - "+.aliyun.com"
+    - "+.aliyuncs.com"
+    - "+.amap.com"
+    # 115网盘
+    - "+.115.com"
+    - "+.115cdn.com"
+    - "+.115img.com"
+    - "+.116cd.com"
+    - "+.anxia.com"
+    - "+.sq.cc"
+    # 小米（新增）
+    - "+.mi.com"
+    - dlg.io.mi.com
+    # 苹果推送（保留）
+    - "+.push.apple.com"
+    # 国内大厂CDN（新增）
+    - "+.cn"
+    - "+.baidu.com"
+    - "+.bdstatic.com"
+    - "+.jd.com"
+    - "+.bilibili.com"
+    - "+.163.com"
+    - "+.youku.com"
+    - "+.meituan.com"
+    - "+.zhihu.com"
+    - "+.weibo.com"
+    - "+.sina.com.cn"
+    # 使用 geosite:cn 替代大量重复条目（启用此规则可大幅精简列表）
+    - "geosite:cn"
+  # skip-src-address:
   #   - 192.168.0.3/32
-  # skip-dst-address: # 对于目标ip跳过嗅探
+  # skip-dst-address:
   #   - 192.168.0.3/32
 ```
 
@@ -377,11 +539,20 @@ sniffer:
 - 自定义规则
 
 ```
-# 1.NTP 端口强制直连
+# 1. NTP 端口强制直连（最高优先级）
 - DST-PORT,123,DIRECT
 
-# 2. 禁用阿里系 UDP 443 端口 (HTTP/3 / QUIC)，强制回退到 TCP 提升加载稳定性
+# 2. 禁用阿里系 UDP 443 端口 (HTTP/3 / QUIC)
 - AND,((NETWORK,UDP),(DST-PORT,443),(GEOSITE,alibaba)),REJECT
+
+# 3. 禁用腾讯系 UDP 443 端口
+- AND,((NETWORK,UDP),(DST-PORT,443),(GEOSITE,tencent)),REJECT
+
+# 4. 禁用字节跳动系 UDP 443 端口
+- AND,((NETWORK,UDP),(DST-PORT,443),(GEOSITE,bytedance)),REJECT
+
+# 5. 其他自定义规则...
+
 ```
 
 ## 配置订阅
@@ -393,9 +564,10 @@ sniffer:
 | 在线订阅转换 | √ |
 | 订阅转换服务地址 | （自己的后端或者api.wcc.best） |
 | 订阅转换模板 | 自定义模板 |
-| 自定义模板地址 | https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/Clash_test01.ini |
+| 自定义模板地址 | [https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/cfg/Clash_test01.ini](https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/cfg/Clash_test01.ini) |
 
 其他参数根据自身情况设置。
+
 
 
 
