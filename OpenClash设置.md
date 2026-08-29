@@ -541,7 +541,7 @@ sniffer:
 - AND,((NETWORK,UDP),(DST-PORT,443),(GEOSITE,bytedance)),REJECT
 
 # 5. 其他自定义规则...
-- DOMAIN-SUFFIX,vogter0616.myds.me,DIRECT
+
 ```
 
 ## 配置订阅
