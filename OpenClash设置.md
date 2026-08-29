@@ -440,7 +440,6 @@ sniffer:
     - "+.nflxvideo.net"
     - "+.amazonaws.com"
     - "+.media.dssott.com"
-    # 国际主流服务强制嗅探（新增）
     - "+.google.com"
     - "+.googleapis.com"
     - "+.youtube.com"
@@ -452,7 +451,6 @@ sniffer:
     - "+.openai.com"
     - "+.chatgpt.com"
   skip-domain:
-    # 已由 #LAN.txt 直连列表覆盖，此处仅保留必要的跳过项
     # 腾讯/微信系（精简）
     - "+.qq.com"
     - "+.tencent.com"
@@ -530,11 +528,20 @@ sniffer:
 - 自定义规则
 
 ```
-# 1.NTP 端口强制直连
+# 1. NTP 端口强制直连（最高优先级）
 - DST-PORT,123,DIRECT
 
-# 2. 禁用阿里系 UDP 443 端口 (HTTP/3 / QUIC)，强制回退到 TCP 提升加载稳定性
+# 2. 禁用阿里系 UDP 443 端口 (HTTP/3 / QUIC)
 - AND,((NETWORK,UDP),(DST-PORT,443),(GEOSITE,alibaba)),REJECT
+
+# 3. 禁用腾讯系 UDP 443 端口
+- AND,((NETWORK,UDP),(DST-PORT,443),(GEOSITE,tencent)),REJECT
+
+# 4. 禁用字节跳动系 UDP 443 端口
+- AND,((NETWORK,UDP),(DST-PORT,443),(GEOSITE,bytedance)),REJECT
+
+# 5. 其他自定义规则...
+- DOMAIN-SUFFIX,vogter0616.myds.me,DIRECT
 ```
 
 ## 配置订阅
