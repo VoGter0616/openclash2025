@@ -117,57 +117,144 @@ behance.net
 - Fake-IP 地址范围 (IPv4 Cidr)：198.18.0.1/16
 - Fake-IP 持久化
 - Fake-IP-Filter
+
+```
+fallback-filter:
+  geoip: true
+  geoip-code: CN
+  ipcidr:
+    - 10.0.0.0/8
+    - 100.64.0.0/10
+    - 127.0.0.0/8
+    - 169.254.0.0/16
+    - 172.16.0.0/12
+    - 192.168.0.0/16
+    - 224.0.0.0/4
+  domain:
+    - "+.google.com"
+    - "+.googleapis.com"
+    - "+.gstatic.com"
+    - "+.youtube.com"
+    - "+.googlevideo.com"
+    - "+.facebook.com"
+    - "+.instagram.com"
+    - "+.x.com"
+    - "+.twitter.com"
+    - "+.telegram.org"
+    - "+.openai.com"
+    - "+.chatgpt.com"
+    - "+.anthropic.com"
+    - "+.claude.ai"
+    - "+.github.com"
+    - "+.browserleaks.com"
+    - "+.pool.ntp.org"
+```
+
 - Fake-IP-Filter-Mode：黑名单模式
 
 ```
+*.somethingstranges.com
 *.lan
+*.localdomain
+*.example
+*.invalid
+*.localhost
+*.test
 *.local
-+.localdomain
-localhost.ptlogin2.qq.com
-time.apple.com
+*.home.arpa
+*.direct
+cable.auth.com
+network-test.debian.org
+detectportal.firefox.com
+resolver1.opendns.com
+global.turn.twilio.com
+global.stun.twilio.com
+app.yinxiang.com
+injections.adguard.org
+localhost.*.weixin.qq.com
+*.blzstatic.cn
+*.cmpassport.com
+id6.me
+open.e.189.cn
+opencloud.wostore.cn
+id.mail.wo.cn
+mdn.open.wo.cn
+hmrz.wo.cn
+nishub1.10010.com
+enrichgw.10010.com
+*.wosms.cn
+*.jegotrip.com.cn
+*.icitymobile.mobi
+*.pingan.com.cn
+*.cmbchina.com
+*.10099.com.cn
+*.microdone.cn
++.msftconnecttest.com
++.msftncsi.com
+time.*.com
+time.*.gov
+time.*.edu.cn
+time.*.apple.com
+time1.*.com
+time2.*.com
+time3.*.com
+time4.*.com
+time5.*.com
+time6.*.com
+time7.*.com
+ntp.*.com
+ntp1.*.com
+ntp2.*.com
+ntp3.*.com
+ntp4.*.com
+ntp5.*.com
+ntp6.*.com
+ntp7.*.com
++.pool.ntp.org
+*.time.edu.cn
+*.ntp.org.cn
 time.android.com
 time.windows.com
-+.ntp.org.cn
-+.pool.ntp.org
-+.xn--ngstr-lra8j.com
+music.163.com
+*.music.163.com
+*.126.net
+musicapi.taihe.com
+music.taihe.com
+songsearch.kugou.com
+trackercdn.kugou.com
+*.kuwo.cn
+api-jooxtt.sanook.com
+api.joox.com
+joox.com
+y.qq.com
+*.y.qq.com
+streamoc.music.tc.qq.com
+mobileoc.music.tc.qq.com
+isure.stream.qqmusic.qq.com
+dl.stream.qqmusic.qq.com
+aqqmusic.tc.qq.com
+amobile.music.tc.qq.com
+*.xiami.com
+*.music.migu.cn
+music.migu.cn
+localhost.ptlogin2.qq.com
+localhost.sec.qq.com
 +.qq.com
 +.tencent.com
 +.wechat.com
 +.servicewechat.com
++.weixin.qq.com
++.qqmail.com
 +.gtimg.com
-+.gtimg.cn
 +.qpic.cn
 +.qlogo.cn
 +.tenpay.com
 +.myqcloud.com
 +.qcloud.com
-+.douyin.com
-+.douyincdn.com
-+.douyinpic.com
-+.douyinstatic.com
-+.douyinliving.com
-+.iesdouyin.com
-+.douyinvod.com
-+.douyinvideo.net
-+.amemv.com
-+.snssdk.com
-+.byteimg.com
-+.bytecdn.cn
-+.ibytedtos.com
-+.zijieapi.com
-+.pstatp.com
-+.toutiao.com
-+.toutiaovod.com
-+.bytedance.net
-+.xiaohongshu.com
-+.xhscdn.com
-+.xhscdn.net
-+.xhslink.com
-+.xhsimg.com
-dlg.io.mi.com
++.qcloudcdn.com
++.dnsv1.com
 +.taobao.com
 +.tmall.com
-+.tbcdn.cn
 +.alicdn.com
 +.alibaba.com
 +.alibabausercontent.com
@@ -181,16 +268,132 @@ dlg.io.mi.com
 +.cainiao.com
 +.amap.com
 +.autonavi.com
-fhnfile.oss-cn-shenzhen.aliyuncs.com
++.fhnfile.oss-cn-shenzhen.aliyuncs.com
++.kunlunca.com
++.kunlungr.com
++.aliclouddns.com
++.baidu.com
++.shifen.com
++.bdstatic.com
++.bdydns.com
++.baidubce.com
++.bcebos.com
++.douyin.com
++.douyincdn.com
++.douyinpic.com
++.douyinstatic.com
++.douyinliving.com
++.iesdouyin.com
++.douyinvod.com
++.douyinvideo.net
++.amemv.com
++.snssdk.com
++.byteimg.com
++.ibytedtos.com
++.zijieapi.com
++.pstatp.com
++.toutiao.com
++.toutiaovod.com
++.bytedance.net
++.jd.com
++.jcloudimg.com
++.jd360.hk
++.360buyimg.com
++.jcloud.com
++.bilibili.com
++.bilicdn1.com
++.hdslb.com
++.163.com
++.126.com
++.netease.com
++.163jiasu.com
++.iqiyi.com
++.qy.net
++.iqiyipic.com
++.youku.com
++.ykimg.com
++.tudou.com
++.xiaohongshu.com
++.xhscdn.com
++.xhscdn.net
++.xhslink.com
++.xhsimg.com
++.pinduoduo.com
++.pinduoduo.net
++.yangkeduo.com
++.kuaishou.com
++.yximgs.com
++.ksapisrv.com
++.meituan.com
++.meituan.net
++.dianping.com
++.dpfile.com
++.zhihu.com
++.zhimg.com
++.sina.com.cn
++.weibo.com
+dlg.io.mi.com
 +.115.com
 +.115cdn.com
 +.115cdn.net
 +.115img.com
-+.116cd.cn
 +.116cd.com
 +.116cd.net
 +.anxia.com
 +.sq.cc
++.xunlei.com
++.sandai.net
++.n0808.com
++.wscdns.com
++.chinanetcenter.com
++.ourglu.com
++.qingcdn.com
++.qiniu.com
++.qiniucdn.com
++.clouddn.com
++.ksyun.com
++.ksyuncs.com
++.360tpcdn.com
++.mi.com
++.xiaomi.com
++.miui.com
++.huawei.com
++.vmall.com
++.csdn.net
++.jianshu.com
++.sohu.com
++.sogou.com
++.cn
++.battlenet.com.cn
++.wotgame.cn
++.wggames.cn
++.wowsgame.cn
+mesu.apple.com
+swscan.apple.com
+swquery.apple.com
+swdownload.apple.com
+swcdn.apple.com
+swdist.apple.com
+lens.l.google.com
+stun.l.google.com
+na.b.g-tun.com
+stun.*.*
+stun.*.*.*
++.stun.*.*
++.stun.*.*.*
++.stun.*.*.*.*
++.stun.*.*.*.*.*
++.stun.playstation.net
+heartbeat.belkin.com
+*.linksys.com
+*.linksyssmartwifi.com
+*.router.asus.com
+local.adguard.org
++.pub.3gppnetwork.org
++.uu.163.com
+ps.res.netease.com
++.media.dssott.com
+shark007.net
 ```
 
 **设置自定义上游 DNS 服务器**（在上方设置中启用本功能后生效）：
