@@ -193,37 +193,6 @@ fhnfile.oss-cn-shenzhen.aliyuncs.com
 +.sq.cc
 ```
 
-#### Nameserver-Policy
-
-```yaml
-    "geosite:private,cn,geolocation-cn,apple-cn,microsoft@cn,steam@cn": [223.5.5.5, 119.29.29.29]
-    "+.speedtest.net": [223.5.5.5, 119.29.29.29]
-    "+.ooklaserver.net": [223.5.5.5, 119.29.29.29]
-    "+.speed.cloudflare.com": [223.5.5.5, 119.29.29.29]
-    "+.measurementlab.net": [223.5.5.5, 119.29.29.29]
-    "+.microsoft.com": [223.5.5.5, 119.29.29.29]
-    "+.live.com": [223.5.5.5, 119.29.29.29]
-    "+.office.com": [223.5.5.5, 119.29.29.29]
-    "+.microsoftonline.com": [223.5.5.5, 119.29.29.29]
-    "+.sharepointonline.com": [223.5.5.5, 119.29.29.29]
-    "+.google.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "+.googleapis.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "+.googleapis.cn": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "+.gstatic.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "+.gvt1.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "+.gvt2.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "+.gvt3.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "+.googleusercontent.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "+.ggpht.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "+.android.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "+.xn--ngstr-lra8j.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "+.openai.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "+.chatgpt.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "+.anthropic.com": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "+.claude.ai": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-    "geosite:geolocation-!cn": ["https://1.1.1.1/dns-query#PROXY", "https://dns.google/dns-query#PROXY"]
-```
-
 **设置自定义上游 DNS 服务器**（在上方设置中启用本功能后生效）：
 
 | 服务器分组 | 服务器地址 | 服务器类型 | 状态 | 操作 |
