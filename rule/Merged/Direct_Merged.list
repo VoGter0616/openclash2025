@@ -1,11 +1,11 @@
 # Direct_Merged_List
-# UPDATED: 2026-08-29 18:58:25 (UTC+8)
+# UPDATED: 2026-08-30 02:29:03 (UTC+8)
 # DOMAIN: 0
 # DOMAIN-KEYWORD: 0
 # DOMAIN-SUFFIX: 67
 # IP-CIDR: 15
 # IP-CIDR6: 0
-# NEWLY ADDED: 0
+# NEWLY ADDED: 1
 # TOTAL: 82
 
 DOMAIN-SUFFIX,10jqka.com.cn
@@ -48,6 +48,7 @@ DOMAIN-SUFFIX,mi-img.com
 DOMAIN-SUFFIX,mi-iot.com
 DOMAIN-SUFFIX,mi-static.com
 DOMAIN-SUFFIX,mi.com
+DOMAIN-SUFFIX,mi.com.cn
 DOMAIN-SUFFIX,mifile.cn
 DOMAIN-SUFFIX,mijia.com
 DOMAIN-SUFFIX,mijia.tech
@@ -73,7 +74,6 @@ DOMAIN-SUFFIX,xiaomi.cn
 DOMAIN-SUFFIX,xiaomi.com
 DOMAIN-SUFFIX,xiaomi.net
 DOMAIN-SUFFIX,xiaomicache.com
-DOMAIN-SUFFIX,xiaomiev.com
 DOMAIN-SUFFIX,xmpush.xiaomi.com
 IP-CIDR,1.189.0.0/16,no-resolve
 IP-CIDR,101.231.0.0/16,no-resolve
