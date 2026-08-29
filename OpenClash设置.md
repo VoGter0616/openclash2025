@@ -221,106 +221,98 @@ fhnfile.oss-cn-shenzhen.aliyuncs.com
 ```yaml
 # 嗅探域名 可选配置
 sniffer:
-  ## 对 redir-host 类型识别的流量进行强制嗅探
-  ## 如：Tun、Redir 和 TProxy 并 DNS 为 redir-host 皆属于
   force-dns-mapping: true
-  ## 对所有未获取到域名的流量进行强制嗅探
   parse-pure-ip: true
-  # 是否使用嗅探结果作为实际访问，默认 true
-  # 全局配置，优先级低于 sniffer.sniff 实际配置
   override-destination: true
-  sniff: # TLS 和 QUIC 默认如果不配置 ports 默认嗅探 443
+  sniff:
     QUIC:
-      ports: [ 443 ]
-
+      ports: [443]
     TLS:
       ports: [443, 8443]
-
-    # 默认嗅探 80
     HTTP:
       ports: [80, 8080-8880]
-      # 是否使用嗅探结果作为实际访问
       override-destination: true
   force-domain:
-#  - '+' # Force all domain to use sniffer
-  - "+.netflix.com"
-  - "+.nflxvideo.net"
-  - "+.amazonaws.com"
-  - "+.media.dssott.com"
-  ## 对嗅探结果进行跳过
+    - "+.netflix.com"
+    - "+.nflxvideo.net"
+    - "+.amazonaws.com"
+    - "+.media.dssott.com"
+    # 国际主流服务强制嗅探（新增）
+    - "+.google.com"
+    - "+.googleapis.com"
+    - "+.youtube.com"
+    - "+.googlevideo.com"
+    - "+.facebook.com"
+    - "+.instagram.com"
+    - "+.twitter.com"
+    - "+.telegram.org"
+    - "+.openai.com"
+    - "+.chatgpt.com"
   skip-domain:
-  - Mijia Cloud
-  - dlg.io.mi.com
-  - "+.push.apple.com"
-  # 腾讯/微信系
-  - "+.qq.com"
-  - "+.tencent.com"
-  - "+.wechat.com"
-  - "+.servicewechat.com"
-  - "+.gtimg.com"
-  - "+.gtimg.cn"
-  - "+.qpic.cn"
-  - "+.qlogo.cn"
-  - "+.tenpay.com"
-  - "+.myqcloud.com"
-  - "+.qcloud.com"
-  # 字节跳动/抖音系
-  - "+.douyin.com"
-  - "+.douyincdn.com"
-  - "+.douyinpic.com"
-  - "+.douyinstatic.com"
-  - "+.douyinliving.com"
-  - "+.iesdouyin.com"
-  - "+.douyinvod.com"
-  - "+.douyinvideo.net"
-  - "+.amemv.com"
-  - "+.snssdk.com"
-  - "+.byteimg.com"
-  - "+.bytecdn.cn"
-  - "+.ibytedtos.com"
-  - "+.zijieapi.com"
-  - "+.pstatp.com"
-  - "+.toutiao.com"
-  - "+.toutiaovod.com"
-  - "+.bytedance.net"
-  # 小红书
-  - "+.xiaohongshu.com"
-  - "+.xhscdn.com"
-  - "+.xhscdn.net"
-  - "+.xhslink.com"
-  - "+.xhsimg.com"
-  # 阿里/淘宝/高德系
-  - "+.taobao.com"
-  - "+.tmall.com"
-  - "+.tbcdn.cn"
-  - "+.alicdn.com"
-  - "+.alibaba.com"
-  - "+.alibabausercontent.com"
-  - "+.alipay.com"
-  - "+.alipayobjects.com"
-  - "+.goofish.com"
-  - "+.idlefish.com"
-  - "+.aliyun.com"
-  - "+.aliyuncs.com"
-  - "+.mmstat.com"
-  - "+.cainiao.com"
-  - "+.amap.com"
-  - "+.autonavi.com"
-  - fhnfile.oss-cn-shenzhen.aliyuncs.com
-  # 115 网盘
-  - "+.115.com"
-  - "+.115cdn.com"
-  - "+.115cdn.net"
-  - "+.115img.com"
-  - "+.116cd.cn"
-  - "+.116cd.com"
-  - "+.116cd.net"
-  - "+.anxia.com"
-  - "+.sq.cc"
-  #- geosite:cn
-  # skip-src-address: # 对于来源ip跳过嗅探
+    # 已由 #LAN.txt 直连列表覆盖，此处仅保留必要的跳过项
+    # 腾讯/微信系（精简）
+    - "+.qq.com"
+    - "+.tencent.com"
+    - "+.wechat.com"
+    - "+.gtimg.com"
+    - "+.qpic.cn"
+    - "+.qlogo.cn"
+    - "+.myqcloud.com"
+    - "+.qcloud.com"
+    # 字节跳动/抖音系（精简）
+    - "+.douyin.com"
+    - "+.douyincdn.com"
+    - "+.douyinpic.com"
+    - "+.iesdouyin.com"
+    - "+.douyinvod.com"
+    - "+.amemv.com"
+    - "+.snssdk.com"
+    - "+.byteimg.com"
+    - "+.ibytedtos.com"
+    - "+.toutiao.com"
+    - "+.bytedance.net"
+    # 小红书
+    - "+.xiaohongshu.com"
+    - "+.xhscdn.com"
+    - "+.xhslink.com"
+    # 阿里系（精简）
+    - "+.taobao.com"
+    - "+.tmall.com"
+    - "+.alicdn.com"
+    - "+.alibaba.com"
+    - "+.alipay.com"
+    - "+.aliyun.com"
+    - "+.aliyuncs.com"
+    - "+.amap.com"
+    # 115网盘
+    - "+.115.com"
+    - "+.115cdn.com"
+    - "+.115img.com"
+    - "+.116cd.com"
+    - "+.anxia.com"
+    - "+.sq.cc"
+    # 小米（新增）
+    - "+.mi.com"
+    - dlg.io.mi.com
+    # 苹果推送（保留）
+    - "+.push.apple.com"
+    # 国内大厂CDN（新增）
+    - "+.cn"
+    - "+.baidu.com"
+    - "+.bdstatic.com"
+    - "+.jd.com"
+    - "+.bilibili.com"
+    - "+.163.com"
+    - "+.youku.com"
+    - "+.meituan.com"
+    - "+.zhihu.com"
+    - "+.weibo.com"
+    - "+.sina.com.cn"
+    # 使用 geosite:cn 替代大量重复条目（启用此规则可大幅精简列表）
+    - "geosite:cn"
+  # skip-src-address:
   #   - 192.168.0.3/32
-  # skip-dst-address: # 对于目标ip跳过嗅探
+  # skip-dst-address:
   #   - 192.168.0.3/32
 ```
 
