@@ -1,49 +1,51 @@
 # NAME: Xiaomi IoT (Mijia)
-# UPDATED: 2026-08-23
-# DESCRIPTION: 专门针对米家智能家居设备分流，强制 DIRECT（直连）
+# 作用: 专门针对米家智能家居设备分流，强制 DIRECT（直连）
+# UPDATED: 2026-08-29
 
-# --- 1. 核心物联网控制平台 (控制指令与状态同步) ---
+# ==================== 1. 核心域名（高优先级） ====================
+# 以下域名覆盖绝大多数小米服务，建议放在最前面
+DOMAIN-SUFFIX,mi.com
+DOMAIN-SUFFIX,mi.com.cn
+DOMAIN-SUFFIX,xiaomi.com
+DOMAIN-SUFFIX,xiaomi.cn
+DOMAIN-SUFFIX,xiaomi.net
+
+# ==================== 2. 核心物联网控制平台 ====================
 DOMAIN-SUFFIX,iotcplatform.com
 DOMAIN-SUFFIX,mi-iot.com
 DOMAIN-SUFFIX,miot-spec.org
 DOMAIN-SUFFIX,miot.com
 DOMAIN-SUFFIX,io.mi.com
 
-# --- 2. 米家 App 与智能家居服务 ---
+# ==================== 3. 米家 App 与智能家居服务 ====================
 DOMAIN-SUFFIX,mijia.com
 DOMAIN-SUFFIX,mijia.tech
 DOMAIN-SUFFIX,mijiayoupin.com
 DOMAIN-SUFFIX,home.miui.com
 
-# --- 3. 小米基础生态域名 ---
-DOMAIN-SUFFIX,mi.com
-DOMAIN-SUFFIX,xiaomi.com
-DOMAIN-SUFFIX,xiaomi.net
-DOMAIN-SUFFIX,xiaomi.cn
-DOMAIN-SUFFIX,xiaomiev.com
-
-# --- 4. 静态资源、图片与 CDN (设备图标/固件更新) ---
+# ==================== 4. 静态资源、图片与 CDN ====================
 DOMAIN-SUFFIX,mi-img.com
 DOMAIN-SUFFIX,mi-static.com
 DOMAIN-SUFFIX,mifile.cn
 DOMAIN-SUFFIX,xiaomicache.com
 
-# --- 5. 账户与安全检测 ---
+# ==================== 5. 账户与安全检测 ====================
+# 注意：account.xiaomi.com 已被 DOMAIN-SUFFIX,xiaomi.com 覆盖，保留是为了增强可读性
 DOMAIN-SUFFIX,account.xiaomi.com
 DOMAIN-SUFFIX,api.account.xiaomi.com
 DOMAIN-SUFFIX,mi-dun.com
 
-# --- 6. 推送与长连接 (实时告警与传感器触发) ---
+# ==================== 6. 推送与长连接 ====================
 DOMAIN-SUFFIX,mipush.com
 DOMAIN-SUFFIX,mipush.com.cn
 DOMAIN-SUFFIX,xmpush.xiaomi.com
 
-# --- 7. 语音助手 (小爱同学) ---
+# ==================== 7. 语音助手 ====================
 DOMAIN-SUFFIX,xiaoaiassist.com
 DOMAIN-SUFFIX,xiaoaisound.com
 DOMAIN-SUFFIX,xiaoaimobile.com
 
-# --- 8. 全局调度与 GSLB (全局负载均衡) ---
+# ==================== 8. 全局调度与 GSLB ====================
 DOMAIN-SUFFIX,mgslb.com
 DOMAIN-SUFFIX,mgslb.cn
 DOMAIN-SUFFIX,mgslb.net
