@@ -1,69 +1,36 @@
 # AI_Merged
-# UPDATED: 2026-09-02 03:58:43 (UTC+8)
-# DOMAIN: 22
-# DOMAIN-KEYWORD: 1
-# DOMAIN-SUFFIX: 34
-# IP-CIDR: 2
+# UPDATED: 2026-09-02 04:22:13 (UTC+8)
+# DOMAIN: 15
+# DOMAIN-KEYWORD: 0
+# DOMAIN-SUFFIX: 11
+# IP-CIDR: 0
 # IP-CIDR6: 0
 # NEWLY ADDED: 0
-# TOTAL: 59
+# TOTAL: 26
 
 DOMAIN,api.msn.com
-DOMAIN,api.statsig.com
 DOMAIN,assets.msn.com
-DOMAIN,browser-intake-datadoghq.com
 DOMAIN,cdn.usefathom.com
-DOMAIN,chat.openai.com.cdn.cloudflare.net
 DOMAIN,copilot.microsoft.com
 DOMAIN,gateway.bingviz.microsoft.net
 DOMAIN,gateway.bingviz.microsoftapp.net
 DOMAIN,in.appcenter.ms
 DOMAIN,location.microsoft.com
 DOMAIN,odc.officeapps.live.com
-DOMAIN,openai-api.arkoselabs.com
-DOMAIN,openaicomproductionae4b.blob.core.windows.net
-DOMAIN,production-openaicom-storage.azureedge.net
 DOMAIN,r.bing.com
 DOMAIN,self.events.data.microsoft.com
 DOMAIN,servd-anthropic-website.b-cdn.net
 DOMAIN,services.bingapis.com
-DOMAIN,static.cloudflareinsights.com
 DOMAIN,sydney.bing.com
 DOMAIN,www.bing.com
-DOMAIN-KEYWORD,openaicom-api
-DOMAIN-SUFFIX,algolia.net
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,api.microsoftapp.net
-DOMAIN-SUFFIX,auth0.com
 DOMAIN-SUFFIX,bing-shopping.microsoft-falcon.io
-DOMAIN-SUFFIX,challenges.cloudflare.com
-DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,chatgpt.livekit.cloud
 DOMAIN-SUFFIX,claude.ai
-DOMAIN-SUFFIX,client-api.arkoselabs.com
 DOMAIN-SUFFIX,computer.perplexity.ai
 DOMAIN-SUFFIX,edgeservices.bing.com
-DOMAIN-SUFFIX,events.statsigapi.net
-DOMAIN-SUFFIX,featuregates.org
-DOMAIN-SUFFIX,host.livekit.cloud
-DOMAIN-SUFFIX,identrust.com
-DOMAIN-SUFFIX,intercom.io
-DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN-SUFFIX,labs.perplexity.ai
-DOMAIN-SUFFIX,launchdarkly.com
-DOMAIN-SUFFIX,oaistatic.com
-DOMAIN-SUFFIX,oaiusercontent.com
-DOMAIN-SUFFIX,observeit.net
-DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,openaiapi-site.azureedge.net
-DOMAIN-SUFFIX,openaicom.imgix.net
 DOMAIN-SUFFIX,openrouter.ai
 DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,poe.com
 DOMAIN-SUFFIX,pplx.ai
-DOMAIN-SUFFIX,segment.io
-DOMAIN-SUFFIX,sentry.io
-DOMAIN-SUFFIX,stripe.com
-DOMAIN-SUFFIX,turn.livekit.cloud
-IP-CIDR,24.199.123.28/32
-IP-CIDR,64.23.132.171/32
