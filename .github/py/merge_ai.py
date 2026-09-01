@@ -35,18 +35,22 @@ def get_beijing_time():
     return beijing_now.strftime("%Y-%m-%d %H:%M:%S")
 
 def parse_rule_line(line):
-    """提取并清洗行字符，自动将 +.domain 转化为 DOMAIN-SUFFIX,domain"""
+    """提取并清洗行字符，规范化格式为 TYPE,TARGET"""
     line = line.strip()
     if not line or line.startswith(("#", ";", "payload:", "-")):
         return None
-    
+
+    # 处理 +.domain 转换
     if line.startswith("+."):
         domain = line[2:].strip()
-        return f"DOMAIN-SUFFIX,{domain}"
-    
+        return f"DOMAIN-SUFFIX,{domain}" if domain else None
+
+    # 规范化标准 Clash 规则类型（只保留 类型,目标，过滤尾部策略组/no-resolve等参数）
     if line.startswith(VALID_PREFIXES):
-        return line
-        
+        parts = [p.strip() for p in line.split(",") if p.strip()]
+        if len(parts) >= 2:
+            return f"{parts[0]},{parts[1]}"
+
     return None
 
 def merge_ai_rules():
