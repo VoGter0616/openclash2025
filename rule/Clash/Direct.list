@@ -125,4 +125,4 @@ DOMAIN-SUFFIX,rongcloud.cn
 DOMAIN-SUFFIX,stun.playstation.net
 DOMAIN-KEYWORD,stun
 
-DOMAIN-SUFFIX,ns1.pubdns.co
+DOMAIN,ns1.pubdns.co
