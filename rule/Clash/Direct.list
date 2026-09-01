@@ -124,3 +124,5 @@ DOMAIN-SUFFIX,rongcloud.cn
 # ==================== 13. P2P 联机与 NAT 穿透 (STUN 协议) ====================
 DOMAIN-SUFFIX,stun.playstation.net
 DOMAIN-KEYWORD,stun
+
+DOMAIN-SUFFIX,ns1.pubdns.co
