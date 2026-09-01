@@ -8,6 +8,14 @@ ai_urls = [
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Gemini/Gemini.list",
 ]
 
+# 本地补丁域名列表（补齐丢失的变量定义）
+manual_ai_domains = [
+    "+.perplexity.ai",
+    "+.labs.google",
+    "+.deepmind.google",
+    "+.notebooklm.google",
+]
+
 VALID_PREFIXES = (
     "DOMAIN",
     "DOMAIN-SUFFIX",
@@ -38,7 +46,7 @@ def parse_rule_line(line):
         
     return None
 
-def merge_gemini_rules():
+def merge_gemini_rules():  # 统一修改函数名为 merge_gemini_rules
     output_dir = "rule/Merged"
     output_filename = "Gemini_Merged.list"
     output_path = os.path.join(output_dir, output_filename)
