@@ -1,0 +1,26 @@
+# Gemini_Merged
+# UPDATED: 2026-09-02 03:59:19 (UTC+8)
+# DOMAIN: 3
+# DOMAIN-KEYWORD: 3
+# DOMAIN-SUFFIX: 10
+# IP-CIDR: 0
+# IP-CIDR6: 0
+# NEWLY ADDED: 16
+# TOTAL: 16
+
+DOMAIN,ai.google.dev
+DOMAIN,alkalimakersuite-pa.clients6.google.com
+DOMAIN,makersuite.google.com
+DOMAIN-KEYWORD,colab
+DOMAIN-KEYWORD,developerprofiles
+DOMAIN-KEYWORD,generativelanguage
+DOMAIN-SUFFIX,apis.google.com
+DOMAIN-SUFFIX,bard.google.com
+DOMAIN-SUFFIX,deepmind.com
+DOMAIN-SUFFIX,deepmind.google
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,generativeai.google
+DOMAIN-SUFFIX,labs.google
+DOMAIN-SUFFIX,notebooklm.google
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
