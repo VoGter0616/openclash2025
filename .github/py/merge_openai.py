@@ -38,7 +38,7 @@ def parse_rule_line(line):
         
     return None
 
-def merge_ai_rules():
+def merge_openai_rules():
     output_dir = "rule/Merged"
     output_filename = "OpenAI_Merged.list"
     output_path = os.path.join(output_dir, output_filename)
