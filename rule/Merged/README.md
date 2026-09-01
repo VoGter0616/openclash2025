@@ -9,9 +9,11 @@
 | :--- | :---: | :--- |:--- |
 | [AI_Merged.list](./AI_Merged.list) | .list | 自动抓取合并的ai相关域名。 | 建议优先使用美国节点，其次使用新加坡，最好不要用香港。|
 | [CDN_Merged.list](./CDN_Merged.list) | .list | 国内CDN直连下载域名。 | DIRECT |
-| [Proxy_Merged.list](./Proxy_Merged.list) | .list | 抓取blackmatrix7和我本地Proxy合并的大兜底代理域名。 | 代理 |
 | [Direct_Merged.list](./Direct_Merged.list) | .list | 抓取国内直连合并域名。 | DIRECT |
 | [Game_Merged.list](./Game_Merged.list) | .list | 抓取代理游戏合并域名。 | 代理 |
+| [Gemini_Merged.list](./Gemini_Merged.list) | .list | 抓取合并Gemini域名。 | 代理 |
+| [OpenAI_Merged.list](./OpenAI_Merged.list) | .list | 抓取合并ChatGPT域名。 | 代理 |
+| [Proxy_Merged.list](./Proxy_Merged.list) | .list | 抓取blackmatrix7和我本地Proxy合并的大兜底代理域名。 | 代理 |
 | [Social_Merged.list](./Social_Merged.list) | .list | 抓取社交平台合并域名。 | 代理 |
 
 > [!WARNING]
