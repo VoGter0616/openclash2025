@@ -4,8 +4,6 @@
 
 # === 1. Container Manager / Docker 镜像拉取与注册表 ===
 # 解决国内 Docker Hub 镜像站失效后，群晖拉取 Docker 镜像超时的问题
-DOMAIN-SUFFIX,docker.com
-DOMAIN-SUFFIX,docker.io
 DOMAIN-SUFFIX,ghcr.io
 DOMAIN-SUFFIX,quay.io
 DOMAIN-SUFFIX,gcr.io
