@@ -8,6 +8,16 @@ ai_urls = [
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list",
 ]
 
+# 本地补丁域名列表（补充定义，避免 NameError 报错）
+manual_ai_domains = [
+    "+.openai.com",
+    "+.chatgpt.com",
+    "+.oaistatic.com",
+    "+.oaiusercontent.com",
+    "+.sora.com",
+    "+.perplexity.ai",
+]
+
 VALID_PREFIXES = (
     "DOMAIN",
     "DOMAIN-SUFFIX",
@@ -68,7 +78,7 @@ def merge_openai_rules():
         except Exception as e:
             print(f"Error fetching {url}: {e}")
 
-    # 3. 追加本地 Perplexity 等补丁域名
+    # 3. 追加本地补丁域名
     for raw_domain in manual_ai_domains:
         rule = parse_rule_line(raw_domain)
         if rule:
