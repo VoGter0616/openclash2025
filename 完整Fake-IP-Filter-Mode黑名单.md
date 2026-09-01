@@ -204,6 +204,7 @@ dlg.io.mi.com
 +.360tpcdn.com
 +.mi.com
 +.xiaomi.com
++.market.xiaomi.com
 +.miui.com
 +.huawei.com
 +.vmall.com
@@ -242,5 +243,6 @@ local.adguard.org
 ps.res.netease.com
 +.media.dssott.com
 shark007.net
+vogter0616.myds.me
 
 ```
