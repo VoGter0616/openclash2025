@@ -5,7 +5,7 @@ import requests
 # 稳定的远程 AI 规则源地址
 ai_urls = [
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Anthropic/Anthropic.list",
-    "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.list",
+    "https://raw.githubusercontent.com/VoGter0616/openclash2025/main/rule/Clash/Claude.list",
     "https://raw.githubusercontent.com/VoGter0616/openclash2025/main/rule/Clash/Copilot.list",
 ]
 
