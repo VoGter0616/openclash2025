@@ -25,8 +25,3 @@ DOMAIN-SUFFIX,global.dl.synology.com
 DOMAIN-SUFFIX,themoviedb.org
 DOMAIN-SUFFIX,tmdb.org
 DOMAIN-SUFFIX,thetvdb.com
-
-# === 5. 群晖系统内整合的 Git 与 开源组件下载 ===
-# DSM 套件内使用到的 GitHub 资源库、代码同步及 Git Server 依赖
-DOMAIN-SUFFIX,github.com
-DOMAIN-SUFFIX,githubusercontent.com
