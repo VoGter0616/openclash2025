@@ -1,13 +1,13 @@
 # Social_Merged
-# UPDATED: 2026-09-01 17:15:40 (UTC+8)
+# UPDATED: 2026-09-02 06:17:58 (UTC+8)
 # DOMAIN: 5
 # DOMAIN-KEYWORD: 7
 # DOMAIN-SUFFIX: 631
-# IP-CIDR: 48
+# IP-CIDR: 49
 # IP-CIDR6: 4
 # OTHER: 9
-# NEWLY ADDED: 0
-# TOTAL: 704
+# NEWLY ADDED: 1
+# TOTAL: 705
 
 DOMAIN,api.imem.app
 DOMAIN,api.nicegram.app
@@ -678,6 +678,7 @@ IP-CIDR,18.194.0.0/15,no-resolve
 IP-CIDR,184.173.128.0/17,no-resolve
 IP-CIDR,185.76.151.0/24,no-resolve
 IP-CIDR,192.133.76.0/22,no-resolve
+IP-CIDR,194.221.250.0/24,no-resolve
 IP-CIDR,196.55.216.167/32,no-resolve
 IP-CIDR,199.59.148.0/22,no-resolve
 IP-CIDR,199.96.56.0/21,no-resolve
