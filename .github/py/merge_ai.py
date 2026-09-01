@@ -6,7 +6,7 @@ import requests
 ai_urls = [
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Anthropic/Anthropic.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.list",
-    "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+    "https://raw.githubusercontent.com/VoGter0616/openclash2025/main/rule/Clash/Copilot.list",
 ]
 
 # 本地补丁域名（包含 Perplexity 等未单独建库的 AI 域名，自动转化为 DOMAIN-SUFFIX）
