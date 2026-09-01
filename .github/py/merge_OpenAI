@@ -126,4 +126,4 @@ def merge_ai_rules():
     )
 
 if __name__ == "__main__":
-    merge_ai_rules()
+    merge_openai_rules()
