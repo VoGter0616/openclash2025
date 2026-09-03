@@ -524,8 +524,7 @@ sniffer:
     - "+.sq.cc"
     # 小米
     - "+.mi.com"
-    - dlg.io.mi.com
-    - Mijia Cloud
+    - "+.dlg.io.mi.com"
     # 苹果推送
     - "+.push.apple.com"
     # 国内大厂CDN
