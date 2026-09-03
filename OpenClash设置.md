@@ -1,5 +1,14 @@
 # OpenClash使用设置
 
+## 首页
+
+### 运行状态——覆写模块（openclah v0.47以上版本）
+
+在exit 0上方粘贴并修改成所需机场节点域名解析DNS
+```
+    ruby_edit "$CONFIG_FILE" "['dns']['proxy-server-nameserver']" "['节点域名解析DNS1','节点域名解析DNS2']"
+```
+
 ## 插件设置
 
 ### 模式设置
