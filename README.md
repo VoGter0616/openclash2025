@@ -158,25 +158,284 @@ fallback-filter:
     - 192.168.0.0/16
     - 224.0.0.0/4
   domain:
+    # =========================================================
+    # Google / Gemini / YouTube
+    # =========================================================
     - "+.google.com"
     - "+.googleapis.com"
     - "+.gstatic.com"
-    - "+.youtube.com"
+    - "+.googleusercontent.com"
     - "+.googlevideo.com"
-    - "+.facebook.com"
-    - "+.instagram.com"
-    - "+.x.com"
-    - "+.twitter.com"
-    - "+.telegram.org"
+    - "+.googleadservices.com"
+    - "+.googlesyndication.com"
+    - "+.doubleclick.net"
+    - "+.ggpht.com"
+    - "+.youtube.com"
+    - "+.youtube-nocookie.com"
+    - "+.ytimg.com"
+    - "+.youtu.be"
+    - "+.gemini.google.com"
+    - "+.ai.google.dev"
+    - "+.generativelanguage.googleapis.com"
+    - "+.aistudio.google.com"
+
+    # =========================================================
+    # OpenAI / ChatGPT
+    # =========================================================
     - "+.openai.com"
     - "+.chatgpt.com"
+    - "+.oaistatic.com"
+    - "+.oaiusercontent.com"
+    - "+.oaistatsig.com"
+
+    # OpenAI 依赖的部分第三方服务
+    - "+.challenges.cloudflare.com"
+    - "+.workos.com"
+    - "+.workos.imgix.net"
+    - "+.workoscdn.com"
+    - "+.intercom.io"
+    - "+.intercomcdn.com"
+    - "+.sentry.io"
+    - "+.datadoghq.com"
+
+    # =========================================================
+    # Anthropic / Claude
+    # =========================================================
     - "+.anthropic.com"
     - "+.claude.ai"
+    - "+.claude.com"
+
+    # =========================================================
+    # AI / 开发者 AI 服务
+    # =========================================================
+    - "+.huggingface.co"
+    - "+.hf.co"
+    - "+.replicate.com"
+    - "+.perplexity.ai"
+    - "+.poe.com"
+    - "+.cohere.com"
+    - "+.mistral.ai"
+    - "+.mistral.com"
+    - "+.groq.com"
+    - "+.x.ai"
+    - "+.grok.com"
+    - "+.cursor.com"
+    - "+.cursor.sh"
+    - "+.windsurf.com"
+    - "+.codeium.com"
+
+    # =========================================================
+    # GitHub / GitLab / 开发者服务
+    # =========================================================
     - "+.github.com"
+    - "+.githubusercontent.com"
+    - "+.githubassets.com"
+    - "+.github.io"
+    - "+.gitlab.com"
+    - "+.gitlab.io"
+    - "+.bitbucket.org"
+    - "+.sourcegraph.com"
+    - "+.npmjs.com"
+    - "+.npmjs.org"
+    - "+.pypi.org"
+    - "+.pythonhosted.org"
+    - "+.docker.com"
+    - "+.docker.io"
+    - "+.dockerusercontent.com"
+    - "+.jsdelivr.net"
+    - "+.unpkg.com"
+    - "+.cdnjs.com"
+    - "+.cdnjs.cloudflare.com"
+
+    # =========================================================
+    # Cloudflare / CDN / DNS
+    # =========================================================
+    - "+.cloudflare.com"
+    - "+.cloudflare-dns.com"
+    - "+.cloudflareclient.com"
+    - "+.workers.dev"
+    - "+.pages.dev"
+    - "+.cloudfront.net"
+    - "+.fastly.net"
+    - "+.akamaized.net"
+    - "+.akamaihd.net"
+    - "+.edgekey.net"
+    - "+.edgesuite.net"
+
+    # =========================================================
+    # Facebook / Instagram / Meta
+    # =========================================================
+    - "+.facebook.com"
+    - "+.facebook.net"
+    - "+.fbcdn.net"
+    - "+.fbsbx.com"
+    - "+.instagram.com"
+    - "+.cdninstagram.com"
+    - "+.threads.net"
+    - "+.threads.com"
+    - "+.whatsapp.com"
+    - "+.whatsapp.net"
+
+    # =========================================================
+    # X / Twitter
+    # =========================================================
+    - "+.x.com"
+    - "+.twitter.com"
+    - "+.twimg.com"
+
+    # =========================================================
+    # Telegram
+    # =========================================================
+    - "+.telegram.org"
+    - "+.t.me"
+    - "+.telegra.ph"
+    - "+.telegram.me"
+    - "+.telegram.dog"
+
+    # =========================================================
+    # Reddit
+    # =========================================================
+    - "+.reddit.com"
+    - "+.redditmedia.com"
+    - "+.redditstatic.com"
+    - "+.redd.it"
+
+    # =========================================================
+    # Discord
+    # =========================================================
+    - "+.discord.com"
+    - "+.discordapp.com"
+    - "+.discordapp.net"
+    - "+.discord.gg"
+    - "+.discord.media"
+
+    # =========================================================
+    # Microsoft / Azure / Copilot
+    # =========================================================
+    - "+.microsoft.com"
+    - "+.microsoftonline.com"
+    - "+.msauth.net"
+    - "+.msftauth.net"
+    - "+.live.com"
+    - "+.office.com"
+    - "+.office.net"
+    - "+.office365.com"
+    - "+.azure.com"
+    - "+.azureedge.net"
+    - "+.windows.net"
+    - "+.bing.com"
+    - "+.bingapis.com"
+    - "+.copilot.microsoft.com"
+
+    # =========================================================
+    # Apple
+    # =========================================================
+    - "+.apple.com"
+    - "+.icloud.com"
+    - "+.icloud-content.com"
+    - "+.mzstatic.com"
+    - "+.itunes.apple.com"
+    - "+.push.apple.com"
+
+    # =========================================================
+    # Amazon / AWS
+    # =========================================================
+    - "+.amazon.com"
+    - "+.amazonaws.com"
+    - "+.amazonvideo.com"
+    - "+.aws.amazon.com"
+
+    # =========================================================
+    # Netflix
+    # =========================================================
+    - "+.netflix.com"
+    - "+.netflix.net"
+    - "+.nflxvideo.net"
+    - "+.nflximg.net"
+    - "+.nflximg.com"
+    - "+.nflxso.net"
+    - "+.nflxext.com"
+
+    # =========================================================
+    # Spotify
+    # =========================================================
+    - "+.spotify.com"
+    - "+.spotifycdn.com"
+    - "+.scdn.co"
+
+    # =========================================================
+    # Disney+
+    # =========================================================
+    - "+.disneyplus.com"
+    - "+.disney-plus.net"
+    - "+.dssott.com"
+    - "+.media.dssott.com"
+
+    # =========================================================
+    # Twitch
+    # =========================================================
+    - "+.twitch.tv"
+    - "+.twitchcdn.net"
+    - "+.ttvnw.net"
+
+    # =========================================================
+    # 游戏 / Steam / Epic / PlayStation / Xbox
+    # =========================================================
+    - "+.steampowered.com"
+    - "+.steamcommunity.com"
+    - "+.steamstatic.com"
+    - "+.steamcontent.com"
+    - "+.steamusercontent.com"
+    - "+.steamserver.net"
+    - "+.epicgames.com"
+    - "+.epicgamescdn.com"
+    - "+.playstation.com"
+    - "+.playstation.net"
+    - "+.xbox.com"
+    - "+.xboxlive.com"
+    - "+.ea.com"
+    - "+.eaassets.com"
+    - "+.ubisoft.com"
+    - "+.ubisoftconnect.com"
+    - "+.rockstargames.com"
+    - "+.nvidia.com"
+
+    # =========================================================
+    # 常用国外资讯 / 社区
+    # =========================================================
+    - "+.wikipedia.org"
+    - "+.wikimedia.org"
+    - "+.medium.com"
+    - "+.quora.com"
+    - "+.stackexchange.com"
+    - "+.stackoverflow.com"
+    - "+.stackprinter.com"
+
+    # =========================================================
+    # 隐私 / DNS / 网络测试
+    # =========================================================
     - "+.browserleaks.com"
+    - "+.dnsleaktest.com"
+    - "+.ipleak.net"
+    - "+.ipinfo.io"
+    - "+.whatismyipaddress.com"
+    - "+.whatismyip.com"
+    - "+.whoer.net"
+
+    # =========================================================
+    # NTP / 时间同步
+    # =========================================================
     - "+.pool.ntp.org"
-    - "+.dnsleaktest.com" 
-    - "+.cloudflare.com" 
+    - "+.ntp.org"
+
+    # =========================================================
+    # 补充：常用协作/工具服务
+    # =========================================================
+    - "+.notion.so"
+    - "+.figma.com"
+    - "+.slack.com"
+    - "+.zoom.us"
+    - "+.teamviewer.com"
 ```
 - Fake-IP-Filter✅
 - Fake-IP-Filter-Mode：黑名单模式
