@@ -29,7 +29,7 @@
 
 **绕过指定区域IPv4黑名单里添加：**
 
-```yaml
+```
 services.googleapis.cn
 googleapis.cn
 xn--ngstr-lra8j.com
@@ -38,8 +38,6 @@ adobelogin.com
 adobe.io
 behance.net
 ```
-
-- 其他默认
 
 ### DNS设置
 
@@ -60,27 +58,29 @@ behance.net
 
 ### IPv6设置
 
-- 默认勾选：
-- IPv6 流量代理允许
-- IPv6 类型 DNS 解析
+- IPv6 流量代理✅
 - IPv6 代理模式:Mix混合模式
+- 允许IPv6 类型 DNS 解析✅
 - Fake-IP 地址范围 (IPv6 Cidr)：fdfe:dcba:9876::1/64
-- 开启绕过中国大陆
+- 实验性：绕过指定区域IPv6:绕过中国大陆
 - 其他默认
 
 ### GEO数据库订阅
 
-**默认勾选：**
+- 自动更新 GeoIP MMDB 数据库✅
+```
+https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb
+```
 
-- 自动更新 GeoIP MMDB 数据库
-- 自动更新 GeoIP Dat 数据库
-- 自动更新 GeoSite 数据库
+- 自动更新 GeoIP Dat 数据库✅
+```
+https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat
+```
 
-**数据库更新 URL：**
-
-- https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb
-- https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat
-- https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
+- 自动更新 GeoSite 数据库✅
+```
+https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
+```
 
 ### 大陆白名单订阅
 
@@ -118,14 +118,10 @@ behance.net
 
 ### DNS设置
 
-**默认勾选：**
-
-- 自定义上游 DNS 服务器
-- 遵循规则(respect-rules)
-- Fake-IP 地址范围 (IPv4 Cidr)：198.18.0.1/16
-- Fake-IP 持久化
-- Fake-IP-Filter
-
+- 自定义上游 DNS 服务器✅
+- 遵循规则(respect-rules)✅
+- Fake-IP 持久化✅
+- Fallback-Filter✅
 ```
 fallback-filter:
   geoip: true
@@ -156,8 +152,10 @@ fallback-filter:
     - "+.github.com"
     - "+.browserleaks.com"
     - "+.pool.ntp.org"
+    - "+.dnsleaktest.com" 
+    - "+.cloudflare.com" 
 ```
-
+- Fake-IP-Filter✅
 - Fake-IP-Filter-Mode：黑名单模式
 
 ```
@@ -364,6 +362,7 @@ dlg.io.mi.com
 +.360tpcdn.com
 +.mi.com
 +.xiaomi.com
++.market.xiaomi.com
 +.miui.com
 +.huawei.com
 +.vmall.com
@@ -402,17 +401,21 @@ local.adguard.org
 ps.res.netease.com
 +.media.dssott.com
 shark007.net
+#添加局域网内ddns域名
+```
+- Hosts✅
+```
+  'mtalk.google.com': 108.177.125.188
+  'raw.githubusercontent.com': 151.101.76.133
 ```
 
-**设置自定义上游 DNS 服务器**（在上方设置中启用本功能后生效）：
+**设置自定义上游 DNS 服务器**（在上方设置中启用本功能后生效）：**
 
 | 服务器分组 | 服务器地址 | 服务器类型 | 状态 | 操作 |
 | --- | --- | --- | --- | --- |
 | nameserver | 223.5.5.5 | UDP | 启用 | |
 | nameserver | 119.29.29.29 | UDP | 启用 | |
-| nameserver | 专用dns,用来解析新协议 | HTTPS | 启用 | 编辑-勾选节点域名解析 |
-| nameserver | 专用dns,用来解析新协议 | HTTPS | 启用 | 编辑-勾选节点域名解析 |
-| fallback | 1.1.1.1/dns-query#PROXY | HTTPS | 启用 | |
+| fallback | 1.1.1.1/dns-query#PROXY | HTTPS | 启用 | PROXY为策略组|
 | fallback | dns.google/dns-query#PROXY | HTTPS | 启用 | |
 | default- nameserver | 223.5.5.5 | UDP | 启用 |  |
 | default- nameserver | 119.29.29.29 | UDP | 启用 |  |
