@@ -25,7 +25,7 @@
 
 ## 首页
 
-### 运行状态——覆写模块（openclah v0.47以上版本）
+### 运行状态——覆写模块（openclah v0.47.081以上版本）
 
 **在openclash_custom_overwrite.sh文件内的exit 0上方粘贴并修改成所需机场节点域名解析DNS**
 ```
