@@ -415,24 +415,20 @@ shark007.net
 | --- | --- | --- | --- | --- |
 | nameserver | 223.5.5.5 | UDP | 启用 | |
 | nameserver | 119.29.29.29 | UDP | 启用 | |
-| fallback | 1.1.1.1/dns-query#PROXY | HTTPS | 启用 | PROXY为策略组|
-| fallback | dns.google/dns-query#PROXY | HTTPS | 启用 | |
+| fallback | 1.1.1.1/dns-query#PROXY | HTTPS | 启用 | PROXY为策略节点组配置里的策略组 |
+| fallback | dns.google/dns-query#PROXY | HTTPS | 启用 | PROXY为策略节点组配置里的策略组 |
 | default- nameserver | 223.5.5.5 | UDP | 启用 |  |
 | default- nameserver | 119.29.29.29 | UDP | 启用 |  |
 
 ### Meta设置
 
-**默认勾选：**
-
-- 启用 TCP 并发
-- 启用统一延迟
-- Geodata 数据加载方式：标准模式
-- 启用 GeoIP Dat 版数据库
-- 启用流量（域名）探测
-- 探测（嗅探）纯 IP 连接
-- 自定义流量探测（嗅探）设置
-
-```yaml
+- 启用 TCP 并发✅
+- 启用统一延迟✅
+- 其他默认
+- 启用流量（域名）探测✅
+- 探测（嗅探）纯 IP 连接✅
+- 自定义流量探测（嗅探）设置✅
+```
 # 嗅探域名 可选配置
 sniffer:
   force-dns-mapping: true
@@ -462,7 +458,7 @@ sniffer:
     - "+.openai.com"
     - "+.chatgpt.com"
   skip-domain:
-    # 腾讯/微信系（精简）
+    # 腾讯/微信系
     - "+.qq.com"
     - "+.tencent.com"
     - "+.wechat.com"
@@ -471,7 +467,7 @@ sniffer:
     - "+.qlogo.cn"
     - "+.myqcloud.com"
     - "+.qcloud.com"
-    # 字节跳动/抖音系（精简）
+    # 字节跳动/抖音系
     - "+.douyin.com"
     - "+.douyincdn.com"
     - "+.douyinpic.com"
@@ -487,7 +483,7 @@ sniffer:
     - "+.xiaohongshu.com"
     - "+.xhscdn.com"
     - "+.xhslink.com"
-    # 阿里系（精简）
+    # 阿里系
     - "+.taobao.com"
     - "+.tmall.com"
     - "+.alicdn.com"
@@ -503,13 +499,13 @@ sniffer:
     - "+.116cd.com"
     - "+.anxia.com"
     - "+.sq.cc"
-    # 小米（新增）
+    # 小米
     - "+.mi.com"
     - dlg.io.mi.com
-    # 苹果推送（保留）
+    - Mijia Cloud
+    # 苹果推送
     - "+.push.apple.com"
-    # 国内大厂CDN（新增）
-    - "+.cn"
+    # 国内大厂CDN
     - "+.baidu.com"
     - "+.bdstatic.com"
     - "+.jd.com"
@@ -520,8 +516,6 @@ sniffer:
     - "+.zhihu.com"
     - "+.weibo.com"
     - "+.sina.com.cn"
-    # 使用 geosite:cn 替代大量重复条目（启用此规则可大幅精简列表）
-    - "geosite:cn"
   # skip-src-address:
   #   - 192.168.0.3/32
   # skip-dst-address:
@@ -534,10 +528,10 @@ sniffer:
 
 ## 规则设置
 
-**默认勾选：**
+- 仅代理命中规则流量✅
+- 自定义规则✅
 
-- 自定义规则
-
+**rules:下填写**
 ```
 # 1. NTP 端口强制直连（最高优先级）
 - DST-PORT,123,DIRECT
@@ -552,6 +546,7 @@ sniffer:
 - AND,((NETWORK,UDP),(DST-PORT,443),(GEOSITE,bytedance)),REJECT
 
 # 5. 其他自定义规则...
+- DOMAIN,局域网内DDNS域名,DIRECT
 
 ```
 
@@ -561,7 +556,7 @@ sniffer:
 | --- | --- |
 | 订阅地址 | （自定义） |
 | User-Agent | clash.meta/1.19.20 |
-| 在线订阅转换 | √ |
+| 在线订阅转换 | ✅ |
 | 订阅转换服务地址 | （自己的后端或者api.wcc.best） |
 | 订阅转换模板 | 自定义模板 |
 | 自定义模板地址 | [https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/cfg/Clash_test01.ini](https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/cfg/Clash_test01.ini) |
