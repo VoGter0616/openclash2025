@@ -804,7 +804,7 @@ sniffer:
 - AND,((NETWORK,UDP),(DST-PORT,443),(GEOSITE,bytedance)),REJECT
 
 # 5. 其他自定义规则...
-- DOMAIN,局域网内DDNS域名,DIRECT
+#- DOMAIN,局域网内DDNS域名,DIRECT
 
 ```
 
