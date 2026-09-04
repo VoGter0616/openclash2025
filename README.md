@@ -459,7 +459,7 @@ global.turn.twilio.com
 global.stun.twilio.com
 app.yinxiang.com
 injections.adguard.org
-localhost.*.weixin.qq.com
++.weixin.qq.com
 *.blzstatic.cn
 *.cmpassport.com
 id6.me
@@ -479,30 +479,11 @@ enrichgw.10010.com
 *.microdone.cn
 +.msftconnecttest.com
 +.msftncsi.com
-time.*.com
-time.*.gov
-time.*.edu.cn
-time.*.apple.com
-time1.*.com
-time2.*.com
-time3.*.com
-time4.*.com
-time5.*.com
-time6.*.com
-time7.*.com
-ntp.*.com
-ntp1.*.com
-ntp2.*.com
-ntp3.*.com
-ntp4.*.com
-ntp5.*.com
-ntp6.*.com
-ntp7.*.com
-+.pool.ntp.org
 *.time.edu.cn
 *.ntp.org.cn
 time.android.com
 time.windows.com
++.pool.ntp.org
 music.163.com
 *.music.163.com
 *.126.net
@@ -531,7 +512,6 @@ localhost.sec.qq.com
 +.tencent.com
 +.wechat.com
 +.servicewechat.com
-+.weixin.qq.com
 +.qqmail.com
 +.gtimg.com
 +.qpic.cn
@@ -666,12 +646,6 @@ swdist.apple.com
 lens.l.google.com
 stun.l.google.com
 na.b.g-tun.com
-stun.*.*
-stun.*.*.*
-+.stun.*.*
-+.stun.*.*.*
-+.stun.*.*.*.*
-+.stun.*.*.*.*.*
 +.stun.playstation.net
 heartbeat.belkin.com
 *.linksys.com
@@ -683,7 +657,18 @@ local.adguard.org
 ps.res.netease.com
 +.media.dssott.com
 shark007.net
-#添加局域网内ddns域名
++.wilds.monsterhunter.com
++.playfabapi.com
++.cloudapp.azure.com
++.westeurope.cloudapp.azure.com
++.vodafone-ip.de
+mask.icloud.com
+mask-h2.icloud.com
+mask.apple-dns.net
+# DDNS/内网穿透（请替换为你的实际DDNS域名）
+# +.ddnsddns.com
+# +.tailscale.com
+live-push.bilivideo.com
 ```
 
 **设置自定义上游 DNS 服务器**（在上方设置中启用本功能后生效）：**
