@@ -685,11 +685,6 @@ ps.res.netease.com
 shark007.net
 #添加局域网内ddns域名
 ```
-- Hosts✅
-```
-  'mtalk.google.com': 108.177.125.188
-  'raw.githubusercontent.com': 151.101.76.133
-```
 
 **设置自定义上游 DNS 服务器**（在上方设置中启用本功能后生效）：**
 
@@ -827,7 +822,7 @@ sniffer:
 - AND,((NETWORK,UDP),(DST-PORT,443),(GEOSITE,bytedance)),REJECT
 
 # 5. 其他自定义规则...
-- DOMAIN,局域网内DDNS域名,DIRECT
+#- DOMAIN,局域网内DDNS域名,DIRECT
 
 ```
 
@@ -840,7 +835,7 @@ sniffer:
 | 在线订阅转换 | ✅ |
 | 订阅转换服务地址 | （自己的后端或者api.wcc.best） |
 | 订阅转换模板 | 自定义模板 |
-| 自定义模板地址 | [https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/cfg/Clash_test01.ini](https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/cfg/Clash_test01.ini) |
+| 自定义模板地址 | [https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/cfg/Clash_IPLC_VIP.ini](https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/cfg/Clash_IPLC_VIP.ini) |
 
 其他参数根据自身情况设置。
 
