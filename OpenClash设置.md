@@ -662,11 +662,6 @@ ps.res.netease.com
 shark007.net
 #添加局域网内ddns域名
 ```
-- Hosts✅
-```
-  'mtalk.google.com': 108.177.125.188
-  'raw.githubusercontent.com': 151.101.76.133
-```
 
 **设置自定义上游 DNS 服务器**（在上方设置中启用本功能后生效）：**
 
