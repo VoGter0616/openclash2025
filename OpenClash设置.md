@@ -797,7 +797,7 @@ sniffer:
 | 在线订阅转换 | ✅ |
 | 订阅转换服务地址 | （自己的后端（版本0.9.9）或者api.asailor.org尝试转换） |
 | 订阅转换模板 | 自定义模板 |
-| 自定义模板地址 | [https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/cfg/Clash_IPLC_VIP.ini](https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/cfg/Clash_IPLC_VIP.ini) |
+| 自定义模板地址 | https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/cfg/Clash_IPLC_VIP.ini |
 | 跳过证书验证 | 启用 |
 
 其他参数根据自身情况设置。
