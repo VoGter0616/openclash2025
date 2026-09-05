@@ -659,6 +659,7 @@ live-push.bilivideo.com
 | fallback | dns.google/dns-query#PROXY | HTTPS | 启用 | PROXY为策略节点组配置里的策略组 |
 | default- nameserver | 223.5.5.5 | UDP | 启用 |  |
 | default- nameserver | 119.29.29.29 | UDP | 启用 |  |
+| default- nameserver | 2400:3200::1 | UDP | 启用 | 使用IPv6DNS解析时开启 |
 
 ### Meta设置
 
