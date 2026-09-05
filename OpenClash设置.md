@@ -655,6 +655,7 @@ live-push.bilivideo.com
 | --- | --- | --- | --- | --- |
 | nameserver | 223.5.5.5 | UDP | 启用 | |
 | nameserver | 119.29.29.29 | UDP | 启用 | |
+| nameserver | dhcp://system | UDP | 启用 | 旁路由模式下将其改成主路由网关，默认关闭 |
 | fallback | 1.1.1.1/dns-query#PROXY | HTTPS | 启用 | PROXY为策略节点组配置里的策略组 |
 | fallback | dns.google/dns-query#PROXY | HTTPS | 启用 | PROXY为策略节点组配置里的策略组 |
 | default- nameserver | 223.5.5.5 | UDP | 启用 |  |
