@@ -1,12 +1,12 @@
 # Custom_Proxy_List
-# UPDATED: 2026-09-05 16:16:33 (UTC+8)
+# UPDATED: 2026-09-06 16:35:02 (UTC+8)
 # DOMAIN: 10
 # DOMAIN-KEYWORD: 26
-# DOMAIN-SUFFIX: 6783
+# DOMAIN-SUFFIX: 6785
 # IP-CIDR: 93
 # IP-CIDR6: 4
-# NEWLY ADDED: 0
-# TOTAL: 6916
+# NEWLY ADDED: 2
+# TOTAL: 6918
 
 DOMAIN,api.waqi.info
 DOMAIN,aqi.aqicn.org
@@ -1342,6 +1342,7 @@ DOMAIN-SUFFIX,csuchen.de
 DOMAIN-SUFFIX,csw.org.uk
 DOMAIN-SUFFIX,ct.org.tw
 DOMAIN-SUFFIX,ctao.org
+DOMAIN-SUFFIX,ctee.com.tw
 DOMAIN-SUFFIX,ctfriend.net
 DOMAIN-SUFFIX,ctinets.com
 DOMAIN-SUFFIX,ctinews.com
@@ -3399,6 +3400,7 @@ DOMAIN-SUFFIX,linode.com
 DOMAIN-SUFFIX,linpie.com
 DOMAIN-SUFFIX,linux.do
 DOMAIN-SUFFIX,linux.org.hk
+DOMAIN-SUFFIX,linux.sb
 DOMAIN-SUFFIX,linuxtoy.org
 DOMAIN-SUFFIX,lionsroar.com
 DOMAIN-SUFFIX,lipuman.com
