@@ -16,6 +16,7 @@ DOMAIN-SUFFIX,m-team.io
 # ==================== 3. 机场官网及机场专属DNS ====================
 DOMAIN-SUFFIX,lamgo.io
 DOMAIN,ns1.pubdns.co
+DOMAIN-SUFFIX,mysub.cc
 
 # ==================== 4. 国内高大宽公共/开发资源镜像 ====================
 DOMAIN-SUFFIX,hf-mirror.com
