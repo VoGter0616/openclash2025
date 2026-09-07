@@ -5,7 +5,6 @@
 # ==================== 1. NAS、本地组网与私有云设备 ====================
 DOMAIN-KEYWORD,synology
 DOMAIN-KEYWORD,quickconnect
-DOMAIN-SUFFIX,tailscale.com
 DOMAIN-SUFFIX,terra-master.com
 DOMAIN-SUFFIX,tnas.link
 DOMAIN-SUFFIX,tnas.online
@@ -14,12 +13,11 @@ DOMAIN-SUFFIX,tnas.online
 DOMAIN-SUFFIX,m-team.cc
 DOMAIN-SUFFIX,m-team.io
 
-# ==================== 3. 机场官网 (防止代理访问触发防火墙拦截) ====================
+# ==================== 3. 机场官网及机场专属DNS ====================
 DOMAIN-SUFFIX,lamgo.io
+DOMAIN,ns1.pubdns.co
 
 # ==================== 4. 国内高大宽公共/开发资源镜像 ====================
-DOMAIN-SUFFIX,jsdelivr.com
-DOMAIN-SUFFIX,jsdelivr.net
 DOMAIN-SUFFIX,hf-mirror.com
 DOMAIN-SUFFIX,dockerpull.org
 DOMAIN-SUFFIX,dockerpull.pw
@@ -35,7 +33,7 @@ DOMAIN-SUFFIX,emby.yun
 DOMAIN-SUFFIX,miraiemby.com
 DOMAIN-SUFFIX,shangxuannet.com
 
-# 阿里云/海外高带宽直连优化回源段
+# 阿里云/国内高带宽直连优化回源段
 IP-CIDR,47.246.99.0/24,no-resolve
 IP-CIDR,47.246.103.0/24,no-resolve
 IP-CIDR,47.246.177.0/24,no-resolve
@@ -43,9 +41,8 @@ IP-CIDR,47.246.180.0/24,no-resolve
 
 # 国内公共基础设施/电信联通骨干网测速及互联节点 IP
 IP-CIDR,218.78.7.16/32,no-resolve
-IP-CIDR,98.126.27.164/32,no-resolve
 
-# ==================== 6. SSL 证书 OCSP & CRL 校验（全量防卡顿） ====================
+# ==================== 6. SSL 证书 OCSP & CRL 校验（仅保留国内访问良好的节点） ====================
 DOMAIN-SUFFIX,sectigo.com
 DOMAIN-SUFFIX,usertrust.com
 DOMAIN-SUFFIX,comodoca.com
@@ -53,8 +50,6 @@ DOMAIN-SUFFIX,digicert.com
 DOMAIN-SUFFIX,geotrust.com
 DOMAIN-SUFFIX,verisign.com
 DOMAIN-SUFFIX,thawte.com
-DOMAIN-SUFFIX,letsencrypt.org
-DOMAIN-SUFFIX,lencr.org
 DOMAIN-SUFFIX,globalsign.com
 DOMAIN-SUFFIX,globalsign.hn
 DOMAIN-SUFFIX,alphassl.com
@@ -68,17 +63,12 @@ DOMAIN,ocsp.apple.com
 DOMAIN,ocsp2.apple.com
 DOMAIN,crl.apple.com
 DOMAIN-SUFFIX,buypass.com
-DOMAIN-SUFFIX,zerossl.com
 DOMAIN-SUFFIX,actalis.com
 DOMAIN-SUFFIX,identitytrust.de
 
-# ==================== 7. 游戏激励广告 SDK ====================
+# ==================== 7. 游戏基础广告/资源 SDK ====================
 DOMAIN-SUFFIX,unity3dusercontent.com
 DOMAIN-SUFFIX,unityads.unity3d.com
-DOMAIN-SUFFIX,applovin.com
-DOMAIN-SUFFIX,applvn.com
-DOMAIN-SUFFIX,ironsource.com
-DOMAIN-SUFFIX,vungle.com
 
 # ==================== 8. 网络时间同步 (NTP) ====================
 DOMAIN,time.apple.com
@@ -121,8 +111,5 @@ DOMAIN-SUFFIX,agorartc.com
 DOMAIN-SUFFIX,netease.im
 DOMAIN-SUFFIX,rongcloud.cn
 
-# ==================== 13. P2P 联机与 NAT 穿透 (STUN 协议) ====================
+# ==================== 13. P2P 联机与 NAT 穿透 ====================
 DOMAIN-SUFFIX,stun.playstation.net
-DOMAIN-KEYWORD,stun
-
-DOMAIN,ns1.pubdns.co
