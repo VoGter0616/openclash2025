@@ -1,12 +1,12 @@
 # CDN_Merged
-# UPDATED: 2026-09-08 06:53:00 (UTC+8)
+# UPDATED: 2026-09-08 07:00:53 (UTC+8)
 # DOMAIN: 7
 # DOMAIN-KEYWORD: 12
-# DOMAIN-SUFFIX: 154
+# DOMAIN-SUFFIX: 155
 # IP-CIDR: 32
 # IP-CIDR6: 0
-# NEWLY ADDED: 0
-# TOTAL: 205
+# NEWLY ADDED: 1
+# TOTAL: 206
 
 DOMAIN,crl.apple.com
 DOMAIN,ns1.pubdns.co
@@ -89,6 +89,7 @@ DOMAIN-SUFFIX,m-team.io
 DOMAIN-SUFFIX,miaozhen.com
 DOMAIN-SUFFIX,mipush.com
 DOMAIN-SUFFIX,miraiemby.com
+DOMAIN-SUFFIX,mysub.cc
 DOMAIN-SUFFIX,netease.im
 DOMAIN-SUFFIX,nexusphp.org
 DOMAIN-SUFFIX,nvda.d2.sc.omtrdc.net
