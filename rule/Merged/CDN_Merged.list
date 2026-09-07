@@ -1,12 +1,12 @@
 # CDN_Merged
-# UPDATED: 2026-09-07 17:01:30 (UTC+8)
+# UPDATED: 2026-09-08 06:53:00 (UTC+8)
 # DOMAIN: 7
-# DOMAIN-KEYWORD: 13
-# DOMAIN-SUFFIX: 164
-# IP-CIDR: 33
+# DOMAIN-KEYWORD: 12
+# DOMAIN-SUFFIX: 154
+# IP-CIDR: 32
 # IP-CIDR6: 0
 # NEWLY ADDED: 0
-# TOTAL: 217
+# TOTAL: 205
 
 DOMAIN,crl.apple.com
 DOMAIN,ns1.pubdns.co
@@ -24,7 +24,6 @@ DOMAIN-KEYWORD,privatehd
 DOMAIN-KEYWORD,quickconnect
 DOMAIN-KEYWORD,stat-cdn
 DOMAIN-KEYWORD,stats-download
-DOMAIN-KEYWORD,stun
 DOMAIN-KEYWORD,synology
 DOMAIN-KEYWORD,tracker
 DOMAIN-KEYWORD,tracker-stat
@@ -33,8 +32,6 @@ DOMAIN-SUFFIX,admaster.com.cn
 DOMAIN-SUFFIX,agora.io
 DOMAIN-SUFFIX,agorartc.com
 DOMAIN-SUFFIX,alphassl.com
-DOMAIN-SUFFIX,applovin.com
-DOMAIN-SUFFIX,applvn.com
 DOMAIN-SUFFIX,beizi.biz
 DOMAIN-SUFFIX,bitcomet.com
 DOMAIN-SUFFIX,bitcomet.net
@@ -84,14 +81,9 @@ DOMAIN-SUFFIX,hdsky.me
 DOMAIN-SUFFIX,hf-mirror.com
 DOMAIN-SUFFIX,identitytrust.de
 DOMAIN-SUFFIX,igexin.com
-DOMAIN-SUFFIX,ironsource.com
 DOMAIN-SUFFIX,jiguang.cn
 DOMAIN-SUFFIX,jpush.io
-DOMAIN-SUFFIX,jsdelivr.com
-DOMAIN-SUFFIX,jsdelivr.net
 DOMAIN-SUFFIX,lamgo.io
-DOMAIN-SUFFIX,lencr.org
-DOMAIN-SUFFIX,letsencrypt.org
 DOMAIN-SUFFIX,m-team.cc
 DOMAIN-SUFFIX,m-team.io
 DOMAIN-SUFFIX,miaozhen.com
@@ -168,7 +160,6 @@ DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
 DOMAIN-SUFFIX,steamcontent.com
 DOMAIN-SUFFIX,steampipe.akamaized.net
 DOMAIN-SUFFIX,stun.playstation.net
-DOMAIN-SUFFIX,tailscale.com
 DOMAIN-SUFFIX,talkingdata.com
 DOMAIN-SUFFIX,tegrazone.co
 DOMAIN-SUFFIX,tegrazone.co.kr
@@ -190,8 +181,6 @@ DOMAIN-SUFFIX,unityads.unity3d.com
 DOMAIN-SUFFIX,usertrust.com
 DOMAIN-SUFFIX,utorrent.com
 DOMAIN-SUFFIX,verisign.com
-DOMAIN-SUFFIX,vungle.com
-DOMAIN-SUFFIX,zerossl.com
 IP-CIDR,103.10.124.0/23,no-resolve
 IP-CIDR,103.28.54.0/24,no-resolve
 IP-CIDR,146.66.152.0/24,no-resolve
@@ -224,4 +213,3 @@ IP-CIDR,47.246.180.0/24,no-resolve
 IP-CIDR,47.246.99.0/24,no-resolve
 IP-CIDR,62.210.122.0/24,no-resolve
 IP-CIDR,91.121.144.0/24,no-resolve
-IP-CIDR,98.126.27.164/32,no-resolve
