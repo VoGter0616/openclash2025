@@ -414,6 +414,7 @@ fallback-filter:
     - "+.slack.com"
     - "+.zoom.us"
     - "+.teamviewer.com"
+    - "+.services.mozilla.com"
 ```
 - Fake-IP-Filter✅
 - Fake-IP-Filter-Mode：黑名单模式
