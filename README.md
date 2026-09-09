@@ -10,7 +10,7 @@
 | [/rule](./rule) | 规则集。 |
 | [Clash_IPLC_VIP.ini](./cfg/Clash_IPLC_VIP.ini) | OpenClash自定义转换文件，机场IPLC.PLUS专用。 |
 | [Clash_custom.ini](./cfg/Clash_custom.ini) | OpenClash自定义转换文件。 |
-| [Clash_test01.ini](./cfg/Clash_test01.ini) | OpenClash转换前测试文件。 |
+| [Clash_test.ini](./cfg/Clash_test.ini) | OpenClash转换前测试文件。 |
 | [Clash_Verge.ini](./cfg/Clash_Verge.ini) | Clash Verge自定义转换文件。 |
 | [Shadowrocket_basic.conf](./cfg/Shadowrocket_basic.conf) | Shadowrocket自定义转换文件。 |
 
@@ -824,7 +824,7 @@ sniffer:
 | 在线订阅转换 | ✅ |
 | 订阅转换服务地址 | （自己的后端（版本0.9.9）或者api.asailor.org尝试转换） |
 | 订阅转换模板 | 自定义模板 |
-| 自定义模板地址 | [https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/cfg/Clash_IPLC_VIP.ini](https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/cfg/Clash_IPLC_VIP.ini) |
+| 自定义模板地址 | [https://raw.githubusercontent.com/VoGter0616/VoGter_Clash/refs/cfg/Clash_IPLC_VIP.ini](https://raw.githubusercontent.com/VoGter0616/VoGter_Clash/refs/heads/main/cfg/Clash_IPLC_VIP.ini) |
 | 跳过证书验证 | 启用 |
 
 其他参数根据自身情况设置。
@@ -858,7 +858,7 @@ sniffer:
 **配置文件地址：**
 
 ```
-https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/cfg/Shadowrocket_basic.conf
+https://raw.githubusercontent.com/VoGter0616/VoGter_Clash/refs/heads/main/cfg/Shadowrocket_basic.conf
 ```
 
 复制粘贴后点击下载，等待下载完成即可。Raw地址需要代理才可以正常访问GitHub下载，如果没有代理的条件可以把上述地址转换成国内CDN的地址即可，复制上述地址给AI生成（提示词：转换成testingcf.jsdelivr.net/加速连接）生成的新连接复制粘贴并下载即可使用
