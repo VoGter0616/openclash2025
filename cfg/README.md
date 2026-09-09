@@ -812,7 +812,7 @@ sniffer:
 | 在线订阅转换 | ✅ |
 | 订阅转换服务地址 | （自己的后端（版本0.9.9）或者api.asailor.org尝试转换） |
 | 订阅转换模板 | 自定义模板 |
-| 自定义模板地址 | [https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/cfg/Clash_IPLC_VIP.ini](https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/cfg/Clash_IPLC_VIP.ini) |
+| 自定义模板地址 | [https://raw.githubusercontent.com/VoGter0616/VoGter_Clash/refs/cfg/Clash_IPLC_VIP.ini](https://raw.githubusercontent.com/VoGter0616/VoGter_Clash/refs/heads/main/cfg/Clash_IPLC_VIP.ini) |
 | 跳过证书验证 | 启用 |
 
 其他参数根据自身情况设置。
@@ -890,7 +890,7 @@ https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/cfg/S
 | --- | --- | --- |
 | [Clash_IPLC_VIP.ini](./Clash_IPLC_VIP.ini) | ini | OpenClash自定义转换文件，IPLC.VIP专用转换。 |
 | [Clash_custom.ini](./Clash_custom.ini) | ini | OpenClash自定义转换文件。 |
-| [Clash_test01.ini](./Clash_test01.ini) | ini | OpenClash转换前测试文件。 |
+| [Clash_test.ini](./Clash_test.ini) | ini | OpenClash转换前测试文件。 |
 | [Clash_Verge.ini](./Clash_Verge.ini) | ini | Clash Verge自定义转换文件。 |
 | [Shadowrocket_basic.conf](./Shadowrocket_basic.conf) | conf | Shadowrocket自定义转换文件。 |
 | [base.yaml](./yaml/base.yaml) | yaml | Clash Verge头文件组成的yaml。 |
