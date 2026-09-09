@@ -4,8 +4,8 @@ import requests
 
 # 直连规则源列表
 direct_urls = [
-    "https://raw.githubusercontent.com/VoGter0616/openclash2025/main/rule/Clash/Bank_CN.list",
-    "https://raw.githubusercontent.com/VoGter0616/openclash2025/main/rule/Clash/Xiaomi_IoT.list",
+    "https://raw.githubusercontent.com/VoGter0616/Clash/main/rule/Clash/Bank_CN.list",
+    "https://raw.githubusercontent.com/VoGter0616/Clash/main/rule/Clash/Xiaomi_IoT.list",
 ]
 
 
