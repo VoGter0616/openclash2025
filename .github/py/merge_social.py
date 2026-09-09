@@ -11,7 +11,7 @@ social_urls = [
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Whatsapp/Whatsapp.list",
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Reddit/Reddit.list",
-    "https://raw.githubusercontent.com/VoGter0616/openclash2025/refs/heads/main/rule/Clash/Telegram.list",
+    "https://raw.githubusercontent.com/VoGter0616/Clash/refs/heads/main/rule/Clash/Telegram.list",
 ]
 
 # 有效规则前缀白名单
