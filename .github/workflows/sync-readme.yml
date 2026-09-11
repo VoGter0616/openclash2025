@@ -1,10 +1,12 @@
 name: Sync README Content
 
 on:
-  schedule:
-    # 每天 UTC 时间 0:00 (北京时间早 8:00) 自动运行一次
-    - cron: '0 0 * * *'
-  workflow_dispatch: # 支持在 GitHub 页面手动点击触发
+  push:
+    branches:
+      - main
+    paths:
+      - 'OpenClash设置.md' # 仅当该文件被更新时触发
+  workflow_dispatch: # 保留手动触发按钮
 
 permissions:
   contents: write
@@ -28,5 +30,5 @@ jobs:
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: auto sync OpenClash settings to README.md"
+          commit_message: "chore: sync OpenClash设置.md to README.md"
           branch: ${{ github.ref_name }}
