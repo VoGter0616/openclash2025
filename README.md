@@ -12,7 +12,8 @@
 | [Clash_custom.ini](./cfg/Clash_custom.ini) | OpenClash自定义转换文件。 |
 | [Clash_test.ini](./cfg/Clash_test.ini) | OpenClash转换前测试文件。 |
 | [Clash_Verge.ini](./cfg/Clash_Verge.ini) | Clash Verge自定义转换文件。 |
-| [Shadowrocket_basic.conf](./cfg/Shadowrocket_basic.conf) | Shadowrocket自定义转换文件。 |
+| [Shadowrocket_basic.conf](./cfg/Shadowrocket_basic.conf) | Shadowrocket自定义配置文件。 |
+| [Surge.conf](./cfg/Surge.conf) | Surge自定义配置文件。 |
 
 ---
 
