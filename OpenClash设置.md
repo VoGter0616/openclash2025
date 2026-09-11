@@ -5,6 +5,7 @@
 ### 运行状态——覆写模块（openclah v0.47.081以上版本）
 
 **在openclash_custom_overwrite.sh文件内的exit 0上方粘贴并修改成所需机场节点域名解析DNS，没有或者不知道专属DNS，无视此条设置**
+
 ```
     ruby_edit "$CONFIG_FILE" "['dns']['proxy-server-nameserver']" "['节点域名解析DNS1','节点域名解析DNS2']"
 ```
@@ -69,16 +70,19 @@ behance.net
 ### GEO数据库订阅
 
 - 自动更新 GeoIP MMDB 数据库✅
+
 ```
 https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb
 ```
 
 - 自动更新 GeoIP Dat 数据库✅
+
 ```
 https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat
 ```
 
 - 自动更新 GeoSite 数据库✅
+
 ```
 https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
 ```
@@ -123,6 +127,7 @@ https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
 - 遵循规则(respect-rules)✅
 - Fake-IP 持久化✅
 - Fallback-Filter✅
+
 ```
 fallback-filter:
   geoip: true
@@ -671,6 +676,7 @@ live-push.bilivideo.com
 - 启用流量（域名）探测✅
 - 探测（嗅探）纯 IP 连接✅
 - 自定义流量探测（嗅探）设置✅
+
 ```
 # 嗅探域名 可选配置
 sniffer:
@@ -774,6 +780,7 @@ sniffer:
 - 自定义规则✅
 
 **rules:下填写**
+
 ```
 # 1. NTP 端口强制直连（最高优先级）
 - DST-PORT,123,DIRECT
