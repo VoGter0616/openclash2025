@@ -16,6 +16,11 @@ SYNC_CONFIGS = [
         "start_tag": "<!-- SHADOWROCKET_START -->",
         "end_tag": "<!-- SHADOWROCKET_END -->",
     },
+    {
+        "file": "Surge设置.md",
+        "start_tag": "<!-- SURGE_START -->",
+        "end_tag": "<!-- SURGE_END -->",
+    },
 ]
 
 def update_readme_file(readme_path):
