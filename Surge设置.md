@@ -69,11 +69,12 @@ https://raw.githubusercontent.com/VoGter0616/VoGter_Clash/main/cfg/Surge_basic.c
 ## 使用说明
 
 - 右键顶部菜单栏Surge图标，出站模式选择规则判定
+- 第一次使用，在 我的节点 里选择重新测速
 - 下方的规则默认使用最优节点，也可根据自己需求点击修改
 
 > [!WARNING]
 > 该设置已满足当前主机代理分流上网，还需要其他增值设置的自行去YouTube学习设置。
 > 
-> 教程中使用的配置是VoGter个人使用，如有需要增加规则，可自行在Surge配置里进行修改
+> 教程中使用的配置是VoGter个人使用，该配置文件开源于Github，出现任何问题均于VoGter无关。如有需要增加规则，可自行在Surge配置里进行修改
 > 
 > 规则集数据来源于blackmatrix7大佬，由衷感谢大佬无私奉献
