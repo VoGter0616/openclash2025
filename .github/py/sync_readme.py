@@ -1,44 +1,58 @@
 import os
 import re
 
-SRC_PATH = "OpenClash设置.md"
-README_PATH = "README.md"
+README_FILE = "README.md"
+
+# 配置需要同步的文件及对应的 HTML 标记
+SYNC_CONFIGS = [
+    {
+        "file": "OpenClash设置.md",
+        "start_tag": "<!-- OPENCLASH_START -->",
+        "end_tag": "<!-- OPENCLASH_END -->",
+    },
+    {
+        "file": "Shadowrocket设置.md",
+        "start_tag": "<!-- SHADOWROCKET_START -->",
+        "end_tag": "<!-- SHADOWROCKET_END -->",
+    },
+]
 
 def main():
-    if not os.path.exists(SRC_PATH) or not os.path.exists(README_PATH):
-        print("错误: 找不到源文件或 README.md")
+    if not os.path.exists(README_FILE):
+        print("错误: 找不到 README.md，请检查文件位置！")
         return
 
-    # 读取本地 OpenClash设置.md
-    with open(SRC_PATH, 'r', encoding='utf-8') as f:
-        src_content = f.read().strip()
-
-    with open(README_PATH, 'r', encoding='utf-8') as f:
+    with open(README_FILE, "r", encoding="utf-8") as f:
         readme_content = f.read()
 
-    start_tag = "<!-- OPENCLASH_START -->"
-    end_tag = "<!-- OPENCLASH_END -->"
+    new_readme = readme_content
 
-    # 优先匹配 HTML 注释标记区域
-    if start_tag in readme_content and end_tag in readme_content:
-        pattern = re.compile(f"{re.escape(start_tag)}.*?{re.escape(end_tag)}", re.DOTALL)
-        new_readme = pattern.sub(f"{start_tag}\n\n{src_content}\n\n{end_tag}", readme_content)
-    else:
-        # 无标记时，从 <p align="center">VoGter的自用模板库</p> 开始替换到文本末尾
-        target_head = '<p align="center">VoGter的自用模板库</p>'
-        if target_head in readme_content:
-            head_idx = readme_content.find(target_head)
-            new_readme = readme_content[:head_idx] + src_content + "\n"
+    for config in SYNC_CONFIGS:
+        file_path = config["file"]
+        start_tag = config["start_tag"]
+        end_tag = config["end_tag"]
+
+        if not os.path.exists(file_path):
+            print(f"提示: 未找到文件 {file_path}，跳过该项同步。")
+            continue
+
+        with open(file_path, "r", encoding="utf-8") as f:
+            source_content = f.read().strip()
+
+        if start_tag in new_readme and end_tag in new_readme:
+            pattern = re.compile(f"{re.escape(start_tag)}.*?{re.escape(end_tag)}", re.DOTALL)
+            new_readme = pattern.sub(f"{start_tag}\n\n{source_content}\n\n{end_tag}", new_readme)
+            print(f"已同步 [{file_path}] -> README.md")
         else:
-            print("警告: 未在 README.md 中找到替换标记或定位文本，跳过更新。")
-            return
+            print(f"警告: README.md 中未找到标记 {start_tag} ... {end_tag}")
 
+    # 若内容有改变则写回文件
     if new_readme != readme_content:
-        with open(README_PATH, 'w', encoding='utf-8') as f:
+        with open(README_FILE, "w", encoding="utf-8") as f:
             f.write(new_readme)
-        print("README.md 更新完成！")
+        print("README.md 更新成功！")
     else:
-        print("内容一致，无需更新。")
+        print("README.md 内容已是最新，无需更新。")
 
 if __name__ == "__main__":
     main()
