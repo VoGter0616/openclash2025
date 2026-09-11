@@ -22,7 +22,8 @@ https://raw.githubusercontent.com/VoGter0616/VoGter_Clash/main/cfg/Shadowrocket_
 
 复制粘贴后点击下载，等待下载完成即可。Raw地址需要代理才可以正常访问GitHub下载，如果没有代理的条件可以把上述地址转换成国内CDN的地址即可，复制上述地址给AI生成（提示词：转换成testingcf.jsdelivr.net/加速连接）生成的新连接复制粘贴并下载即可使用
 
-**注意！！！ 如果需要使用特定DNS解析域名，在配置——本地文件里选择Shadowrocket_basic.conf长按选择编辑纯文本。翻阅至最低部的Host进行修改，如果无特殊需求，无视此操作**
+> [!WARNING]
+> 如果需要使用特定DNS解析域名，在配置——本地文件里选择Shadowrocket_basic.conf长按选择编辑纯文本。翻阅至最低部的Host进行修改，如果无特殊需求，无视此操作**
 
 ### 使用配置（仅iPhone设置，Mac默认即可）
 
