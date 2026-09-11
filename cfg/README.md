@@ -9,6 +9,8 @@
 
 <br>
 
+<!-- OPENCLASH_START -->
+
 # OpenClash使用设置
 
 ## 首页
@@ -817,7 +819,7 @@ sniffer:
 
 其他参数根据自身情况设置。
 
-
+<!-- OPENCLASH_END -->
 
 </details>
 
@@ -825,6 +827,8 @@ sniffer:
 <summary><b>📄 点击展开 / 折叠查看：Shadowrocket 设置指南</b></summary>
 
 <br>
+
+<!-- SHADOWROCKET_START -->
 
 # Shadowrocket使用设置
 
@@ -878,6 +882,7 @@ https://raw.githubusercontent.com/VoGter0616/VoGter_Clash/refs/heads/main/cfg/Sh
 
 > 其他参数根据自身情况设置。
 
+<!-- SHADOWROCKET_END -->
 
 </details>
 
