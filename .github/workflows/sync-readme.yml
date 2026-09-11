@@ -1,34 +1,33 @@
-name: Sync README Content
+name: Sync Settings to All READMEs
 
 on:
   push:
-    branches:
-      - main
     paths:
-      - 'OpenClash设置.md' # 仅当该文件被更新时触发
-  workflow_dispatch: # 保留手动触发按钮
+      - 'OpenClash设置.md'
+      - 'Shadowrocket设置.md'
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  update-readme:
+  sync-readme:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: 检出代码库
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: 配置 Python 环境
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
-      - name: Run sync script
+      - name: 执行替换脚本
         run: python .github/py/sync_readme.py
 
-      - name: Commit and push changes
+      - name: 提交并推送变更
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: sync OpenClash设置.md to README.md"
+          commit_message: "chore: auto sync settings to README files"
           branch: ${{ github.ref_name }}
