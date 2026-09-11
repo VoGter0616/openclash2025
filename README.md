@@ -145,7 +145,7 @@ https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
 
 ### 常规设置
 
-- Github 地址修改：https://testingcf.jsdelivr.net/
+- Github 地址修改：https://testingcf.jsdelivr.net/  ##代理通后将此选项改为禁止
 - 其他默认
 
 ### DNS设置
