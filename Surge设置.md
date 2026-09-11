@@ -16,11 +16,11 @@
 - 从URL安装配置
 
 ```
-
+https://raw.githubusercontent.com/VoGter0616/VoGter_Clash/main/cfg/Surge.conf
 ```
 
 > [!WARNING]
-> 以下所有可复制粘贴的内容（除覆写模块和自定义规则外）均直接复制覆盖到配置里即可
+> 无法下载转换成
 
 ### 运行状态——覆写模块（openclah v0.47.081以上版本）
 
