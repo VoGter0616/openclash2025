@@ -1,33 +1,62 @@
-name: Sync Settings to README
+import os
+import re
 
-on:
-  push:
-    paths:
-      - 'OpenClash设置.md'
-      - 'Shadowrocket设置.md'
-  workflow_dispatch:
+# 定义需要同步更新的所有 README 文件路径
+TARGET_READMES = ["README.md", "cfg/README.md"]
 
-permissions:
-  contents: write
+# 配置源文件与其对应的 HTML 标记
+SYNC_CONFIGS = [
+    {
+        "file": "OpenClash设置.md",
+        "start_tag": "<!-- OPENCLASH_START -->",
+        "end_tag": "<!-- OPENCLASH_END -->",
+    },
+    {
+        "file": "Shadowrocket设置.md",
+        "start_tag": "<!-- SHADOWROCKET_START -->",
+        "end_tag": "<!-- SHADOWROCKET_END -->",
+    },
+]
 
-jobs:
-  sync-readme:
-    runs-on: ubuntu-latest
+def update_readme_file(readme_path):
+    if not os.path.exists(readme_path):
+        print(f"提示: 找不到文件 {readme_path}，跳过同步。")
+        return
 
-    steps:
-      - name: 检出代码库
-        uses: actions/checkout@v4
+    with open(readme_path, "r", encoding="utf-8") as f:
+        readme_content = f.read()
 
-      - name: 配置 Python 环境
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
+    new_readme = readme_content
 
-      - name: 执行替换脚本
-        run: python .github/py/sync_readme.py
+    for config in SYNC_CONFIGS:
+        source_file = config["file"]
+        start_tag = config["start_tag"]
+        end_tag = config["end_tag"]
 
-      - name: 提交并推送变更
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: auto sync settings files to README.md"
-          branch: ${{ github.ref_name }}
+        if not os.path.exists(source_file):
+            print(f"提示: 找不到源文件 {source_file}，跳过。")
+            continue
+
+        with open(source_file, "r", encoding="utf-8") as f:
+            source_content = f.read().strip()
+
+        if start_tag in new_readme and end_tag in new_readme:
+            pattern = re.compile(f"{re.escape(start_tag)}.*?{re.escape(end_tag)}", re.DOTALL)
+            new_readme = pattern.sub(f"{start_tag}\n\n{source_content}\n\n{end_tag}", new_readme)
+            print(f"成功处理: [{source_file}] -> [{readme_path}]")
+        else:
+            print(f"警告: [{readme_path}] 中未找到标记 {start_tag} ... {end_tag}")
+
+    if new_readme != readme_content:
+        with open(readme_path, "w", encoding="utf-8") as f:
+            f.write(new_readme)
+        print(f"写入成功: [{readme_path}] 已完成更新！\n")
+    else:
+        print(f"跳过写入: [{readme_path}] 内容已是最新。\n")
+
+def main():
+    for readme_path in TARGET_READMES:
+        update_readme_file(readme_path)
+
+if __name__ == "__main__":
+    main()
