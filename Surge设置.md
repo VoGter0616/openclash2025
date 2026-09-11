@@ -24,7 +24,9 @@ https://raw.githubusercontent.com/VoGter0616/VoGter_Clash/main/cfg/Surge_basic.c
 
 > [!WARNING]
 > 下载完成后，右键 Surge_basic选择在文本编辑器中编辑
+> 
 > 根据机场节点协议修改Host，详见[Host] 组标注
+> 
 > 注意使用的时候一定要将Surge的订阅链接填写至“我的节点”，详见[Proxy Group] 组第7条。
 
 以下是[Host]修改教程，如无专属DNS，则忽视此设置
@@ -71,8 +73,7 @@ https://raw.githubusercontent.com/VoGter0616/VoGter_Clash/main/cfg/Surge_basic.c
 
 > [!WARNING]
 > 该设置已满足当前主机代理分流上网，还需要其他增值设置的自行去YouTube学习设置。
+> 
 > 教程中使用的配置是VoGter个人使用，如有需要增加规则，可自行在Surge配置里进行修改
+> 
 > 规则集数据来源于blackmatrix7大佬，由衷感谢大佬无私奉献
-
-其他参数根据自身情况设置。
-
