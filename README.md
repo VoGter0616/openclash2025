@@ -21,6 +21,8 @@
 
 <br>
 
+<!-- OPENCLASH_START -->
+
 # OpenClash使用设置
 
 ## 首页
@@ -829,6 +831,7 @@ sniffer:
 
 其他参数根据自身情况设置。
 
+<!-- OPENCLASH_END -->
 
 </details>
 
