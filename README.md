@@ -25,11 +25,12 @@
 
 # OpenClash使用设置
 
-## 测试首页
+## 首页
 
 ### 运行状态——覆写模块（openclah v0.47.081以上版本）
 
 **在openclash_custom_overwrite.sh文件内的exit 0上方粘贴并修改成所需机场节点域名解析DNS，没有或者不知道专属DNS，无视此条设置**
+
 ```
     ruby_edit "$CONFIG_FILE" "['dns']['proxy-server-nameserver']" "['节点域名解析DNS1','节点域名解析DNS2']"
 ```
@@ -94,16 +95,19 @@ behance.net
 ### GEO数据库订阅
 
 - 自动更新 GeoIP MMDB 数据库✅
+
 ```
 https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb
 ```
 
 - 自动更新 GeoIP Dat 数据库✅
+
 ```
 https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat
 ```
 
 - 自动更新 GeoSite 数据库✅
+
 ```
 https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
 ```
@@ -148,6 +152,7 @@ https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
 - 遵循规则(respect-rules)✅
 - Fake-IP 持久化✅
 - Fallback-Filter✅
+
 ```
 fallback-filter:
   geoip: true
@@ -696,6 +701,7 @@ live-push.bilivideo.com
 - 启用流量（域名）探测✅
 - 探测（嗅探）纯 IP 连接✅
 - 自定义流量探测（嗅探）设置✅
+
 ```
 # 嗅探域名 可选配置
 sniffer:
@@ -799,6 +805,7 @@ sniffer:
 - 自定义规则✅
 
 **rules:下填写**
+
 ```
 # 1. NTP 端口强制直连（最高优先级）
 - DST-PORT,123,DIRECT
@@ -848,7 +855,7 @@ sniffer:
 
 ### 订阅节点
 
-右上角 ＋ 号添加节点，类型根据你的机场提供的订阅进行设置（部分机场支持一键导入Shadowrocket），其他设置保持默认即可，过滤可以使用AI生成正则表达式来过滤不需要的节点（提示词：保留其他节点，删除XXXXX，在小火箭的过滤正则中，填入以下代码：）就可以自动生成正则表达式，复制到已添加节点的过滤里即可生效。
+右上角 ＋ 号添加节点，类型根据你的机场提供的订阅进行设置（部分机场支持一键导入Shadowrocket），其他设置保持默认即可，过滤可以使用AI生成正则表达式来过滤不需要的节点（提示词：^(?!.*(xxxx|xxxx)).*$，在小火箭的过滤正则中，填入以下代码：）就可以自动生成正则表达式，复制到已添加节点的过滤里即可生效。
 
 ### 全局路由：配置
 
@@ -863,7 +870,7 @@ sniffer:
 **配置文件地址：**
 
 ```
-https://raw.githubusercontent.com/VoGter0616/VoGter_Clash/refs/heads/main/cfg/Shadowrocket_basic.conf
+https://raw.githubusercontent.com/VoGter0616/VoGter_Clash/refs/heads/main/Shadowrocket_basic.conf
 ```
 
 复制粘贴后点击下载，等待下载完成即可。Raw地址需要代理才可以正常访问GitHub下载，如果没有代理的条件可以把上述地址转换成国内CDN的地址即可，复制上述地址给AI生成（提示词：转换成testingcf.jsdelivr.net/加速连接）生成的新连接复制粘贴并下载即可使用
