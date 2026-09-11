@@ -20,7 +20,11 @@ https://raw.githubusercontent.com/VoGter0616/VoGter_Clash/main/cfg/Surge.conf
 ```
 
 > [!WARNING]
-> 无法下载转换成
+> 复制粘贴后点击下载，等待下载完成即可。Raw地址需要代理才可以正常访问GitHub下载，如果没有代理的条件可以把上述地址转换成国内CDN的地址即可，复制上述地址给AI生成（提示词：转换成testingcf.jsdelivr.net/加速连接）生成的新连接复制粘贴并下载即可使用
+
+> [!WARNING]
+> 下载完成后，右键 Surge_basic选择在文本编辑器中编辑
+> 
 
 ### 运行状态——覆写模块（openclah v0.47.081以上版本）
 
