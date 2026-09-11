@@ -1,0 +1,28 @@
+name: Sync README to Wiki
+
+on:
+  push:
+    paths:
+      - 'README.md'   # 当根目录的 README.md 发生修改时自动触发
+  workflow_dispatch:  # 支持手动运行
+
+permissions:
+  contents: write
+
+jobs:
+  sync-wiki:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 检出代码库
+        uses: actions/checkout@v4
+
+      - name: 配置 Python 环境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: 执行 Wiki 同步脚本
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python .github/py/sync_wiki.py
