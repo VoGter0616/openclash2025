@@ -1,0 +1,48 @@
+# > Telegram.list（Telegram 服务识别规则集）
+# - 分类：即时通信平台 / 加密通讯服务 / 策略分流用途
+# - 来源：Telegram 官方文档 / 本地流量行为分析 / 手动校验 / 持续自维护
+# - 特征：识别 Telegram 相关的域名、IP 地址段与 ASN
+
+DOMAIN-SUFFIX,telegram.org # Telegram 主站域名
+DOMAIN-SUFFIX,t.me # Telegram 短链服务（频道、用户跳转）
+DOMAIN-SUFFIX,telegram.me # Telegram 历史短链服务
+DOMAIN-SUFFIX,telegram.dog # Telegram 镜像跳转域名
+DOMAIN-SUFFIX,telegram-cdn.org # Telegram CDN 内容分发域名
+DOMAIN-SUFFIX,cdn-telegram.org # Telegram CDN 加速域名
+DOMAIN-SUFFIX,tdesktop.com # Telegram Desktop 客户端服务
+DOMAIN-SUFFIX,telegra.ph # Telegram Telegraph 图文服务
+DOMAIN-SUFFIX,legra.ph # Telegraph 镜像跳转域名
+DOMAIN-SUFFIX,stel.com # Telegram 历史短链跳转
+DOMAIN-SUFFIX,tx.me # Telegram 静态资源服务域名
+DOMAIN-SUFFIX,contest.com # Telegram 开发者竞赛平台
+DOMAIN-SUFFIX,graph.org # Telegram 内嵌图床与图文链接跳转
+DOMAIN-SUFFIX,comments.app # Telegram 评论插件服务（频道 / Telegraph）
+DOMAIN-SUFFIX,quiz.directory # Telegram 互动问卷与小程序服务
+DOMAIN-SUFFIX,usercontent.dev # Telegram 内容托管服务（小程序等）
+DOMAIN-SUFFIX,tg.dev # Telegram 开发者平台服务
+DOMAIN-SUFFIX,telegram.space # Telegram 备用跳转域名
+DOMAIN-SUFFIX,telegramdownload.com # Telegram 客户端下载安装地址
+
+# > Telegram IPv4（Telegram 官方 IPv4 网络段）
+# - 数据来源：https://core.telegram.org/resources/cidr.txt
+# - 校对时间：2026-04-21
+
+IP-CIDR,91.105.192.0/23 # Telegram 官方基础设施网段
+IP-CIDR,91.108.4.0/22 # Telegram 官方通信节点网段
+IP-CIDR,91.108.8.0/22 # Telegram 官方通信节点网段
+IP-CIDR,91.108.12.0/22 # Telegram 官方通信节点网段
+IP-CIDR,91.108.16.0/22 # Telegram 官方通信节点网段
+IP-CIDR,91.108.20.0/22 # Telegram 官方通信节点网段
+IP-CIDR,91.108.56.0/22 # Telegram 官方通信节点网段
+IP-CIDR,149.154.160.0/20 # Telegram 官方通信节点网段
+IP-CIDR,185.76.151.0/24 # Telegram 官方通信节点网段
+
+# > Telegram IPv6（Telegram 官方 IPv6 网络段）
+# - 数据来源：https://core.telegram.org/resources/cidr.txt
+# - 校对时间：2026-04-21
+
+IP-CIDR6,2001:67c:4e8::/48 # Telegram 官方 IPv6 通信节点
+IP-CIDR6,2001:b28:f23c::/48 # Telegram 官方 IPv6 通信节点
+IP-CIDR6,2001:b28:f23d::/48 # Telegram 官方 IPv6 通信节点
+IP-CIDR6,2001:b28:f23f::/48 # Telegram 官方 IPv6 通信节点
+IP-CIDR6,2a0a:f280::/32 # Telegram 官方 IPv6 网络段
