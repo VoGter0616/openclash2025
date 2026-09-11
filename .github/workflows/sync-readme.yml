@@ -5,6 +5,7 @@ on:
     paths:
       - 'OpenClash设置.md'
       - 'Shadowrocket设置.md'
+      - 'Surge设置.md'
   workflow_dispatch:
 
 permissions:
