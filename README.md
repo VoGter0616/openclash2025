@@ -928,6 +928,8 @@ https://raw.githubusercontent.com/VoGter0616/VoGter_Clash/main/cfg/Shadowrocket_
 >
 > https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash/config
 >
+> https://github.com/JohnnySun/geoip
+>
 > 感谢以上大佬的代码开源，如有侵权告知删
 > 
 > 如需使用，请自行斟酌后再用，有任何问题VoGter均无义务解决。
