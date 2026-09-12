@@ -908,7 +908,7 @@
 >
 > 提示词：`转换成 testingcf.jsdelivr.net/加速连接`
 
-> [!WARNING]
+> [!TIP]
 > 如果需要使用特定 DNS 解析域名，在 **配置 → 本地文件** 里选择 `Shadowrocket_basic.conf`，长按选择 **编辑纯文本**，翻阅至最底部的 `[Host]` 进行修改。如果无特殊需求，无视此操作。
 
 ### 2.2 使用配置（仅 iPhone 设置，Mac 默认即可）
