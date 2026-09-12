@@ -913,7 +913,7 @@ https://raw.githubusercontent.com/VoGter0616/VoGter_Clash/main/cfg/Shadowrocket_
 ### 配置当前设备
 
 - 设置为系统代理✅
-- 启动增强模式✅  注：不开启增强模式会导致默认使用原生的 TCP/UDP 协议通信的软件或网站无法使用
+- 启动增强模式✅  (注：不开启增强模式会导致默认使用原生的 TCP/UDP 协议通信的软件或网站无法使用)
 
 - 在Surge启动时显示该向导✅
 点击继续
