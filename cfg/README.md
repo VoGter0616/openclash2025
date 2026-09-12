@@ -43,9 +43,9 @@
 | [Clash_IPLC_VIP.ini](./Clash_IPLC_VIP.ini) | ini | OpenClash自定义转换文件，IPLC.VIP专用转换。 |
 | [Clash_custom.ini](./Clash_custom.ini) | ini | OpenClash自定义转换文件。 |
 | [Clash_test.ini](./Clash_test.ini) | ini | OpenClash转换前测试文件。 |
-| [Clash_Verge.ini](./Clash_Verge.ini) | ini | Clash Verge自定义转换文件。 |
-| [Shadowrocket_basic.conf](./Shadowrocket_basic.conf) | conf | Shadowrocket自定义转换文件。 |
-| [base.yaml](./yaml/base.yaml) | yaml | Clash Verge头文件组成的yaml。 |
+| [Clash_Verge.ini](./Clash_Verge.ini) | ini | Clash Verge的自定义转换文件。 |
+| [Shadowrocket_basic.conf](./Shadowrocket_basic.conf) | conf | Shadowrocket的自定义配置文件。 |
+| [Surge_basic.conf](./Surge_basic.conf) | conf | Surge的自定义配置文件。 |
 
 > [!IMPORTANT]
 > 三种路径解决的是“如何获得并维护策略组、规则和节点来源”，不能替代 OpenClash LuCI 中的插件设置。建议选择一种主路径，不要在不了解执行顺序和覆盖关系时叠加使用。
