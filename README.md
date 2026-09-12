@@ -1,5 +1,5 @@
-<p align="center">
-  <b>VoGter 的自用模板库</b>
+# 🧩 OpenClash 订阅转换配置模板
+
 </p>
 
 ---
