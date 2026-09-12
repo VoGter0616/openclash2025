@@ -4,7 +4,7 @@
 > 本文档面向 OpenWrt / iStoreOS / ImmortalWrt 上的 OpenClash，涵盖覆写模块、模式设置、DNS、GEO 数据库、覆写设置、规则设置与订阅配置。
 > 首次使用建议按“首页 → 插件设置 → 覆写设置 → 规则设置 → 配置订阅”的顺序阅读。
 
-> [!WARNING]
+> [!TIP]
 > 以下所有可复制粘贴的内容（除覆写模块和自定义规则外）均直接复制覆盖到配置里即可。
 
 ---
@@ -13,7 +13,7 @@
 
 ### 1.1 运行状态 —— 覆写模块（OpenClash v0.47.081 以上版本）
 
-> [!WARNING]
+> [!TIP]
 > 在 `openclash_custom_overwrite.sh` 文件内的 `exit 0` 上方、`CONFIG_FILE="$1"` 的下方粘贴并修改成所需机场节点域名解析 DNS。没有或者不知道专属 DNS，无视此条设置。
 
     ruby_edit "$CONFIG_FILE" "['dns']['proxy-server-nameserver']" "['节点域名解析DNS1','节点域名解析DNS2']"
